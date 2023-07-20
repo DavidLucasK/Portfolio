@@ -32,12 +32,11 @@
     min-width: 40rem;
     max-width: 47rem;
     height: auto;
-    border-radius: 8px;
     transition: 0.3s ease-in-out;
 }
 
 .projects ul li .image img:hover{
-    transform: translateY(-10px);
+    transform: perspective(800px) translate3d(0, 0, 50px);
 }
 
 .projects ul li .projects__info{
