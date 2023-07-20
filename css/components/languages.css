@@ -1,5 +1,6 @@
 .skills1 {
-    background-color: #f3f6fb;
+    background-color: #f5f5f5;
+    /* background-image: linear-gradient(to bottom, #f5f5f5, #dfe6f1, #f5f5f5); */
     scroll-margin-top: 15rem;
 }
 
