@@ -8,6 +8,10 @@
     text-align: center;    
 }
 
+.skills1 .skills1__content h3{
+    font: 500px;  
+}
+
 .skills1 .skills1__content .description {
     max-width: 56rem;
     margin: 0 auto 6rem;
@@ -16,7 +20,7 @@
 .skills1 .skills1__content ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .skills1 .skills1__content ul li .image-container{
