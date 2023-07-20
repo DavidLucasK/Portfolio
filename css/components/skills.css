@@ -30,6 +30,13 @@
     align-items: center;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0,1);
     margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    opacity: 50%;
+}
+
+.skills .skills__content ul li .image-container:hover {
+    transform: translateY(-3px);
+    opacity: 100%;
 }
 
 .skills .skills__content ul li h3{
