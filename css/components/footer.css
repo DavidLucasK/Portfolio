@@ -1,5 +1,5 @@
 footer {
-    background-color: #f3f6fb;
+    background-color: #eceef3;
 }
 
 footer .footer__content {
@@ -21,6 +21,10 @@ footer .footer__content ul li a{
     display: inline-block;
     padding: 1rem;
     transition: 0.3s ease-in-out;
+}
+
+footer .footer__content ul li a .git{
+    filter: invert(100%);
 }
 
 footer .footer__content ul li a:hover{

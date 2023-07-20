@@ -98,6 +98,15 @@ p:not(:last-of-type),
   margin-bottom: 26rem;
 }
 
+.init-hidden {
+  opacity: 0;
+  transition: opacity 1.5s linear;
+}
+
+.init-hidden-off {
+  opacity: 1;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
