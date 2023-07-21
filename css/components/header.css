@@ -63,4 +63,8 @@ header .header__right .header__image .background {
   header .header__left p {
     margin: 2rem auto 4rem;
   }
+
+  header .header__right .header__image img {
+    justify-content: center;
+  }
 }
