@@ -43,12 +43,14 @@
 .navbar .navbar__content .navbar__links a {
   padding: 1rem;
   display: inline-block;
-  color: aliceblue;
-  font-size: 13pt;
+  color: rgb(217, 219, 223);
+  font-size: 15pt;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar .navbar__content .navbar__links a:hover {
-  color: var(--tertiary-color);
+  transform: scale(1.08);
+  color: white;
 }
 
 .navbar.active {

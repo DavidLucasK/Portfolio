@@ -12,7 +12,17 @@ footer .footer__content {
 }
 
 footer .footer__content h2{
+    margin-top: -5px;
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 4.5rem;
     color: aliceblue;
+}
+
+footer .footer__content .footer__contact .mailphone{
+    display: grid;
+    justify-content: center;
+    gap: 8px;
 }
 
 footer .footer__content .footer__contact .mailphone .email{
@@ -20,8 +30,6 @@ footer .footer__content .footer__contact .mailphone .email{
     flex-direction: grid;
     justify-content: center;
     transition: 0.3s ease-in-out;
-    padding: 0;
-    margin: 0;
 }
 
 footer .footer__content .footer__contact .mailphone .email:hover{
@@ -37,20 +45,15 @@ footer .footer__content .footer__contact .mailphone .email .mail{
     display: flex;
     align-items: center;
     padding: 10px;
-    padding: 0;
-    margin: 0;
 }
 
 footer .footer__content .footer__contact .mailphone .whatsapp{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     transition: 0.3s ease-in-out;
-    margin:auto
 }
 
 footer .footer__content .footer__contact .mailphone .whatsapp:hover{
-    transform: translateY(-3px);
+    transform: scale(1.05);
 }
 
 footer .footer__content .footer__contact .mailphone .whatsapp img{
