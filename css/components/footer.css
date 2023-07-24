@@ -1,30 +1,90 @@
 footer {
-    background-color: #eceef3;
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+    background-size: 200% 200%;
 }
 
 footer .footer__content {
     text-align: center;
     padding: 6rem 2rem 1rem;
     max-width: 47rem;
+    color: aliceblue;
 }
 
-footer .footer__content .footer__contact span{
+footer .footer__content h2{
+    color: aliceblue;
+}
+
+footer .footer__content .footer__contact .mailphone .email{
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+footer .footer__content .footer__contact .mailphone .email:hover{
+    transform: scale(1.05);
+}
+
+footer .footer__content .footer__contact .mailphone .email img{
+    filter: invert(100%);
+    width: 4rem;
+}
+
+footer .footer__content .footer__contact .mailphone .email .mail{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+footer .footer__content .footer__contact .mailphone .whatsapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    border: 1px solid red;
+    margin:auto
+}
+
+footer .footer__content .footer__contact .mailphone .whatsapp:hover{
+    transform: translateY(-3px);
+}
+
+footer .footer__content .footer__contact .mailphone .whatsapp img{
+    filter: invert(100%);
+    width: 4rem;
+}
+
+footer .footer__content .footer__contact .mailphone .whatsapp .phone{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .footer__content .footer__contact .mailphone span {
     display: block;
     font-weight: 900;
 }
 
-footer .footer__content ul li{
-    display: inline-block;
+footer .footer__content .mb-l{
+    display: inline-flex;
 }
 
 footer .footer__content ul li a{
-    display: inline-block;
+    display: inline-flex;
     padding: 1rem;
     transition: 0.3s ease-in-out;
 }
 
-footer .footer__content ul li a .git{
+footer .footer__content ul li a img{
     filter: invert(100%);
+    width: 4rem;
 }
 
 footer .footer__content ul li a:hover{

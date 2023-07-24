@@ -39,7 +39,7 @@ animeScroll();
 if(target.length) {
   window.addEventListener('scroll', debounce(function() {
     animeScroll();
-  }, 200));
+  }, 50));
 }
 
 //

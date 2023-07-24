@@ -6,7 +6,10 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-image: linear-gradient(90deg,#340ea5,#7b30d0);
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+  background-size: 200% 200%;
+  /* background-image: linear-gradient(90deg, black, grey); */
 }
 
 .navbar .navbar__content {
@@ -95,4 +98,20 @@
     display: block;
     text-align: center;
   }
+}
+
+@keyframes gradient {
+
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+
 }
