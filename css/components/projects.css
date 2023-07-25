@@ -1,6 +1,7 @@
 .projects {
     margin-bottom: 16rem;
     scroll-margin-top: 15rem;
+    margin-top: 400px;
   }
 
   .projects .projects__content {
@@ -9,11 +10,6 @@
     margin: 0 auto 6rem;
   }
 
-  .projects .projects__content .image .image-stacks{
-    position: fixed;
-    z-index: -3;
-  }
-  
   .projects ul li {
     display: flex;
     justify-content: space-between;
@@ -36,6 +32,7 @@
     height: auto;
     transition: 0.3s ease-in-out;
     border-radius: 1rem;
+    box-shadow: 5px 5px 20px .1px #000000;
   }
 
   .projects ul li .image img:hover{

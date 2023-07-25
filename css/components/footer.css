@@ -19,7 +19,7 @@ footer .footer__content h2{
     color: aliceblue;
 }
 
-footer .footer__content .footer__contact .mailphone{
+/* footer .footer__content .footer__contact .mailphone{
     display: grid;
     justify-content: center;
     gap: 8px;
@@ -70,7 +70,7 @@ footer .footer__content .footer__contact .mailphone .whatsapp .phone{
 footer .footer__content .footer__contact .mailphone span {
     display: block;
     font-weight: 900;
-}
+} */
 
 footer .footer__content .mb-l{
     display: inline-flex;
