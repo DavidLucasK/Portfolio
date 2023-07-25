@@ -116,15 +116,11 @@ p:not(:last-of-type),
 }
 
 [data-anime="left"] {
-  transform: translate3d(-1000px, 0, 0);
-}
-
-[data-anime="left-frontend"] {
-  transform: translate3d(-1500px, 0, 0);
+  transform: translate3d(-200px, 0, 0);
 }
 
 [data-anime="right"] {
-  transform: translate3d(1000px, 0, 0);
+  transform: translate3d(200px, 0, 0);
 }
 
 [data-anime="top"] {
