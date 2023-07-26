@@ -19,59 +19,6 @@ footer .footer__content h2{
     color: aliceblue;
 }
 
-/* footer .footer__content .footer__contact .mailphone{
-    display: grid;
-    justify-content: center;
-    gap: 8px;
-}
-
-footer .footer__content .footer__contact .mailphone .email{
-    display: flex;
-    flex-direction: grid;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-}
-
-footer .footer__content .footer__contact .mailphone .email:hover{
-    transform: scale(1.05);
-}
-
-footer .footer__content .footer__contact .mailphone .email img{
-    filter: invert(100%);
-    width: 4rem;
-}
-
-footer .footer__content .footer__contact .mailphone .email .mail{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-footer .footer__content .footer__contact .mailphone .whatsapp{
-    display: flex;
-    transition: 0.3s ease-in-out;
-}
-
-footer .footer__content .footer__contact .mailphone .whatsapp:hover{
-    transform: scale(1.05);
-}
-
-footer .footer__content .footer__contact .mailphone .whatsapp img{
-    filter: invert(100%);
-    width: 4rem;
-}
-
-footer .footer__content .footer__contact .mailphone .whatsapp .phone{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-footer .footer__content .footer__contact .mailphone span {
-    display: block;
-    font-weight: 900;
-} */
-
 footer .footer__content .mb-l{
     display: inline-flex;
 }
