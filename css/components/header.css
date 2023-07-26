@@ -68,3 +68,45 @@ header .header__right .header__image .background {
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+
+  header .header__right .header__image {
+    display: block;
+    margin-right: 60px;
+  }
+
+  header .header__right .header__image img {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+
+  header .header__right .header__image {
+    display: block;
+    margin-right: 60px;
+  }
+
+  header .header__right .header__image img {
+    justify-content: center;
+  }
+}

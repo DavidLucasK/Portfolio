@@ -51,11 +51,12 @@
     }
   
     .about .about__left {
-      max-width: 66rem;
+      max-width: fit-content;
       text-align: center;
     }
   
     .about .about__right {
       text-align: center;
+      width: 100%;
     }
   }
