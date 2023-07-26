@@ -31,7 +31,7 @@ header .header__right .header__image::after {
   position: absolute;
   top: -1.5rem;
   right: -2.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   z-index: -1;
 }
 
@@ -42,7 +42,7 @@ header .header__right .header__image img {
 }
 
 header .header__right .header__image .david {
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   min-width: 25rem;
   max-width: 100%;
 }
