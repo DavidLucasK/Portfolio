@@ -75,4 +75,9 @@
     .projects ul li .image img {
       min-width: auto;
     }
+
+    .projects ul li .projects__info a {
+      justify-items: center;
+      justify-content: center;
+    }
   }
