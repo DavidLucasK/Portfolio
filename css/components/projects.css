@@ -35,6 +35,33 @@
     box-shadow: 5px 5px 20px .1px #000000;
   }
 
+  .projects ul li .image-t img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+    transition: 0.3s ease-in-out;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px .1px #000000;
+    filter: blur(.8px);
+    filter: brightness(50%);
+  }
+
+  .projects ul li .image-t .breve {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 130px;
+    color: white;
+    font-size: xxx-large;
+    user-select: none;
+    font-weight: 900;
+    text-shadow: 5px 5px 30px white;
+  }
+
+  .projects ul li .image-t img:hover{
+    transform: scale(1.05);
+  }
+
   .projects ul li .image img:hover{
     transform: scale(1.05);
   }
