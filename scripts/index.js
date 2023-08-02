@@ -53,3 +53,19 @@ window.addEventListener('scroll', function () {
   if (this.window.pageYOffset > 0) return navbar.classList.add('active');
   return navbar.classList.remove('active');
 });
+
+/* Efeito de máquina de escrever */ 
+
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textoArray.forEach((letra, i) => {
+    console.log(i);
+      setTimeout(function() {
+        elemento.innerHTML += letra;
+      }, 75 * i)
+  });
+}
+
+const titulo = document.querySelector('h1');
+typeWriter(titulo);
