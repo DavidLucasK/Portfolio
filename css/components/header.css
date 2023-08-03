@@ -12,12 +12,11 @@ header .header__left {
 }
 
 header .header__right .header__image img {
-  width: 500px;
-  height: 500px;
-  border-radius: 1rem;
+  width: 350px;
+  height: 350px;
+  margin-left: -450px;
   filter:brightness(105%);
   filter: contrast(110%);
-  /*animation: opacidade 1.5s steps(5, jump-end) 3.5s forwards;*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -32,7 +31,8 @@ header .header__right .header__image img {
 
   header .header__right .header__image img {
     justify-content: center;
-    width: 480px;
+    width: 350px;
+    margin-right: 450px;
   }
 }
 
@@ -54,7 +54,8 @@ header .header__right .header__image img {
 
   header .header__right .header__image img {
     justify-content: center;
-    width: 480px;
+    width: 350px;
+    margin-left: 70px;
   }
 }
 
@@ -76,5 +77,6 @@ header .header__right .header__image img {
 
   header .header__right .header__image img {
     justify-content: center;
+    margin-left: 500px;
   }
 }
