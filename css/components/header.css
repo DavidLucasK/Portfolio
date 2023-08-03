@@ -15,8 +15,6 @@ header .header__right .header__image img {
   width: 350px;
   height: 350px;
   margin-left: -450px;
-  filter:brightness(105%);
-  filter: contrast(110%);
 }
 
 @media only screen and (max-width: 768px) {
