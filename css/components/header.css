@@ -12,9 +12,9 @@ header .header__left {
 }
 
 header .header__right .header__image img {
-  width: 340px;
-  height: 330px;
-  margin-left: -350px;
+  width: 240px;
+  height: 230px;
+  margin-left: -380px;
   border-radius: 250px;
 }
 
