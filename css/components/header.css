@@ -12,9 +12,10 @@ header .header__left {
 }
 
 header .header__right .header__image img {
-  width: 350px;
-  height: 350px;
-  margin-left: -450px;
+  width: 340px;
+  height: 330px;
+  margin-left: -350px;
+  border-radius: 250px;
 }
 
 @media only screen and (max-width: 768px) {
