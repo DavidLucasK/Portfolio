@@ -16,27 +16,32 @@
 
 .about .about__left ul {
     margin-left: -1.2rem;
+    display: flex;
+    gap: 1rem;
 }
 
-.about .about__left ul li{
+.about .about__left ul li {
     display: inline-block;
+    flex: 1;
 }
 
-.about .about__left ul li a{
+.about .about__left ul li a {
     display: inline-block;
     padding: 1rem;
     transition: 0.3s ease-in-out;
-    opacity: 70%;
+    opacity: 0.7;
+    text-align: center;
 }
 
-.about .about__left ul li img{
+.about .about__left ul li img {
     margin: 0 auto;
     width: 4.5rem;
+    display: block;
 }
 
-.about .about__left ul li a:hover{
+.about .about__left ul li a:hover {
     transform: scale(1.06);
-    opacity: 100%;
+    opacity: 1;
 }
 
 .about .about__right {
@@ -46,17 +51,15 @@
 
 @media only screen and (max-width: 768px) {
     .about {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .about .about__left {
-      max-width: fit-content;
-      text-align: center;
+        max-width: 100%;
     }
-  
+
     .about .about__right {
-      text-align: center;
-      width: 100%;
+        width: 100%;
     }
-  }
+}
