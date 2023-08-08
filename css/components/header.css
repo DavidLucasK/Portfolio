@@ -18,27 +18,9 @@ header .header__right .header__image img {
   border-radius: 250px;
 }
 
-@media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  header .header__left p {
-    margin: 2rem auto 4rem;
-  }
-
-  header .header__right .header__image img {
-    justify-content: center;
-    width: 350px;
-    margin-right: 450px;
-  }
-}
-
 @media only screen and (max-width: 1050px) {
   header {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -48,34 +30,21 @@ header .header__right .header__image img {
 
   header .header__right .header__image {
     display: block;
-    margin-right: 60px;
+    margin: 0 auto;
   }
 
   header .header__right .header__image img {
-    justify-content: center;
-    width: 350px;
-    margin-left: 70px;
+    width: 300px;
+    height: 290px;
+    margin: 0;
+    border-radius: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  header .header__left p {
-    margin: 2rem auto 4rem;
-  }
-
-  header .header__right .header__image {
-    display: block;
-    margin-right: 60px;
-  }
-
   header .header__right .header__image img {
-    justify-content: center;
-    margin-left: 500px;
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
   }
 }
