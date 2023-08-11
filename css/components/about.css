@@ -62,4 +62,9 @@
     .about .about__right {
         width: 100%;
     }
+
+    .about .about__left ul li  {
+        display: flex;
+        justify-content: center;
+    }
 }

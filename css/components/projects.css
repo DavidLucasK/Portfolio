@@ -44,7 +44,7 @@
     border-radius: 1rem;
     box-shadow: 5px 5px 20px .1px #000000;
     filter: blur(.8px);
-    filter: brightness(50%);
+    filter: brightness(40%);
   }
 
   .projects ul li .image-t .breve {
@@ -96,7 +96,7 @@
     }
   
     .projects ul li .projects__info {
-      max-width: 66rem;
+      max-width: 46rem;
     }
   
     .projects ul li .image img {

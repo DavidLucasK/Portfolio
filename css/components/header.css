@@ -4,6 +4,7 @@ header {
   align-items: center;
   gap: 4rem;
   scroll-margin-top: 20rem;
+  height: 34rem;
 }
 
 header .header__left {
@@ -11,11 +12,16 @@ header .header__left {
   flex: 1;
 }
 
-header .header__right .header__image img {
-  width: 240px;
-  height: 230px;
-  margin-left: -380px;
+header .header__right img {
+  width: 220px;
+  height: 210px;
+  margin-left: -440px;
   border-radius: 250px;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+  background-size: 300% 200%;
+  filter: brightness(110%);
+  filter: contrast(135%);
 }
 
 @media only screen and (max-width: 1050px) {
