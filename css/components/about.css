@@ -56,6 +56,7 @@
     }
 
     .about .about__left {
+        margin-left: 1px;
         max-width: 100%;
     }
 
