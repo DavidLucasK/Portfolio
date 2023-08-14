@@ -80,6 +80,7 @@
     width: 3.6rem;
     height: 3.6rem;
     cursor: pointer;
+    filter: invert();
   }
 
   .navbar .navbar__content .navbar__mobile.active .mobile__links {

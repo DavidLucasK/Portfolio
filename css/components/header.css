@@ -16,7 +16,7 @@ header .header__right img {
   width: 220px;
   height: 210px;
   margin-left: -440px;
-  border-radius: 250px;
+  border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%       ;
   animation: gradient 10s ease infinite;
   background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
   background-size: 300% 200%;
@@ -34,23 +34,22 @@ header .header__right img {
     margin: 2rem auto 4rem;
   }
 
-  header .header__right .header__image {
+  header .header__right {
     display: block;
     margin: 0 auto;
   }
 
-  header .header__right .header__image img {
-    width: 300px;
-    height: 290px;
+  header .header__right img {
+    width: 220px;
+    height: 210px;
     margin: 0;
-    border-radius: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   header .header__right .header__image img {
-    width: 250px;
-    height: 240px;
+    width: 220px;
+    height: 210px;
     border-radius: 10px;
   }
 }
