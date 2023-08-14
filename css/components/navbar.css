@@ -67,13 +67,21 @@
     display: none;
   }
 
+  .navbar .navbar__content .david-logo{
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: white;
+  }
+
   *{
     overflow-x: invisible;
   }
 
   .navbar .navbar__content .navbar__mobile {
     display: flex;
-    align-items: center;
+    margin-top: -4px;
   }
 
   .navbar .navbar__content .navbar__mobile img {
