@@ -1,10 +1,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 4rem;
-  scroll-margin-top: 20rem;
-  height: 34rem;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  margin-bottom: 26rem;
 }
 
 header .header__left {
@@ -15,7 +18,8 @@ header .header__left {
 header .header__right img {
   width: 220px;
   height: 210px;
-  margin-left: -440px;
+  margin-left: -350px;
+  margin-top: 60px;
   border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%       ;
   animation: gradient 10s ease infinite;
   background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
@@ -46,7 +50,19 @@ header .header__right img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+
+  header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .header__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header .header__right .header__image img {
     width: 220px;
     height: 210px;
