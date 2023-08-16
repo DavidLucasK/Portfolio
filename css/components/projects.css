@@ -2,6 +2,11 @@
     margin-bottom: 16rem;
     scroll-margin-top: 15rem;
     margin-top: 400px;
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+    margin-bottom: 26rem;
   }
 
   .projects .projects__content {
@@ -29,7 +34,6 @@
     width: 100%;
     min-width: 40rem;
     max-width: 47rem;
-    height: auto;
     transition: 0.3s ease-in-out;
     border-radius: 1rem;
     box-shadow: 5px 5px 20px .1px #000000;
@@ -39,28 +43,35 @@
     width: 100%;
     min-width: 40rem;
     max-width: 47rem;
-    height: auto;
     transition: 0.3s ease-in-out;
     border-radius: 1rem;
     box-shadow: 5px 5px 20px .1px #000000;
-    filter: blur(.8px);
-    filter: brightness(40%);
+    filter: brightness(40%) blur(.8px);
   }
 
-  .projects ul li .image-t .breve {
+  .projects ul li .image-bug img {
     position: absolute;
-    margin-top: -180px;
-    margin-left: 130px;
-    color: white;
-    font-size: xxx-large;
-    user-select: none;
-    font-weight: 900;
-    text-shadow: 5px 5px 30px white;
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px .1px #000000;
+    filter: brightness(40%) blur(.8px);
+    transform: translateY(-110px);
   }
 
-  .projects ul li .image-t img:hover{
-    transform: scale(1.05);
+  .projects ul li .image-bug span div {
+    position: relative;
+    color: rgb(255, 34, 34);
+    text-shadow: 10px 10px 5px black, 0 0 1em white, 1px 1px 0.1px black;
+    font-weight: 600;
+    font-size: 70px;
+    margin-left: 4rem;
+    margin-top: -20px;
+    user-select: none;
+    transform: rotate(-28deg);
   }
+
 
   .projects ul li .image img:hover{
     transform: scale(1.05);
