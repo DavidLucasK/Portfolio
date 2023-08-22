@@ -62,7 +62,7 @@
 
   .projects ul li .image-bug span div {
     position: relative;
-    color: rgb(255, 34, 34);
+    color: #c70000;
     text-shadow: 10px 10px 5px black, 0 0 1em white, 1px 1px 0.1px black;
     font-weight: 600;
     font-size: 70px;
