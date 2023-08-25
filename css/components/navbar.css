@@ -45,6 +45,7 @@ nav .navbar__content .navbar__links a {
   display: inline-block;
   color: rgb(217, 219, 223);
   font-size: 15pt;
+  font-weight: 300;
   transition: 0.3s ease-in-out;
 }
 
