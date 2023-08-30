@@ -2,16 +2,11 @@
     background-color: #f5f5f5;
     /* background-image: linear-gradient(to bottom, #f5f5f5, #dfe6f1, #f5f5f5); */
     scroll-margin-top: 15rem;
-    margin-bottom: -20rem;
 }
 
 .mobile .mobile__content {
     padding: 6rem 4rem;
-    text-align: center; 
-}
-
-.mobile .mobile__content h3{
-    font: 500px;  
+    text-align: center;
 }
 
 .mobile .mobile__content .description {
