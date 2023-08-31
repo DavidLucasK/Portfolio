@@ -1,6 +1,6 @@
-const navbar = document.querySelector('.navbar');
-const mobileNavbar = document.querySelector('.navbar__mobile');
-const button = document.querySelector('.burguer');
+const navbar = document.querySelector('.navbar'),
+      mobileNavbar = document.querySelector('.navbar__mobile'),
+      button = document.querySelector('.burguer');
 
 // Animação com scroll
 
