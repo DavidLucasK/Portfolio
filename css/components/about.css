@@ -21,6 +21,7 @@
 }
 
 .about .about__left ul li {
+    text-align: center;
     display: inline-block;
     flex: 1;
 }
@@ -42,6 +43,18 @@
 .about .about__left ul li a:hover {
     transform: scale(1.06);
     opacity: 1;
+}
+
+.about .about__left ul li p {
+    margin-top: -10px;
+    opacity: 0;
+    transition: 400ms ease-in-out;
+    font-size: 14px;
+}
+
+.about .about__left ul li:hover p {
+    opacity: 1;
+    transform: scale(1.10);
 }
 
 .about .about__right {
