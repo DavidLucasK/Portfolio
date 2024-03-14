@@ -11,7 +11,7 @@
   <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- Title -->
   <title>DavidLucas - Portfolio</title>
   <!-- Favicon -->
@@ -26,7 +26,7 @@
       rel="stylesheet"
     />
 </head>
-<body class="dark">
+<body>
   <!-- Navbar  -->
   <nav class="navbar">
       <div class="navbar__content">
@@ -56,14 +56,14 @@
 
   <div class="interface">
     <!-- header -->
-    <section id="header">
+    <section id="header" data-anime="left">
       <header>
           <div class="header__left">
-            <h1>Olá! Meu nome é David Lucas e sou Desenvolvedor</h1>
+            <h1>Olá! Meu nome é David Lucas e sou Desenvolvedor FullStack</h1>
           </div>
           <div class="header__right">
             <div class="teste">
-              <img src="assets/perfil27-semfundo.png" alt="David Lucas" class="david">
+              <a href="https://www.linkedin.com/in/david-lucas-a21208176/" target="_blank"><img src="assets/avatar-big-david_NO_BG.png" alt="David Lucas" class="david"></a>
             </div>
           </div>
       </header>
@@ -71,7 +71,7 @@
 
     <!-- Sobre  -->
 
-    <section id="about" class="about max-width">
+    <section id="about" class="about max-width" data-anime="right">
       <div class="about__left">
         <h2 class="secundary-title">Além do código: Quem sou eu?</h2>
         <p>
@@ -115,16 +115,16 @@
       </div>
     </section>
 
-    <section id="companys" class="about max-width">
+    <section id="companys" class="about max-width" data-anime="left">
       <div class="companys">
         <h3 class="tertiary-title mb-m">
           Empresas em que já trabalhei e/ou estive em projetos relacionados.
         </h3>
           <div class="company-logos">
-            <img src="./assets/Thomson_Reuters_logo.png">
-            <img src="./assets/viracopos.logo.png">
-            <img src="./assets/embraer.png" width="420px">
-            <img src="./assets/nissan.png">
+            <a href="https://www.thomsonreuters.com/en.html" target="_blank"><img src="./assets/Thomson_Reuters_logo.png"></a>
+            <a href="https://www.viracopos.com/" target="_blank"><img src="./assets/viracopos.logo.png"></a>
+            <a href="https://embraer.com/br/pt" target="_blank"><img src="./assets/embraer.png" width="420px"></a>
+            <a href="https://www.nissan.com.br/" target="_blank"><img src="./assets/nissan.png"></a>
             <!-- <img src="./assets/sotreq.png" width="300px"> -->
           </div>
       </div>
@@ -133,7 +133,7 @@
     <!-- habilidades -->
 
     <section id="skills" class="skills">
-      <div class="skills__content max-width">
+      <div class="skills__content max-width" data-anime="right">
         <h2 class="tertiary-title">Caixa de Ferramentas</h2>
         <p class="description">
           Aqui estão algumas habilidades e ferramentas que domino e que me permitem
@@ -197,7 +197,7 @@
     <!-- Linguagens -->
 
     <section id="frontend" class="frontend">
-      <div class="frontend__content max-width">
+      <div class="frontend__content max-width" data-anime="left">
         <h2 class="tertiary-title">Minhas habilidades</h2>
         <p class="description">
           Linguagens backend e outras ferramentes que já utilizei e utilizo em meus projetos e nas empresas em que trabalhei.
@@ -276,9 +276,10 @@
               Intermediário
             </p>
           </li>
-        </ul> 
+        </ul>
+    </section> 
     <section id="backend" class="backend">
-      <div class="backend__content max-width">
+      <div class="backend__content max-width" data-anime="right">
         <h3 class="quintiary-title">Backend e outras ferramentas que ja utilizei</h3>
         <ul>
           <li class="backend__item">
@@ -367,9 +368,8 @@
         </ul>
       </div>
       </div>
-    </section>
     <section id="mobile" class="mobile">
-      <div class="mobile__content max-width">
+      <div class="mobile__content max-width" data-anime="left">
         <h3 class="quintiary-title">Mobile</h3>
         <ul>
           <li class="mobile__item">

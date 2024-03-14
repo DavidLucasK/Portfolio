@@ -6,7 +6,6 @@
   font-family: var(--font-family);
 }
 
-
 html {
   font-size: 62.5%;
 }
@@ -14,7 +13,9 @@ html {
 body {
   font-size: 1.6rem;
   margin-top: 15rem;
+  overflow-y: scroll;
 }
+
 
 ul {
   list-style: none;
@@ -108,18 +109,22 @@ p:not(:last-of-type),
   opacity: 1;
 }
 
-/* Personalizando a scrolbar */
-
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px; /* Largura da scrollbar */
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Cor de fundo da scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.3); /* Cor do indicador da scrollbar */
+  border-radius: 5px; /* Borda arredondada do indicador */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(105, 105, 105);
+  background-color: rgba(0, 0, 0, 0.5); /* Cor do indicador da scrollbar ao passar o mouse */
 }
 
 
