@@ -1,13 +1,13 @@
 .skills {
     background: linear-gradient(180deg, #ffffff, #e7e7e7) no-repeat;
     scroll-margin-top: 15rem;
-    margin-bottom: -350px;
+    margin-bottom: -300px;
 }
 
 .skills .skills__content {
     padding: 6rem 4rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -100px;
 }
 
 .skills .skills__content .description {
