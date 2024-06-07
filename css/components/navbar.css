@@ -5,7 +5,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 100px;
   z-index: 10;
   animation: gradient 10s ease infinite;
   background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
@@ -22,7 +22,7 @@ nav .navbar__content {
 nav .logo-navbar {
   position: relative;
   margin-left: 100px;
-  width: 100px;
+  width: 85px;
   margin-top: -40px;
   transition: 0.5s ease-in-out;
 }
