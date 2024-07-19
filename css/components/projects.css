@@ -33,7 +33,7 @@
   height: 30rem;
   object-fit: cover; 
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -50px 30px 50px 1px rgb(122, 122, 122);
   transition: transform 0.3s ease-in-out;
 }
 
