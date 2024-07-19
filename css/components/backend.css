@@ -20,7 +20,7 @@
 
 .backend .backend__content ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* Duas colunas */
     gap: 4rem;
 }
 
@@ -81,7 +81,7 @@
 @media (max-width: 600px) {
     .backend .backend__content {
         padding: 2rem 1rem;
-        overflow-y: hidden;
+
     }
 
     .backend .backend__content h3 {

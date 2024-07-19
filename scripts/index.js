@@ -49,7 +49,7 @@ const animationClass = 'animate';
 
 
 function animeScroll() {
-  const windowTop = window.pageYOffset + ((window.innerHeight * 44) / 64);
+  const windowTop = window.pageYOffset + ((window.innerHeight * 100) / 80);
   target.forEach(function(element) {
     if((windowTop) > element.offsetTop) {
       element.classList.add(animationClass);
@@ -64,20 +64,8 @@ animeScroll();
 if(target.length) {
   window.addEventListener('scroll', debounce(function() {
     animeScroll();
-  }, 10));
+  }, 1));
 }
-
-//
-
-
-button.addEventListener('click', function () {
-  mobileNavbar.classList.toggle('active');
-});
-
-window.addEventListener('scroll', function () {
-  if (this.window.pageYOffset > 0) return navbar.classList.add('active');
-  return navbar.classList.remove('active');
-});
 
 /* Efeito de máquina de escrever */ 
 
