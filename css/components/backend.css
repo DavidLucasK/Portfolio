@@ -93,6 +93,10 @@
         height: 80px;
     }
 
+    .backend .backend__content ul li .image-container:hover {
+        opacity: 100%;
+    }
+
     .backend .backend__content ul li h3 {
         font-size: 1.4rem;
     }
