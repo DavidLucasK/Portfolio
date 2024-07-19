@@ -77,6 +77,10 @@
       max-width: 100%;
   }
 
+  .projects ul li  {
+    display: grid;
+  }
+
   .projects ul li .image img {
     height: 100%;
     width: 100%;
@@ -88,6 +92,7 @@
       display: block;
       text-align: center; /* Centraliza o texto do botão */
       margin: 1rem auto; /* Adiciona margem para centralizar o botão */
+      max-width: 120px;
   }
 
   .projects ul li .projects__info p {
