@@ -74,11 +74,14 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content {
     padding: 1px 40px 1px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  nav .navbar__content a {
+    margin-left: 80px;
   }
 
   nav .navbar__content .logo-navbar {
-    margin-left: 0;
     width: 60px;
     margin-top: 5px;
   }
