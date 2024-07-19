@@ -2,6 +2,22 @@ window.onload = function(){
   window.scrollTo(-1000, -1000);
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href').substring(1); // Remove o "#"
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 180, // Ajuste o valor conforme necessário
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   // Seleciona o botão burger e a lista de links mobile
   const burger = document.querySelector('.burguer');
