@@ -77,10 +77,6 @@ nav .navbar__content .navbar__mobile .mobile__links {
     justify-content: space-between;
   }
 
-  nav .navbar__content a {
-    margin-left: 80px;
-  }
-
   nav .navbar__content .logo-navbar {
     width: 60px;
     margin-top: 5px;
