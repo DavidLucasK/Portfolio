@@ -2,6 +2,27 @@ window.onload = function(){
   window.scrollTo(-1000, -1000);
 }
 
+//Somente parte do href="/"
+document.addEventListener('DOMContentLoaded', function() {
+  // Verifica o URL da página
+  if (window.location.pathname === '/') {
+    // Define a posição de rolagem para (-1000, -1000)
+    window.scrollTo(-1000, -1000);
+  }
+
+  // Adiciona um evento de clique para links com href="/"
+  document.querySelectorAll('a[href="/"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Define a posição de rolagem para (-1000, -1000) quando o link é clicado
+      window.scrollTo(-1000, -1000);
+      // Opcionalmente, você pode redirecionar para a página inicial
+      window.location.href = '/';
+    });
+  });
+});
+//
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
