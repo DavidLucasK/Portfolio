@@ -1,6 +1,20 @@
-const navbar = document.querySelector('.navbar'),
-      mobileNavbar = document.querySelector('.navbar__mobile'),
-      button = document.querySelector('.burguer');
+document.addEventListener('DOMContentLoaded', () => {
+  // Seleciona o botão burger e a lista de links mobile
+  const burger = document.querySelector('.burguer');
+  const mobileLinks = document.querySelector('.mobile__links');
+
+  // Adiciona um evento de clique ao botão burger
+  burger.addEventListener('click', () => {
+    // Verifica se a lista de links mobile está visível
+    if (mobileLinks.style.display === 'block') {
+      // Se visível, oculta a lista
+      mobileLinks.style.display = 'none';
+    } else {
+      // Se não visível, exibe a lista
+      mobileLinks.style.display = 'block';
+    }
+  });
+});
 
 // Animação com scroll
 

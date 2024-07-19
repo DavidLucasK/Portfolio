@@ -48,21 +48,42 @@ header .header__right img {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
-
   header {
     display: grid;
     justify-content: center;
     align-items: center;
   }
 
-  header .header__left{
+  header .header__left {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  header .header__right .header__image img {
+
+  header .header__right img {
     width: 220px;
     height: 210px;
-    border-radius: 10px;
+    border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 8rem;
+  }
+
+  header .header__left {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  header .header__right img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 100%;
   }
 }

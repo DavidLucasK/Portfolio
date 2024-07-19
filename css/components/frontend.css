@@ -2,29 +2,29 @@
     background-color: #e9e9e9;
     scroll-margin-top: 15rem;
     margin-bottom: -300px;
-}
-
-.frontend .frontend__content {
+  }
+  
+  .frontend .frontend__content {
     padding: 6rem 4rem;
     text-align: center;    
-}
-
-.frontend .frontend__content h3{
-    font: 500px;  
-}
-
-.frontend .frontend__content .description {
+  }
+  
+  .frontend .frontend__content h3 {
+    font-weight: 500;  
+  }
+  
+  .frontend .frontend__content .description {
     max-width: 56rem;
     margin: 0 auto 6rem;
-}
-
-.frontend .frontend__content ul {
+  }
+  
+  .frontend .frontend__content ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 4rem;
-}
-
-.frontend .frontend__content ul li .image-container{
+  }
+  
+  .frontend .frontend__content ul li .image-container {
     background-color: white;
     padding: 2rem;
     border-radius: 50%;
@@ -33,19 +33,84 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0,1);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     transition: 0.3s ease-in-out;
     opacity: 60%;
-}
-
-.frontend .frontend__content ul li .image-container:hover {
+  }
+  
+  .frontend .frontend__content ul li .image-container:hover {
     transform: translateY(-5px);
     opacity: 100%;
-}
-
-.frontend .frontend__content ul li h3{
+  }
+  
+  .frontend .frontend__content ul li h3 {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem 0 1rem;
-}
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .frontend {
+      margin-bottom: -200px;
+    }
+  
+    .frontend .frontend__content {
+      padding: 4rem 2rem;
+    }
+  
+    .frontend .frontend__content .description {
+      margin-top: 30px;
+    }
+
+    .frontend .frontend__content h3 {
+        margin-top: 30px;
+      }
+  
+    .frontend .frontend__content ul {
+      gap: 2rem;
+    }
+  
+    .frontend .frontend__content ul li .image-container {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    .frontend .frontend__content ul li h3 {
+      font-size: 1.4rem;
+      margin: 1.5rem 0 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .frontend {
+      margin-bottom: -150px;
+    }
+  
+    .frontend .frontend__content {
+      padding: 3rem 1rem;
+    }
+  
+    .frontend .frontend__content .description {
+      margin-bottom: 4rem;
+    }
+  
+    .frontend .frontend__content ul {
+      gap: 1rem;
+    }
+  
+    .frontend .frontend__content ul li .image-container {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .frontend .frontend__content ul li h3 {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .frontend .frontend__content ul li p {
+        font-size: 14px;
+      }
+  }
+  

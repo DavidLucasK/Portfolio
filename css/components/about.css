@@ -3,6 +3,7 @@
     justify-content: space-between;
     gap: 4rem;
     scroll-margin-top: 20rem;
+    flex-wrap: wrap;
 }
 
 .about .about__left {
@@ -18,6 +19,7 @@
     margin-left: -1.2rem;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .about .about__left ul li {
@@ -62,16 +64,13 @@
     max-width: 66rem;
 }
 
-.companys {
-}
-
-.companys .company-logos{
+.companys .company-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.companys .company-logos img{
+.companys .company-logos img {
     padding: 50px;
     max-width: 500px;
     max-height: 200px;
@@ -92,8 +91,38 @@
         width: 100%;
     }
 
-    .about .about__left ul li  {
+    .about .about__left ul {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about .about__left ul li {
         display: flex;
         justify-content: center;
+        flex: none;
+        width: 100%;
+    }
+
+    .about .about__left ul li a {
+        width: 100%;
+    }
+
+    .about .about__left ul li img {
+        width: 3rem;
+    }
+
+    .companys h3 {
+        margin-left: 50px;
+    }
+
+    .companys .company-logos img {
+        margin-left: 50px;
+        max-width: 80%;
+        max-height: auto;
+    }
+
+    .about .about__left ul li p {
+        display: none;
     }
 }

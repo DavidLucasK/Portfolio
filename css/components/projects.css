@@ -1,121 +1,96 @@
 .projects {
-    margin-bottom: 16rem;
-    scroll-margin-top: 15rem;
-    margin-top: 400px;
-    width: 100%;
-    max-width: 120rem;
-    padding: 0 4rem;
-    margin: 0 auto;
-    margin-bottom: 26rem;
-  }
+  margin-bottom: 26rem; /* Ajustado para consistência */
+  scroll-margin-top: 15rem;
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 2rem; /* Reduzido para melhor ajuste em telas menores */
+  margin: 0 auto;
+}
 
-  .projects .projects__content {
-    max-width: 56rem;
-    text-align: center;
-    margin: 0 auto 6rem;
-  }
+.projects .projects__content {
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto 6rem;
+}
 
+.projects ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove marcadores padrão da lista */
+}
+
+.projects ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Ajustado para melhor ajuste em telas menores */
+  margin-bottom: 12rem;
+  position: relative; /* Para ajustes de posicionamento */
+}
+
+.projects ul li .image img {
+  width: 500px; 
+  height: 30rem;
+  object-fit: cover; 
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects ul li .image img:hover {
+  transform: scale(1.05);
+}
+
+.projects ul li .projects__info {
+  max-width: 100%;
+}
+
+.projects ul li .projects__info p {
+  margin: 1rem 0 4rem;
+}
+
+.projects ul li .projects__info a {
+  font-weight: 300;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(90deg, #340ea5, #7b30d0);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.projects ul li .projects__info a:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1024px) {
   .projects ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-  }
-  
-  .projects ul li.projects__reversed-list {
-    flex-direction: row-reverse;
-  }
-  
-  .projects ul li:not(:last-of-type) {
-    margin-bottom: 12rem;
-  }
-  
-  .projects ul li .image img {
-    width: 100%;
-    min-width: 40rem;
-    max-width: 47rem;
-    transition: 0.3s ease-in-out;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 20px .1px #000000;
+      gap: 1rem; 
   }
 
-  .projects ul li .image-t img {
-    width: 100%;
-    min-width: 40rem;
-    max-width: 47rem;
-    transition: 0.3s ease-in-out;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 20px .1px #000000;
-    filter: brightness(40%) blur(.8px);
-  }
-
-  .projects ul li .image-bug img {
-    position: absolute;
-    width: 100%;
-    min-width: 40rem;
-    max-width: 47rem;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 20px .1px #000000;
-    filter: brightness(40%) blur(.8px);
-    transform: translateY(-110px);
-  }
-
-  .projects ul li .image-bug span div {
-    position: relative;
-    color: #c70000;
-    text-shadow: 10px 10px 5px black, 0 0 1em white, 1px 1px 0.1px black;
-    font-weight: 600;
-    font-size: 70px;
-    margin-left: 4rem;
-    margin-top: -20px;
-    user-select: none;
-    transform: rotate(-28deg);
-  }
-
-
-  .projects ul li .image img:hover{
-    transform: scale(1.05);
-  }
-  
   .projects ul li .projects__info {
-    max-width: 47rem;
+      max-width: 90%;
   }
-  
-  .projects ul li .projects__info p {
-    margin: 1rem 0 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects ul li .projects__info {
+      max-width: 100%;
   }
-  
+
+  .projects ul li .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1;
+  }
+
   .projects ul li .projects__info a {
-    font-weight: 500;
-    color: black;
-    font-weight: 300;
-    border-radius: 12px;
-    padding: 10px;
-    background: linear-gradient(90deg, #340ea5, #7b30d0);
-    color: white;
-    transition: 300ms ease-in-out;
+      display: block;
+      text-align: center; /* Centraliza o texto do botão */
+      margin: 1rem auto; /* Adiciona margem para centralizar o botão */
   }
 
-  .projects ul li .projects__info a:hover{
-    box-shadow: 5px 5px 20px .1px #000000;
+  .projects ul li .projects__info p {
+    margin: 2px 0 8px;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .projects ul li,
-    .projects ul li.projects__reversed-list {
-      flex-direction: column;
-    }
-  
-    .projects ul li .projects__info {
-      max-width: 46rem;
-    }
-  
-    .projects ul li .image img {
-      min-width: auto;
-    }
-
-    .projects ul li .projects__info a {
-      justify-items: center;
-      justify-content: center;
-    }
-  }
+}

@@ -10,7 +10,6 @@ nav {
   animation: gradient 10s ease infinite;
   background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
   background-size: 200% 200%;
-  /* background-image: linear-gradient(90deg, black, grey); */
 }
 
 nav .navbar__content {
@@ -27,7 +26,7 @@ nav .logo-navbar {
   transition: 0.5s ease-in-out;
 }
 
-nav .navbar__content .david-logo{
+nav .navbar__content .david-logo {
   font-size: 6rem;
   margin-top: -20px;
   font-family: 'Poppins';
@@ -37,7 +36,7 @@ nav .navbar__content .david-logo{
   transition: 0.3s ease-in-out;
 }
 
-nav .navbar__content .david-logo:hover{
+nav .navbar__content .david-logo:hover {
   opacity: 100%;
 }
 
@@ -59,7 +58,6 @@ nav .navbar__content .navbar__links a {
 }
 
 nav .navbar__content .navbar__links a:hover {
-  /* transform: scale(1.05); */
   color: white;
 }
 
@@ -73,70 +71,70 @@ nav .navbar__content .navbar__mobile .mobile__links {
 }
 
 @media only screen and (max-width: 768px) {
+  nav .navbar__content {
+    padding: 1px 40px 1px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .navbar__content .logo-navbar {
+    margin-left: 0;
+    width: 60px;
+    margin-top: 5px;
+  }
+
   nav .navbar__content .navbar__links {
     display: none;
   }
 
-  nav .navbar__content .david-logo{
-    font-size: 30pt;
-    text-align: center;
-    font-family: 'Poppins';
-    font-weight: 600;
-    color: white;
-  }
-
-  *{
-    overflow-x: invisible;
+  * {
+    overflow-x: hidden;
   }
 
   nav .navbar__content .navbar__mobile {
     display: flex;
-    margin-top: -4px;
+    margin-top: 10px;
   }
 
   nav .navbar__content .navbar__mobile img {
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 50px;
+    height: 80px;
     cursor: pointer;
     filter: invert();
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 98%;
+  nav .navbar__content .navbar__mobile .mobile__links {
+    display: flex; /* Oculta a lista de links por padrão */
+    margin-top: 89px;
+    position: fixed; /* Fixa a lista em relação à viewport */
     left: 0;
-    padding: 1rem 0;
-    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    background: white; /* Define a cor de fundo da lista */
+    z-index: 100; /* Garante que a lista esteja acima de outros conteúdos */
+    transition: opacity 1s ease-in-out;
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links li {
-    margin-right: 0;
+  nav .navbar__content .navbar__mobile .mobile__links li {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   nav .navbar__content .navbar__mobile.active .mobile__links li a {
     padding: 1rem;
-    display: block;
     text-align: center;
   }
 }
 
 @keyframes gradient {
-
   0% {
     background-position: 0 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0 50%;
   }
-
 }
