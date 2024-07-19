@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Seleciona o botão burger e a lista de links mobile
   const burger = document.querySelector('.burguer');
   const mobileLinks = document.querySelector('.mobile__links');
+  const navLinks = mobileLinks.querySelectorAll('li a');
 
+  mobileLinks.style.display = 'none';
   // Adiciona um evento de clique ao botão burger
   burger.addEventListener('click', () => {
     // Verifica se a lista de links mobile está visível
@@ -14,7 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileLinks.style.display = 'block';
     }
   });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Oculta a lista de links móveis quando um link é clicado
+      mobileLinks.style.display = 'none';
+    });
+  });
 });
+
+
 
 // Animação com scroll
 
