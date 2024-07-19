@@ -69,6 +69,7 @@
   
     .frontend .frontend__content ul {
       gap: 2rem;
+      grid-template-columns: repeat(2, 1fr); /* Duas colunas */
     }
   
     .frontend .frontend__content ul li .image-container {
