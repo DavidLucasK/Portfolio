@@ -96,6 +96,11 @@
       width: 100px;
       height: 100px;
     }
+    
+    .skills .skills__content ul li .image-container:hover {
+      transform: translateY(0px);
+      opacity: 100%;
+    }
   
     .skills .skills__content ul li h3 {
       font-size: 2rem;

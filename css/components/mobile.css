@@ -85,6 +85,11 @@
         height: 80px;
     }
 
+    .mobile .mobile__content ul li .image-container:hover {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+
     .mobile .mobile__content ul li h3 {
         font-size: 1.4rem;
     }

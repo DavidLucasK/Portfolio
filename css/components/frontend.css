@@ -104,6 +104,11 @@
       width: 80px;
       height: 80px;
     }
+
+    .frontend .frontend__content ul li .image-container:hover {
+      transform: translateY(0px);
+      opacity: 100%;
+    }
   
     .frontend .frontend__content ul li h3 {
       font-size: 1.8rem;

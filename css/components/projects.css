@@ -88,6 +88,10 @@
     border-radius: 1;
   }
 
+  .projects ul li .image img:hover {
+    transform: scale(1);
+  }
+
   .projects ul li .projects__info a {
       display: block;
       text-align: center; /* Centraliza o texto do botão */
