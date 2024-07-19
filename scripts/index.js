@@ -1,5 +1,5 @@
 window.onload = function(){
-  window.scrollTo(50, 50);
+  window.scrollTo(20, 20);
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
