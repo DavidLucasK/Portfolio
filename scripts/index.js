@@ -1,3 +1,7 @@
+window.onload = function(){
+  window.scrollTo(-1000, -1000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Seleciona o botão burger e a lista de links mobile
   const burger = document.querySelector('.burguer');
