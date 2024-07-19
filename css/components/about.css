@@ -64,19 +64,6 @@
     max-width: 66rem;
 }
 
-.companys .company-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.companys .company-logos img {
-    padding: 50px;
-    max-width: 500px;
-    max-height: 200px;
-}
-
-
 @media only screen and (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -108,20 +95,11 @@
 
     .about .about__left ul li a {
         width: 100%;
+        opacity: 1;
     }
 
     .about .about__left ul li img {
         width: 5rem;
-    }
-
-    .companys h3 {
-        margin-left:  30px;
-    }
-
-    .companys .company-logos img {
-        margin-left: 30px;
-        max-width: 80%;
-        max-height: auto;
     }
 
     .about .about__left ul li p {

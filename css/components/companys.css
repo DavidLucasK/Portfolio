@@ -1,0 +1,28 @@
+.companys .company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companys .company-logos img {
+  padding: 50px;
+  max-width: 500px;
+  max-height: 200px;
+  transition: 0.5s ease-in-out;
+}
+
+.companys .company-logos img:hover {
+  transform: scale(107%);
+}
+
+@media only screen and (max-width: 768px) {
+  .companys h3 {
+      margin-left:  30px;
+  }
+
+  .companys .company-logos img {
+      margin-left: 30px;
+      max-width: 80%;
+      max-height: auto;
+  }
+}
