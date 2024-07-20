@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
 .projects {
   margin-bottom: 26rem; /* Ajustado para consistência */
   scroll-margin-top: 15rem;
@@ -21,9 +23,8 @@
 
 .projects ul li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem; /* Ajustado para melhor ajuste em telas menores */
+  gap: 5rem; /* Ajustado para melhor ajuste em telas menores */
   margin-bottom: 12rem;
   position: relative; /* Para ajustes de posicionamento */
 }
@@ -62,19 +63,10 @@
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1024px) {
-  .projects ul li {
-      gap: 1rem; 
-  }
-
-  .projects ul li .projects__info {
-      max-width: 90%;
-  }
-}
-
+/* iPads, tablets */
 @media only screen and (max-width: 768px) {
   .projects ul li .projects__info {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .projects ul li  {
@@ -82,10 +74,10 @@
   }
 
   .projects ul li .image img {
-    height: 100%;
     width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
     object-fit: cover;
-    border-radius: 1;
+    border-radius: 1rem;
     box-shadow: none;
   }
 
@@ -94,13 +86,80 @@
   }
 
   .projects ul li .projects__info a {
-      display: block;
-      text-align: center; /* Centraliza o texto do botão */
-      margin: 1rem auto; /* Adiciona margem para centralizar o botão */
-      max-width: 120px;
+    display: block;
+    text-align: center; /* Centraliza o texto do botão */
+    margin: 1rem auto; /* Adiciona margem para centralizar o botão */
+    max-width: 120px;
   }
 
   .projects ul li .projects__info p {
     margin: 2px 0 8px;
+  }
+}
+
+/* telas pequenas, laptops */
+@media only screen and (max-width: 1024px) {
+  .projects ul li {
+    gap: 5rem; 
+  }
+
+  .projects ul li .projects__info {
+    max-width: 90%;
+  }
+}
+
+/* desktops, telas grandes */
+@media only screen and (max-width: 1200px) {
+  .projects ul li {
+    gap: 5rem;
+  }
+
+  .projects ul li .projects__info {
+    max-width: 90%;
+  }
+}
+
+/* dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  .projects ul li .projects__info {
+    max-width: 100%;
+  }
+
+  .projects ul li {
+    display: grid;
+  }
+
+  .projects ul li .image img {
+    width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+
+  .projects ul li .image img:hover {
+    transform: scale(1);
+  }
+
+  .projects ul li .projects__info a {
+    display: block;
+    text-align: center; /* Centraliza o texto do botão */
+    margin: 1rem auto; /* Adiciona margem para centralizar o botão */
+    max-width: 120px;
+  }
+
+  .projects ul li .projects__info p {
+    margin: 2px 0 8px;
+  }
+}
+
+/* telas muito grandes, TVs */
+@media only screen and (min-width: 1201px) {
+  .projects ul li {
+    gap: 5rem;
+  }
+
+  .projects ul li .projects__info {
+    max-width: 90%;
   }
 }
