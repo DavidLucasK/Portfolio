@@ -87,3 +87,10 @@ header .header__right img {
     border-radius: 100%;
   }
 }
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .interface {
+    margin-left: 20px;
+  }
+}

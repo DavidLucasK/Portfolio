@@ -64,9 +64,10 @@
 }
 
 /* dispositivos móveis */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .projects {
-    padding: 0 1rem; /* Ajuste para melhor visualização em telas pequenas */
+    padding: 0 1rem;
+    margin-left: 20px; /* Ajuste para melhor visualização em telas pequenas */
   }
   .projects ul li {
     display: grid;

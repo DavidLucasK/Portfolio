@@ -77,79 +77,9 @@
     }
 }
 
-@media (max-width: 600px) {
-    .mobile .mobile__content {
-        padding: 2rem 1rem;
-    }
-
-    .mobile .mobile__content .description {
-        margin: 0 auto 4rem;
-    }
-
-    .mobile .mobile__content ul {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .mobile .mobile__content ul li .image-container {
-        width: 80px;
-        height: 80px;
-    }
-
-    .mobile .mobile__content ul li .image-container:hover {
-        transform: translateY(0px);
-        opacity: 100%;
-    }
-
-    .mobile .mobile__content ul li h3 {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .mobile .mobile__content {
-        padding: 1.5rem 1rem;
-    }
-
-    .mobile .mobile__content .description {
-        margin: 0 auto 3rem;
-    }
-
-    .mobile .mobile__content ul {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .mobile .mobile__content ul li .image-container {
-        width: 70px;
-        height: 70px;
-    }
-
-    .mobile .mobile__content ul li h3 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 320px) {
-    .mobile .mobile__content {
-        padding: 1rem 0.5rem;
-    }
-
-    .mobile .mobile__content .description {
-        margin: 0 auto 2rem;
-    }
-
-    .mobile .mobile__content ul {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-    }
-
-    .mobile .mobile__content ul li .image-container {
-        width: 60px;
-        height: 60px;
-    }
-
-    .mobile .mobile__content ul li h3 {
-        font-size: 1rem;
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .mobile {
+        width: 100vw;
+        margin-left: 20px;
     }
 }
