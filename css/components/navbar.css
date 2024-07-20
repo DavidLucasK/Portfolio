@@ -1,266 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+.projects {
+  margin-bottom: 26rem; /* Ajustado para consistência */
+  scroll-margin-top: 15rem;
   width: 100%;
-  height: 100px;
-  z-index: 10;
-  animation: gradient 10s ease infinite;
-  background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
-  background-size: 200% 200%;
+  max-width: 120rem;
+  padding: 0 2rem; /* Reduzido para melhor ajuste em telas menores */
+  margin: 0 auto;
 }
 
-nav .navbar__content {
-  padding: 3rem 4rem 1rem;
+.projects .projects__content {
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.projects ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove marcadores padrão da lista */
+}
+
+.projects ul li {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 5rem; /* Ajustado para melhor ajuste em telas menores */
+  margin-bottom: 12rem;
+  position: relative; /* Para ajustes de posicionamento */
 }
 
-nav .logo-navbar {
-  position: relative;
-  margin-left: 100px;
-  width: 85px;
-  margin-top: -40px;
-  transition: 0.5s ease-in-out;
+.projects ul li .image img {
+  width: 499px; 
+  height: 30rem;
+  object-fit: cover; 
+  border-radius: 1rem;
+  box-shadow: -50px 30px 50px 1px rgb(122, 122, 122);
+  transition: transform 0.3s ease-in-out;
 }
 
-nav .navbar__content .david-logo {
-  font-size: 6rem;
-  margin-top: -20px;
-  font-family: 'Poppins';
-  font-weight: 600;
+.projects ul li .image img:hover {
+  transform: scale(1.05);
+}
+
+.projects ul li .projects__info {
+  max-width: 100%;
+}
+
+.projects ul li .projects__info p {
+  margin: 1rem 0 4rem;
+}
+
+.projects ul li .projects__info a {
+  font-weight: 300;
   color: white;
-  opacity: 80%;
-  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(90deg, #340ea5, #7b30d0);
+  transition: transform 0.3s ease-in-out;
 }
 
-nav .navbar__content .david-logo:hover {
-  opacity: 100%;
+.projects ul li .projects__info a:hover {
+  transform: scale(1.05);
 }
 
-nav .navbar__content .navbar__links li {
-  display: inline-block;
-}
-
-nav .navbar__content .navbar__links li:not(:last-of-type) {
-  margin-right: 2rem;
-}
-
-nav .navbar__content .navbar__links a {
-  padding: 1rem;
-  display: inline-block;
-  color: rgb(217, 219, 223);
-  font-size: 15pt;
-  font-weight: 500;
-  transition: 0.3s ease-in-out;
-}
-
-nav .navbar__content .navbar__links a:hover {
-  color: white;
-}
-
-.navbar.active {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-nav .navbar__content .navbar__mobile,
-nav .navbar__content .navbar__mobile .mobile__links {
-  display: none;
-}
-
-/* Regras de mídia para dispositivos móveis (320px - 480px) */
+/* dispositivos móveis */
 @media only screen and (max-width: 480px) {
-  nav .navbar__content {
-    padding: 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .projects {
+    padding: 0 1rem; /* Ajuste para melhor visualização em telas pequenas */
   }
-
-  nav .logo-navbar {
-    width: 50px;
-    margin-left: 0;
-    margin-top: 5px;
+  .projects ul li {
+    display: grid;
+    gap: 2rem; /* Ajuste para melhor visualização em telas pequenas */
   }
-
-  nav .navbar__content .navbar__links {
-    display: none;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: flex;
-    margin-top: 0;
-  }
-
-  nav .navbar__content .navbar__mobile img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    filter: invert();
-  }
-
-  nav .navbar__content .navbar__mobile .mobile__links {
-    display: none;
-    flex-direction: column;
+  .projects ul li .image img {
     width: 100%;
-    background: white;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 100;
-    padding: 1rem;
+    height: auto; /* Ajusta a altura para manter a proporção */
+    object-fit: cover;
+    box-shadow: none;
   }
-
-  nav .navbar__content .navbar__mobile .mobile__links li {
-    margin-bottom: 1rem;
+  .projects ul li .projects__info a {
+    max-width: 100px; /* Reduzido para melhor visualização em telas pequenas */
   }
-
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    display: flex;
+  .projects ul li .projects__info p {
+    margin: 1rem 0 2rem;
   }
 }
 
-/* Regras de mídia para tablets (481px - 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  nav .navbar__content {
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* iPads, tablets */
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 0 1.5rem; /* Ajuste para melhor visualização em tablets */
   }
-
-  nav .logo-navbar {
-    width: 60px;
-    margin-left: 0;
-    margin-top: 1px;
+  .projects ul li {
+    display: grid;
   }
-
-  nav .navbar__content .navbar__links {
-    display: none;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: flex;
-    margin-top: 0;
-  }
-
-  nav .navbar__content .navbar__mobile img {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    filter: invert();
-  }
-
-  nav .navbar__content .navbar__mobile .mobile__links {
-    display: none;
-    flex-direction: column;
+  .projects ul li .image img {
     width: 100%;
-    background: white;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 100;
-    padding: 1rem;
+    height: auto; /* Ajusta a altura para manter a proporção */
+    object-fit: cover;
+    box-shadow: none;
   }
-
-  nav .navbar__content .navbar__mobile .mobile__links li {
-    margin-bottom: 1rem;
+  .projects ul li .projects__info a {
+    max-width: 120px; /* Ajuste para melhor visualização em tablets */
   }
-
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    display: flex;
+  .projects ul li .projects__info p {
+    margin: 1rem 0 2rem;
   }
 }
 
-/* Regras de mídia para laptops (769px - 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  nav .navbar__content {
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
+/* telas pequenas, laptops */
+@media only screen and (max-width: 1024px) {
+  .projects {
+    padding: 0 2rem; /* Ajuste para melhor visualização em laptops */
   }
-
-  nav .logo-navbar {
-    width: 70px;
-    margin-left: 0;
-    margin-top: -15px;
-  }
-
-  nav .navbar__content .navbar__links {
-    display: flex;
-  }
-
-  nav .navbar__content .navbar__links a {
-    font-size: 13pt;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: none;
+  .projects ul li {
+    gap: 4rem; /* Ajuste para melhor visualização em laptops */
   }
 }
 
-/* Regras de mídia para desktops (1025px - 1200px) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  nav .navbar__content {
-    padding: 3rem 4rem;
-    display: flex;
-    justify-content: space-between;
+/* desktops, telas grandes */
+@media only screen and (max-width: 1200px) {
+  .projects {
+    padding: 0 2rem; /* Ajuste para melhor visualização em desktops */
   }
-
-  nav .logo-navbar {
-    width: 80px;
-    margin-left: 0;
-  }
-
-  nav .navbar__content .navbar__links {
-    display: flex;
-  }
-
-  nav .navbar__content .navbar__links a {
-    font-size: 14pt;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: none;
+  .projects ul li {
+    gap: 5rem; /* Ajuste para melhor visualização em desktops */
   }
 }
 
-/* Regras de mídia para telas grandes (1201px e acima) */
+/* telas muito grandes, TVs */
 @media only screen and (min-width: 1201px) {
-  nav .navbar__content {
-    padding: 3rem 4rem;
-    display: flex;
-    justify-content: space-between;
+  .projects {
+    padding: 0 2rem; /* Ajuste para melhor visualização em telas grandes */
   }
-
-  nav .logo-navbar {
-    width: 85px;
-    margin-left: 0;
-  }
-
-  nav .navbar__content .navbar__links {
-    display: flex;
-  }
-
-  nav .navbar__content .navbar__links a {
-    font-size: 15pt;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: none;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
+  .projects ul li {
+    gap: 5rem; /* Ajuste para melhor visualização em telas grandes */
   }
 }

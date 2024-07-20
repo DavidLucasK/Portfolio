@@ -63,103 +63,89 @@
   transform: scale(1.05);
 }
 
-/* iPads, tablets */
-@media only screen and (max-width: 768px) {
-  .projects ul li .projects__info {
-    max-width: 100%;
+/* dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  .projects {
+    padding: 0 1rem; /* Ajuste para melhor visualização em telas pequenas */
   }
-
-  .projects ul li  {
+  .projects ul li {
     display: grid;
+    gap: 2rem; /* Ajuste para melhor visualização em telas pequenas */
   }
-
   .projects ul li .image img {
     width: 100%;
-    height: auto; /* Adjust height to maintain aspect ratio */
+    height: auto; /* Ajusta a altura para manter a proporção */
     object-fit: cover;
-    border-radius: 1rem;
     box-shadow: none;
   }
-
-  .projects ul li .image img:hover {
-    transform: scale(1);
-  }
-
   .projects ul li .projects__info a {
-    display: block;
-    text-align: center; /* Centraliza o texto do botão */
-    margin: 1rem auto; /* Adiciona margem para centralizar o botão */
-    max-width: 120px;
+    max-width: 100px; /* Reduzido para melhor visualização em telas pequenas */
   }
-
   .projects ul li .projects__info p {
-    margin: 2px 0 8px;
+    margin: 1rem 0 2rem;
+  }
+}
+
+/* iPads, tablets */
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 0 1.5rem; /* Ajuste para melhor visualização em tablets */
+  }
+  .projects ul li {
+    display: grid;
+  }
+  .projects ul li .image img {
+    width: 100%;
+    height: auto; /* Ajusta a altura para manter a proporção */
+    object-fit: cover;
+    box-shadow: none;
+  }
+  .projects ul li .projects__info a {
+    max-width: 120px; /* Ajuste para melhor visualização em tablets */
+  }
+  .projects ul li .projects__info p {
+    margin: 1rem 0 2rem;
   }
 }
 
 /* telas pequenas, laptops */
-@media only screen and (max-width: 1024px) {
-  .projects ul li {
-    gap: 5rem; 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects {
+    padding: 0 1.5rem; /* Ajuste para melhor visualização em tablets */
   }
-
-  .projects ul li .projects__info {
-    max-width: 90%;
+  .projects ul li {
+    display: grid;
+  }
+  .projects ul li .image img {
+    width: 100%;
+    height: auto; /* Ajusta a altura para manter a proporção */
+    object-fit: cover;
+    box-shadow: none;
+  }
+  .projects ul li .projects__info a {
+    max-width: 120px; /* Ajuste para melhor visualização em tablets */
+  }
+  .projects ul li .projects__info p {
+    margin: 1rem 0 2rem;
   }
 }
 
 /* desktops, telas grandes */
 @media only screen and (max-width: 1200px) {
+  .projects {
+    padding: 0 2rem; /* Ajuste para melhor visualização em desktops */
+  }
   .projects ul li {
-    gap: 5rem;
-  }
-
-  .projects ul li .projects__info {
-    max-width: 90%;
-  }
-}
-
-/* dispositivos móveis */
-@media only screen and (max-width: 480px) {
-  .projects ul li .projects__info {
-    max-width: 100%;
-  }
-
-  .projects ul li {
-    display: grid;
-  }
-
-  .projects ul li .image img {
-    width: 100%;
-    height: auto; /* Adjust height to maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 1rem;
-    box-shadow: none;
-  }
-
-  .projects ul li .image img:hover {
-    transform: scale(1);
-  }
-
-  .projects ul li .projects__info a {
-    display: block;
-    text-align: center; /* Centraliza o texto do botão */
-    margin: 1rem auto; /* Adiciona margem para centralizar o botão */
-    max-width: 120px;
-  }
-
-  .projects ul li .projects__info p {
-    margin: 2px 0 8px;
+    gap: 5rem; /* Ajuste para melhor visualização em desktops */
   }
 }
 
 /* telas muito grandes, TVs */
 @media only screen and (min-width: 1201px) {
-  .projects ul li {
-    gap: 5rem;
+  .projects {
+    padding: 0 2rem; /* Ajuste para melhor visualização em telas grandes */
   }
-
-  .projects ul li .projects__info {
-    max-width: 90%;
+  .projects ul li {
+    gap: 5rem; /* Ajuste para melhor visualização em telas grandes */
   }
 }
