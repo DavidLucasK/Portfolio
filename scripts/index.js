@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Se visível, oculta a lista
       mobileLinks.style.display = 'none';
       burger.setAttribute("src", "assets/menu.svg");
+      burger.style.width = '30px';
+      burger.style.height = '30px';
+
       burger.style.width = '40px';
       burger.style.height = '40px';
     } else {
@@ -53,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       // Oculta a lista de links móveis quando um link é clicado
       mobileLinks.style.display = 'none';
+      burger.setAttribute("src", "assets/menu.svg");
       burger.style.width = '40px';
       burger.style.height = '40px';
     });
