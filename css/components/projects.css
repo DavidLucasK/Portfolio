@@ -111,22 +111,11 @@
 /* telas pequenas, laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .projects {
-    padding: 0 1.5rem; /* Ajuste para melhor visualização em tablets */
+    padding: 0 2rem; /* Ajuste para melhor visualização em laptops */
   }
   .projects ul li {
     display: grid;
-  }
-  .projects ul li .image img {
-    width: 100%;
-    height: auto; /* Ajusta a altura para manter a proporção */
-    object-fit: cover;
-    box-shadow: none;
-  }
-  .projects ul li .projects__info a {
-    max-width: 120px; /* Ajuste para melhor visualização em tablets */
-  }
-  .projects ul li .projects__info p {
-    margin: 1rem 0 2rem;
+    margin-left: 160px;
   }
 }
 
