@@ -82,7 +82,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .logo-navbar {
     width: 50px;
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   nav .navbar__content .navbar__links {
@@ -111,10 +111,15 @@ nav .navbar__content .navbar__mobile .mobile__links {
     left: 0;
     z-index: 100;
     padding: 1rem;
+    box-shadow: 0px 10px 67px 0px rgb(48, 48, 48);
   }
 
   nav .navbar__content .navbar__mobile .mobile__links li {
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 2rem;
+    margin-top: 10px;
   }
 
   nav .navbar__content .navbar__mobile.active .mobile__links {
@@ -127,12 +132,14 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content {
     padding: 1rem 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   nav .logo-navbar {
     width: 60px;
-    margin-top: 1px;
+    margin-left: 0;
+    margin-top: -1px;
   }
 
   nav .navbar__content .navbar__links {
@@ -147,7 +154,6 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content .navbar__mobile img {
     width: 45px;
     height: 45px;
-    align-self: flex-end;
     cursor: pointer;
     filter: invert();
   }
@@ -162,14 +168,19 @@ nav .navbar__content .navbar__mobile .mobile__links {
     left: 0;
     z-index: 100;
     padding: 1rem;
-  }
-
-  nav .navbar__content .navbar__mobile .mobile__links li {
-    margin-bottom: 1rem;
+    box-shadow: 0px 10px 67px 0px rgb(48, 48, 48);
   }
 
   nav .navbar__content .navbar__mobile.active .mobile__links {
     display: flex;
+  }
+
+  nav .navbar__content .navbar__mobile .mobile__links li {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 2rem;
+    margin-top: 10px;
   }
 }
 
@@ -184,7 +195,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .logo-navbar {
     width: 70px;
     margin-left: 0;
-    margin-top: -15px;
+    margin-top: -20px;
   }
 
   nav .navbar__content .navbar__links {
