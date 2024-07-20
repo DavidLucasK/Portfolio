@@ -28,9 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Adiciona um evento de clique ao botão burger
   burger.addEventListener('click', () => {
     // Verifica se a lista de links mobile está visível
+    burger.setAttribute("src", "assets/close.png");
+
+    if (burger.src.endsWith('assets/close.png')) {
+      // Altere o valor da largura conforme necessário
+      burger.style.width = '30px';
+      burger.style.height = '30px';
+      burger.style.marginLeft = '-35px';
+    }
+
     if (mobileLinks.style.display === 'block') {
       // Se visível, oculta a lista
       mobileLinks.style.display = 'none';
+      burger.setAttribute("src", "assets/menu.svg");
+      burger.style.width = '40px';
+      burger.style.height = '40px';
     } else {
       // Se não visível, exibe a lista
       mobileLinks.style.display = 'block';
@@ -41,6 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       // Oculta a lista de links móveis quando um link é clicado
       mobileLinks.style.display = 'none';
+      burger.style.width = '40px';
+      burger.style.height = '40px';
     });
   });
 });
