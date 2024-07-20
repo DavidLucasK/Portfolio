@@ -44,3 +44,10 @@ footer .footer__content ul li a:hover{
 footer .footer__content .footer__copyright {
     font-size: 1.4rem;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    footer {
+        width: 100vw;
+        justify-content: center;
+    }
+}
