@@ -86,12 +86,12 @@
     
     .about .about__left ul {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .about .about__left ul li {
-        display: inline-block;
-        flex: 1;
+        display: flex;
+        justify-content: center;
+        width: 30%;
     }
 
     .about .about__left ul li a {
@@ -104,7 +104,7 @@
     }
 
     .about .about__left ul li p {
-        display: block;
+        display: none;
     }
 
     .about .about__left h2 {
