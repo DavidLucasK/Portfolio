@@ -6,6 +6,10 @@
   font-family: var(--font-family);
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }

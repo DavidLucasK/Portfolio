@@ -119,3 +119,31 @@ function typeWriter(elemento) {
 
 const titulo = document.querySelector('h1');
 typeWriter(titulo);
+
+
+//Função para bug dos dispositivos mobile//
+
+function checkScreenSize() {
+  if (window.innerWidth < 768) {
+    // Esconde manualmente a classe 'interface'
+    const pedro = document.getElementById('header');
+    pedro.addAttribute("class", "hidden");
+    // Rolar até o rodapé
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+
+    // Esperar até que a rolagem para o rodapé termine, então rolar de volta para o cabeçalho
+    setTimeout(() => {
+      window.scrollTo(20, 20);
+
+      // Mostrar a classe 'interface' novamente após rolar de volta para o cabeçalho
+      setTimeout(() => {
+      }, 1000); // Ajuste o tempo conforme necessário
+    }, 2000); // Ajuste o tempo conforme necessário
+  }
+}
+
+// Verifique o tamanho da tela quando a página é carregada
+window.onload = checkScreenSize;
+
+// Verifique o tamanho da tela quando a janela é redimensionada
+window.onresize = checkScreenSize;
