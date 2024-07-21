@@ -68,10 +68,11 @@
     .about {
         flex-direction: column;
         align-items: center;
+        padding: 0 4rem;
     }
 
     .about .about__right {
-        width: 100%;
+        width: 80%;
     }
 
     .about .about__right p {
@@ -80,7 +81,7 @@
 
     .about .about__left {
         margin-left: 1px;
-        max-width: 100%;
+        max-width: 80%;
     }
     
     .about .about__left ul {

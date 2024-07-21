@@ -69,9 +69,8 @@ header .header__right img {
 
 @media only screen and (max-width: 768px) {
   header {
-    flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4rem;
     margin-bottom: 8rem;
   }
 
@@ -89,8 +88,8 @@ header .header__right img {
 }
 
 
-/*@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .interface {
-    margin-left: 20px;
+    width: 100vw;
   }
-}*/
+}
