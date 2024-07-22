@@ -7,7 +7,7 @@
   .skills .skills__content {
     padding: 6rem 4rem;
     text-align: center;
-    margin-top: -100px;
+    margin-bottom: 250px;
   }
   
   .skills .skills__content .description {
@@ -17,7 +17,7 @@
   
   .skills .skills__content ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(1, 1fr); /* Duas colunas */
     gap: 2rem;
   }
   
@@ -51,7 +51,7 @@
     .skills {
       flex-direction: column;
       align-items: center;
-      margin-bottom: -200px;
+      margin-bottom: -300px;
     }
   
     .skills .skills__content {
@@ -80,7 +80,7 @@
   
   @media only screen and (max-width: 768px) {
     .skills {
-      margin-bottom: -100px;
+      margin-bottom: -300px;
     }
   
     .skills .skills__content {
