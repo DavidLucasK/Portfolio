@@ -99,6 +99,7 @@
     height: auto; /* Ajusta a altura para manter a proporção */
     object-fit: cover;
     box-shadow: none;
+    box-shadow: -1px 30px 50px 1px rgb(122, 122, 122);
   }
   .projects ul li .projects__info a {
     max-width: 120px; /* Ajuste para melhor visualização em tablets */
