@@ -120,30 +120,146 @@ function typeWriter(elemento) {
 const titulo = document.querySelector('h1');
 typeWriter(titulo);
 
+// Função para atualizar o tema com base no estado do checkbox
+function updateTheme() {
+  const body = document.body;
+  const header = document.querySelector('header');
+  const about = document.querySelector('.about');
+  const skills = document.querySelector('.skills');
+  const skills__content = document.querySelector('.skills .skills__content');
+  const frontend = document.querySelector('.frontend');
+  const backend = document.querySelector('.backend');
+  const mobile = document.querySelector('.mobile');
+  const projects = document.querySelector('.projects');
+  const nissan = document.querySelector('.nissanlogo');
+  const thomson = document.querySelector('.thomsonlogo');
 
-//Função para bug dos dispositivos mobile//
+  const checkbox = document.getElementById("dark-mode-toggle");
 
-function checkScreenSize() {
-  if (window.innerWidth < 768) {
-    // Esconde manualmente a classe 'interface'
-    const pedro = document.getElementById('header');
-    pedro.addAttribute("class", "hidden");
-    // Rolar até o rodapé
-    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
-
-    // Esperar até que a rolagem para o rodapé termine, então rolar de volta para o cabeçalho
-    setTimeout(() => {
-      window.scrollTo(20, 20);
-
-      // Mostrar a classe 'interface' novamente após rolar de volta para o cabeçalho
-      setTimeout(() => {
-      }, 1000); // Ajuste o tempo conforme necessário
-    }, 2000); // Ajuste o tempo conforme necessário
+  if (checkbox.checked) {
+    body.classList.add('dark-theme');
+    header.classList.add('dark-theme');
+    about.classList.add('dark-theme');
+    skills.classList.add('dark-theme');
+    skills__content.classList.add('dark-theme');
+    frontend.classList.add('dark-theme');
+    backend.classList.add('dark-theme');
+    mobile.classList.add('dark-theme');
+    projects.classList.add('dark-theme');
+    nissan.setAttribute("src", "assets/nissandark.png");
+    thomson.setAttribute("src", "assets/thomsonreutersdark.png");
+  } else {
+    body.classList.remove('dark-theme');
+    header.classList.remove('dark-theme');
+    about.classList.remove('dark-theme');
+    skills.classList.remove('dark-theme');
+    skills__content.classList.remove('dark-theme');
+    frontend.classList.remove('dark-theme');
+    backend.classList.remove('dark-theme');
+    mobile.classList.remove('dark-theme');
+    projects.classList.remove('dark-theme');
+    nissan.setAttribute("src", "assets/nissan.png");
+    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
   }
 }
 
-// Verifique o tamanho da tela quando a página é carregada
-window.onload = checkScreenSize;
+// Inicializa o estado do checkbox e aplica o tema ao carregar a página
+window.addEventListener('load', function() {
+  const checkbox = document.getElementById("dark-mode-toggle");
+  checkbox.addEventListener('change', updateTheme);
+  updateTheme(); // Aplica o tema baseado no estado inicial do checkbox
+});
 
-// Verifique o tamanho da tela quando a janela é redimensionada
-window.onresize = checkScreenSize;
+// Alterna o estado do checkbox ao clicar na imagem
+document.getElementById("checkbox-img").addEventListener("click", function() {
+  const checkbox = document.getElementById("dark-mode-toggle");
+  const img = document.getElementById('checkbox-img');
+
+  checkbox.checked = !checkbox.checked;
+
+  if (checkbox.checked) {
+    img.setAttribute("src", "assets/dark-theme.png");
+    img.style.width = '25px';
+    img.style.height = '25px';
+  } else {
+    img.setAttribute("src", "assets/theme.png");
+    img.style.width = '25px';
+    img.style.height = '25px';
+  }
+
+  updateTheme(); // Atualiza o tema imediatamente após a alteração do checkbox
+});
+
+function updateThemeMobile() {
+  const body = document.body;
+  const header = document.querySelector('header');
+  const about = document.querySelector('.about');
+  const skills = document.querySelector('.skills');
+  const skills__content = document.querySelector('.skills .skills__content');
+  const frontend = document.querySelector('.frontend');
+  const backend = document.querySelector('.backend');
+  const mobile = document.querySelector('.mobile');
+  const projects = document.querySelector('.projects');
+  const nissan = document.querySelector('.nissanlogo');
+  const thomson = document.querySelector('.thomsonlogo');
+
+  const checkbox = document.getElementById("dark-mode-toggle1");
+
+  if (checkbox.checked) {
+    body.classList.add('dark-theme');
+    header.classList.add('dark-theme');
+    about.classList.add('dark-theme');
+    skills.classList.add('dark-theme');
+    skills__content.classList.add('dark-theme');
+    frontend.classList.add('dark-theme');
+    backend.classList.add('dark-theme');
+    mobile.classList.add('dark-theme');
+    projects.classList.add('dark-theme');
+    nissan.setAttribute("src", "assets/nissandark.png");
+    thomson.setAttribute("src", "assets/thomsonreutersdark.png");
+  } else {
+    body.classList.remove('dark-theme');
+    header.classList.remove('dark-theme');
+    about.classList.remove('dark-theme');
+    skills.classList.remove('dark-theme');
+    skills__content.classList.remove('dark-theme');
+    frontend.classList.remove('dark-theme');
+    backend.classList.remove('dark-theme');
+    mobile.classList.remove('dark-theme');
+    projects.classList.remove('dark-theme');
+    nissan.setAttribute("src", "assets/nissan.png");
+    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
+  }
+}
+
+// Alterna o estado do checkbox ao clicar na imagem
+document.getElementById("checkbox-img1").addEventListener("click", function() {
+  const checkbox = document.getElementById("dark-mode-toggle1");
+  const img = document.getElementById('checkbox-img1');
+
+  checkbox.checked = !checkbox.checked;
+
+  if (checkbox.checked) {
+    img.setAttribute("src", "assets/dark-theme.png");
+    img.style.width = '25px';
+    img.style.height = '25px';
+  } else {
+    img.setAttribute("src", "assets/theme.png");
+    img.style.width = '25px';
+    img.style.height = '25px';
+  }
+
+  updateThemeMobile(); // Atualiza o tema imediatamente após a alteração do checkbox
+});
+
+//Função para bug dos dispositivos mobile//
+function checkScreenSize() {
+  if (window.innerWidth < 768) {
+    const img = document.getElementById('checkbox-img1');
+    img.style.width = '25px';
+    img.style.height = '25px';
+    img.style.transition = '0s';
+  }
+}
+
+checkScreenSize();

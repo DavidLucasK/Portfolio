@@ -77,9 +77,15 @@
     }
 }
 
-/*@media only screen and (min-width: 300px) and (max-width: 767px) {
-    .mobile {
-        width: 100vw;
-        margin-left: 20px;
-    }
-}*/
+.mobile.dark-theme {
+    background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;
+    color: white;
+}
+
+.mobile.dark-theme h2 {
+  color: white;
+}
+
+.mobile.dark-theme .mobile__content ul li .image-container {
+  opacity: 100%;
+}

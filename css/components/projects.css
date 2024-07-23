@@ -139,3 +139,11 @@
     gap: 5rem; /* Ajuste para melhor visualização em telas grandes */
   }
 }
+
+.projects.dark-theme h2 {
+  color: white;
+}
+
+.projects.dark-theme ul li .image img {
+  box-shadow: -50px 30px 50px 1px rgb(43, 43, 43);
+}

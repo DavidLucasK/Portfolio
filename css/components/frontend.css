@@ -126,3 +126,16 @@
       width: 100vw;
     }
   }*/
+
+.frontend.dark-theme {
+    background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;
+    color: white;
+}
+
+.frontend.dark-theme h2 {
+  color: white;
+}
+
+.frontend.dark-theme .frontend__content ul li .image-container {
+  opacity: 100%;
+}

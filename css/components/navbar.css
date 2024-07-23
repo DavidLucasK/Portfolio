@@ -42,6 +42,8 @@ nav .navbar__content .david-logo:hover {
 
 nav .navbar__content .navbar__links li {
   display: inline-block;
+  align-content: center;
+  margin-bottom: 100px;
 }
 
 nav .navbar__content .navbar__links li:not(:last-of-type) {
@@ -68,6 +70,24 @@ nav .navbar__content .navbar__links a:hover {
 nav .navbar__content .navbar__mobile,
 nav .navbar__content .navbar__mobile .mobile__links {
   display: none;
+}
+
+.container-check input {
+  display: none;
+}
+
+.container-check img {
+  width: 25px;
+  height: 25px;
+  filter: invert();
+  transition: 0.3s ease;
+  margin-top: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.container-check img:hover {
+  opacity: 1;
 }
 
 /* Regras de mídia para dispositivos móveis (320px - 480px) */
@@ -128,6 +148,12 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content .navbar__mobile.active .mobile__links {
     display: flex;
   }
+
+  .container-check img {
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+  }
 }
 
 /* Regras de mídia para tablets (481px - 768px) */
@@ -187,6 +213,12 @@ nav .navbar__content .navbar__mobile .mobile__links {
     margin-bottom: 2rem;
     margin-top: 10px;
     font-size: 14pt;
+  }
+
+  .navbar__mobile .container-check img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
   }
 }
 

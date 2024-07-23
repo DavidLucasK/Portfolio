@@ -118,3 +118,20 @@
       width: 100vw;
     }
   }*/
+
+.skills.dark-theme {
+  background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;
+}
+
+.skills__content.dark-theme {
+    background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;
+    color: white;
+}
+
+.skills__content.dark-theme h2 {
+  color: white;
+}
+
+.skills.dark-theme .skills__content ul li .image-container {
+  opacity: 100%;
+}

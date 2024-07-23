@@ -52,6 +52,7 @@
     opacity: 0;
     transition: 400ms ease-in-out;
     font-size: 14px;
+    color: black;
 }
 
 .about .about__left ul li:hover p {
@@ -114,4 +115,13 @@
     .about .about__left p {
         font-size: 14pt;
     }
+}
+
+.about.dark-theme .about__left ul li a {
+    filter: invert();
+    opacity: 1;
+}
+
+.about.dark-theme .about__left ul li p {
+    color: white;
 }
