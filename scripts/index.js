@@ -259,6 +259,23 @@ function checkScreenSize() {
     img.style.width = '25px';
     img.style.height = '25px';
     img.style.transition = '0s';
+
+    const pedro = document.getElementById('header');
+    pedro.addAttribute("class", "hidden");
+
+  
+    // Rolar até o rodapé
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+
+    // Esperar até que a rolagem para o rodapé termine, então rolar de volta para o cabeçalho
+    setTimeout(() => {
+      window.scrollTo(20, 20);
+
+      // Mostrar a classe 'interface' novamente após rolar de volta para o cabeçalho
+      setTimeout(() => {
+      }, 1000); // Ajuste o tempo conforme necessário
+    }, 2000); // Ajuste o tempo conforme necessário
+    
   }
 }
 
