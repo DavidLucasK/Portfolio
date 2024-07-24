@@ -2,6 +2,7 @@ window.onload = function(){
   window.scrollTo(20, 20);
 }
 
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -32,18 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (burger.src.endsWith('assets/close.png')) {
       // Altere o valor da largura conforme necessário
-      burger.style.width = '30px';
-      burger.style.height = '30px';
-      burger.style.marginLeft = '-35px';
+      burger.style.width = '25px';
+      burger.style.height = '25px';
+      burger.style.marginTop = '8px';
+      burger.style.marginRight = '10px';
     }
 
     if (mobileLinks.style.display === 'block') {
       // Se visível, oculta a lista
       mobileLinks.style.display = 'none';
       burger.setAttribute("src", "assets/menu.svg");
-      burger.style.width = '30px';
-      burger.style.height = '30px';
-
+      burger.style.marginTop = '0px';
+      burger.style.marginRight = '0px';
       burger.style.width = '40px';
       burger.style.height = '40px';
     } else {
@@ -57,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Oculta a lista de links móveis quando um link é clicado
       mobileLinks.style.display = 'none';
       burger.setAttribute("src", "assets/menu.svg");
+      burger.style.marginTop = '0px';
+      burger.style.marginRight = '0px';
       burger.style.width = '40px';
       burger.style.height = '40px';
     });
@@ -256,26 +259,17 @@ document.getElementById("checkbox-img1").addEventListener("click", function() {
 function checkScreenSize() {
   if (window.innerWidth < 768) {
     const img = document.getElementById('checkbox-img1');
+    
     img.style.width = '25px';
     img.style.height = '25px';
     img.style.transition = '0s';
 
-    const pedro = document.getElementById('header');
-    pedro.addAttribute("class", "hidden");
-
-  
-    // Rolar até o rodapé
-    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
-
-    // Esperar até que a rolagem para o rodapé termine, então rolar de volta para o cabeçalho
-    setTimeout(() => {
-      window.scrollTo(20, 20);
-
-      // Mostrar a classe 'interface' novamente após rolar de volta para o cabeçalho
-      setTimeout(() => {
-      }, 1000); // Ajuste o tempo conforme necessário
-    }, 2000); // Ajuste o tempo conforme necessário
-    
+    const body = document.body;
+    const mobile = document.querySelector('.mobile');
+    const projects = document.querySelector('.projects');
+    body.style.marginLeft = '20px'; 
+    mobile.style.width = '100vw'; 
+    projects.style.marginLeft = '15px';
   }
 }
 

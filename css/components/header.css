@@ -94,10 +94,6 @@ header .header__right img {
     width: 100vw;
   }
 }
-
-#dark-mode-toggle:checked ~ .body{
-  display: none;
-}
 /* Tema Dark */
 body.dark-theme {
   background-color: #1d1d1d;
