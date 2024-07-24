@@ -126,6 +126,7 @@ typeWriter(titulo);
 // Função para atualizar o tema com base no estado do checkbox
 function updateTheme() {
   const body = document.body;
+  const mobile__links = document.querySelector('.mobile__links');
   const header = document.querySelector('header');
   const about = document.querySelector('.about');
   const skills = document.querySelector('.skills');
@@ -141,6 +142,7 @@ function updateTheme() {
 
   if (checkbox.checked) {
     body.classList.add('dark-theme');
+    mobile__links.style.backgroundColor = 'red';
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
@@ -153,6 +155,7 @@ function updateTheme() {
     thomson.setAttribute("src", "assets/thomsonreutersdark.png");
   } else {
     body.classList.remove('dark-theme');
+    mobile__links.classList.remove('dark-theme');
     header.classList.remove('dark-theme');
     about.classList.remove('dark-theme');
     skills.classList.remove('dark-theme');
