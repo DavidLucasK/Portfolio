@@ -21,11 +21,6 @@ nav .navbar__content {
 nav .logo-navbar {
   width: 85px;
   margin-top: -40px;
-  transition: 0.5s ease-in-out;
-}
-
-nav .logo-navbar:hover {
-  transform: rotate(180deg);
 }
 
 nav .navbar__content .navbar__links li {
