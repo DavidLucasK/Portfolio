@@ -19,25 +19,13 @@ nav .navbar__content {
 }
 
 nav .logo-navbar {
-  position: relative;
-  margin-left: 100px;
   width: 85px;
   margin-top: -40px;
   transition: 0.5s ease-in-out;
 }
 
-nav .navbar__content .david-logo {
-  font-size: 6rem;
-  margin-top: -20px;
-  font-family: 'Poppins';
-  font-weight: 600;
-  color: white;
-  opacity: 80%;
-  transition: 0.3s ease-in-out;
-}
-
-nav .navbar__content .david-logo:hover {
-  opacity: 100%;
+nav .logo-navbar:hover {
+  transform: rotate(180deg);
 }
 
 nav .navbar__content .navbar__links li {
