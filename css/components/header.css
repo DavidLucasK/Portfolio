@@ -10,8 +10,8 @@ header {
 }
 
 header .header__left {
-  max-width: 62rem;
-  flex: 1;
+  max-width: 50%;
+  height: 200px;
 }
 
 header .header__right img {
@@ -27,58 +27,38 @@ header .header__right img {
   transition: 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 1050px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header .header__left p {
-    margin: 2rem auto 4rem;
-  }
-
-  header .header__right {
-    display: block;
-    margin: 0 auto;
-  }
-
-  header .header__right img {
-    width: 220px;
-    height: 210px;
-    margin: 0;
-  }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
   header {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    padding-bottom: 200px;
   }
 
   header .header__left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    height: 100px;
   }
 
   header .header__right img {
     width: 220px;
+    margin-left: 50px;
     height: 210px;
     border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 561px) and (max-width: 767px) {
   header {
+    display: grid;
     align-items: center;
+    text-align: center;
     padding: 0 4rem;
     margin-bottom: 8rem;
   }
 
   header .header__left {
     max-width: 100%;
-    margin-bottom: 2rem;
+    height: 300px;
   }
 
   header .header__right img {
@@ -91,13 +71,76 @@ header .header__right img {
   body.dark-theme .mobile__links a {
     color: white;
   }
-}
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
   .interface {
     width: 100vw;
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+  header {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    margin-bottom: 8rem;
+  }
+
+  header .header__left {
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 300px;
+  }
+
+  header .header__right img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+
+  body.dark-theme .mobile__links a {
+    color: white;
+  }
+
+  .interface {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  header {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  header .header__left {
+    max-width: 100vw;
+    height: 100px;
+    margin-bottom: 200px;
+  }
+
+  header .header__right img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+
+  body.dark-theme .mobile__links a {
+    color: white;
+  }
+
+  .interface {
+    width: 100vw;
+  }
+}
+
+
+
+
 /* Tema Dark */
 body.dark-theme {
   background-color: #1d1d1d;

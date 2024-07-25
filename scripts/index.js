@@ -110,18 +110,48 @@ if(target.length) {
 
 /* Efeito de máquina de escrever */ 
 
-function typeWriter(elemento) {
-  const textoArray = elemento.innerHTML.split('');
+// function typeWriter(elemento) {
+//   const textoArray = elemento.innerHTML.split('');
+//   elemento.innerHTML = '';
+//   textoArray.forEach((letra, i) => {
+//       setTimeout(function() {
+//         elemento.innerHTML += letra;
+//       }, 100 * i)
+//   });
+// }
+
+// const titulo = document.querySelector('.cargo');
+// typeWriter(titulo);
+
+
+function typeWriter(elemento, textos, index = 0) {
+  const textoArray = textos[index].split('');
   elemento.innerHTML = '';
   textoArray.forEach((letra, i) => {
-      setTimeout(function() {
-        elemento.innerHTML += letra;
-      }, 75 * i)
+    setTimeout(function() {
+      elemento.innerHTML += letra;
+    }, 100 * i);
   });
+
+  // Calcular o tempo total necessário para escrever o texto
+  const tempoTotal = 100 * textoArray.length;
+
+  // Chamar a função novamente após o tempo necessário para escrever o texto, mais um pequeno delay
+  setTimeout(() => {
+    // Alternar para o próximo texto ou reiniciar
+    const proximoIndex = (index + 1) % textos.length;
+    typeWriter(elemento, textos, proximoIndex);
+  }, tempoTotal + 1000); // 1000ms de delay antes de mudar para o próximo texto
 }
 
-const titulo = document.querySelector('h1');
-typeWriter(titulo);
+const titulo = document.querySelector('.cargo');
+const textos = [
+  'Desenvolvedor Fullstack',
+  'Desenvolvedor Frontend',
+  'Designer UX/UI'
+];
+
+typeWriter(titulo, textos);
 
 // Função para atualizar o tema com base no estado do checkbox
 function updateTheme() {
