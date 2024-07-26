@@ -146,9 +146,9 @@ function typeWriter(elemento, textos, index = 0) {
 
 const titulo = document.querySelector('.cargo');
 const textos = [
-  'Desenvolvedor Fullstack',
+  'Desenvolvedor Backend',
   'Desenvolvedor Frontend',
-  'Designer UX/UI'
+  'Desenvolvedor FullStack'
 ];
 
 typeWriter(titulo, textos);

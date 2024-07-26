@@ -148,13 +148,12 @@
   }
 
   .techs:hover {
-    transform: translateY(-5px);
     filter: grayscale(0);
   }
 }
 
 .techs {
-  background-color: white;
+    background-color: white;
     border-radius: 15px;
     width: 15rem;
     height: 7rem;
