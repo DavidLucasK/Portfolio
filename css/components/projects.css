@@ -147,7 +147,23 @@
       filter: grayscale(1);
   }
 
+  .techs-big {
+    filter: grayscale(1);
+  }
+
+  .techs-bigxl {
+    filter: grayscale(1);
+  }
+
   .techs:hover {
+    filter: grayscale(0);
+  }
+
+  .techs-big:hover {
+    filter: grayscale(0);
+  }
+
+  .techs-bigxl:hover {
     filter: grayscale(0);
   }
 }
@@ -162,6 +178,32 @@
     align-items: center;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
+}
+
+.techs-big {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 18rem;
+  gap: 4px;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.techs-bigxl {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 25rem;
+  gap: 4px;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
 }
 
 .techs :nth-child(2) {
