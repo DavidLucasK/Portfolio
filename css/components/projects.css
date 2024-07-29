@@ -38,7 +38,21 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.projects ul li .image-wip img {
+  width: 499px; 
+  height: 30rem;
+  object-fit: cover; 
+  border-radius: 1rem;
+  filter: grayscale();
+  box-shadow: -50px 30px 50px 1px rgb(122, 122, 122);
+  transition: transform 0.3s ease-in-out;
+}
+
 .projects ul li .image img:hover {
+  transform: scale(1.05);
+}
+
+.projects ul li .image-wip img:hover {
   transform: scale(1.05);
 }
 
