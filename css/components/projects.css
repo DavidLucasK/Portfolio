@@ -77,6 +77,61 @@
   transform: scale(1.05);
 }
 
+.techs {
+  background-color: white;
+  border-radius: 15px;
+  width: 15rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.techs-big {
+background-color: white;
+border-radius: 15px;
+max-width: 18rem;
+gap: 4px;
+height: 7rem;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+transition: 0.3s ease-in-out;
+}
+
+.techs-bigxl {
+background-color: white;
+border-radius: 15px;
+max-width: 25rem;
+gap: 4px;
+height: 7rem;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+transition: 0.3s ease-in-out;
+width: 25rem;
+}
+
+.techs :nth-child(2) {
+margin-left: 10px;
+}
+
+.techs :nth-child(3) {
+margin-left: 10px;
+}
+
+.projects.dark-theme h2 {
+color: white;
+}
+
+.projects.dark-theme ul li .image img {
+box-shadow: -50px 30px 50px 1px rgb(43, 43, 43);
+}
+
 /* dispositivos móveis */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .projects {
@@ -136,6 +191,11 @@
     display: grid;
     margin-left: 160px;
   }
+
+  .techs-bigxl {
+    max-width: 30rem;
+    width: 28rem;
+  }
 }
 
 /* desktops, telas grandes */
@@ -182,56 +242,3 @@
   }
 }
 
-.techs {
-    background-color: white;
-    border-radius: 15px;
-    width: 15rem;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
-}
-
-.techs-big {
-  background-color: white;
-  border-radius: 15px;
-  max-width: 18rem;
-  gap: 4px;
-  height: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
-}
-
-.techs-bigxl {
-  background-color: white;
-  border-radius: 15px;
-  max-width: 25rem;
-  gap: 4px;
-  height: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
-}
-
-.techs :nth-child(2) {
-  margin-left: 10px;
-}
-
-.techs :nth-child(3) {
-  margin-left: 10px;
-}
-
-.projects.dark-theme h2 {
-  color: white;
-}
-
-.projects.dark-theme ul li .image img {
-  box-shadow: -50px 30px 50px 1px rgb(43, 43, 43);
-}
