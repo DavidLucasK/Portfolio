@@ -157,6 +157,10 @@ box-shadow: -50px 30px 50px 1px rgb(43, 43, 43);
   .techs {
     filter: grayscale(0);
   }
+
+  .techs-bigxl {
+    gap: 0;
+  }
 }
 
 /* iPads, tablets */
