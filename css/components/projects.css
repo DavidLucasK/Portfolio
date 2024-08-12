@@ -7,7 +7,6 @@
   max-width: 120rem;
   padding: 0 2rem; /* Reduzido para melhor ajuste em telas menores */
   margin: 0 auto;
-  margin-right: -20px;
 }
 
 .projects .projects__content {
