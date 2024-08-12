@@ -141,14 +141,14 @@ function typeWriter(elemento, textos, index = 0) {
     // Alternar para o próximo texto ou reiniciar
     const proximoIndex = (index + 1) % textos.length;
     typeWriter(elemento, textos, proximoIndex);
-  }, tempoTotal + 1000); // 1000ms de delay antes de mudar para o próximo texto
+  }, tempoTotal + 1300); // 1000ms de delay antes de mudar para o próximo texto
 }
 
 const titulo = document.querySelector('.cargo');
 const textos = [
-  'Desenvolvedor Backend',
-  'Desenvolvedor Frontend',
-  'Desenvolvedor FullStack'
+  'Backend',
+  'Frontend',
+  'FullStack'
 ];
 
 typeWriter(titulo, textos);

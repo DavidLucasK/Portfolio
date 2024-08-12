@@ -5,6 +5,7 @@ footer {
     animation: gradient 10s ease infinite;
     background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
     background-size: 200% 200%;
+    margin-right: -20px;
 }
 
 footer .footer__content {
