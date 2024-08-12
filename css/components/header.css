@@ -25,6 +25,7 @@ header .header__right img {
   filter: brightness(110%);
   filter: contrast(135%);
   transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.445) -30px 10px 30px;
 }
 
 

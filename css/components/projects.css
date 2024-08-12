@@ -38,6 +38,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
+
 .projects ul li .image-wip img {
   width: 499px; 
   height: 30rem;
@@ -71,6 +72,7 @@
   padding: 10px;
   background: linear-gradient(90deg, #340ea5, #7b30d0);
   transition: transform 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
 }
 
 .projects ul li .projects__info a:hover {
@@ -85,7 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
   transition: 0.3s ease-in-out;
 }
 
@@ -98,7 +100,7 @@ height: 7rem;
 display: flex;
 justify-content: center;
 align-items: center;
-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
 transition: 0.3s ease-in-out;
 }
 
@@ -111,7 +113,7 @@ height: 7rem;
 display: flex;
 justify-content: center;
 align-items: center;
-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
 transition: 0.3s ease-in-out;
 width: 25rem;
 }
