@@ -84,7 +84,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
 /* Regras de mídia para dispositivos móveis (320px - 480px) */
 @media only screen and (max-width: 480px) {
   nav .navbar__content {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +103,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content .navbar__mobile {
     display: flex;
     margin-top: 0;
+    gap: 2rem;
   }
 
   nav .navbar__content .navbar__mobile img {

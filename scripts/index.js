@@ -172,7 +172,6 @@ function updateTheme() {
 
   if (checkbox.checked) {
     body.classList.add('dark-theme');
-    mobile__links.style.backgroundColor = 'red';
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
