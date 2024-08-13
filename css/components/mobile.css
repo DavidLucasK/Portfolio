@@ -68,7 +68,7 @@
 
 @media (max-width: 768px) {
     .mobile {
-    padding-left: 0 !important;
+        margin-left: 0 !important;
     }
 
     .mobile .mobile__content {
@@ -77,6 +77,10 @@
 
     .mobile .mobile__content ul {
         gap: 10rem; 
+    }
+
+    .mobile .mobile__content ul li .image-container {
+        padding: 4.5rem;
     }
 }
 

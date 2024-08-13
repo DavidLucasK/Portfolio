@@ -29,6 +29,12 @@
   position: relative; /* Para ajustes de posicionamento */
 }
 
+.projects ul li .containers {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .projects ul li .image img {
   width: 499px; 
   height: 30rem;
@@ -67,7 +73,6 @@
 
 .projects ul li .projects__info a {
   font-weight: 300;
-  position: absolute;
   color: white;
   border-radius: 12px;
   padding: 10px;
@@ -86,7 +91,7 @@ color: white;
 
 
 .projects.dark-theme ul li .image img {
-box-shadow: -50px 30px 50px 1px rgb(43, 43, 43);
+  box-shadow: -50px 30px 50px 1px rgb(0, 0, 0);
 }
 
 /* dispositivos móveis */

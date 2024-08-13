@@ -9,6 +9,14 @@ header {
   margin-bottom: 16rem;
 }
 
+header .header__left h1 {
+  text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+header.dark-theme .header__left h1 {
+  text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.979);
+}
+
 header .header__left {
   max-width: 50%;
   height: 200px;
