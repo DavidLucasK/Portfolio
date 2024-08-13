@@ -166,6 +166,10 @@ color: white;
   .projects ul li .projects__info p {
     margin: 1rem 0 2rem;
   }
+
+  .projects ul li .containers {
+    display: flex;
+  }
 }
 
 /* telas pequenas, laptops */

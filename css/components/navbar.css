@@ -17,6 +17,7 @@ nav .navbar__content {
   padding: 3rem 4rem 1rem;
   display: flex;
   justify-content: space-between;
+  height: 100px;
 }
 
 nav .logo-navbar {
@@ -271,31 +272,6 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 }
 
-/* Regras de mídia para telas grandes (1201px e acima) */
-@media only screen and (min-width: 1201px) {
-  nav .navbar__content {
-    padding: 3rem 4rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav .logo-navbar {
-    width: 85px;
-    margin-left: 0;
-  }
-
-  nav .navbar__content .navbar__links {
-    display: flex;
-  }
-
-  nav .navbar__content .navbar__links a {
-    font-size: 15pt;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: none;
-  }
-}
 
 @keyframes gradient {
   0% {
