@@ -14,21 +14,24 @@ nav {
 }
 
 nav .navbar__content {
-  padding: 3rem 4rem 1rem;
+  padding: 3rem 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 100px;
 }
 
 nav .logo-navbar {
   width: 85px;
-  margin-top: -40px;
 }
 
 nav .navbar__content .navbar__links li {
   display: inline-block;
   align-content: center;
-  margin-bottom: 100px;
+}
+
+nav .navbar__content .navbar__links li:last-of-type {
+  transform: translateY(5px);
 }
 
 nav .navbar__content .navbar__links li:not(:last-of-type) {
