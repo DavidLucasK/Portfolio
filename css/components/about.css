@@ -152,10 +152,16 @@
 .instagram {
     background-image: url('../../assets/instagram.png');
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
 }
 
 .instagram:hover {
     background-image: url('../../assets/instagram-color.png');
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+}
+
+.about.dark-theme .about__left ul li .instagram {
+    box-shadow: none;
 }
 
 .about.dark-theme .about__left ul li .instagram:hover {
@@ -166,10 +172,16 @@
     background-image: url('../../assets/linkedin-invert.png');
     width: 46px;
     height: 46px;
+    border-radius: 10px;
 }
 
 .linkedin:hover {
     background-image: url('../../assets/linkedin-color.png');
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+}
+
+.about.dark-theme .about__left ul li .linkedin {
+    box-shadow: none;
 }
 
 .about.dark-theme .about__left ul li .linkedin:hover {
@@ -178,12 +190,18 @@
 
 .curriculo {
     background-image: url('../../assets/curriculo.png');
+    border-radius: 10px;
     width: 46px;
     height: 46px;
 }
 
 .curriculo:hover {
     background-image: url('../../assets/curriculo-color.png');
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+}
+
+.about.dark-theme .about__left ul li .curriculo {
+    box-shadow: none;
 }
 
 .about.dark-theme .about__left ul li .curriculo:hover {
