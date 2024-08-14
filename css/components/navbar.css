@@ -35,7 +35,7 @@ nav .navbar__content .navbar__links li:last-of-type {
 }
 
 nav .navbar__content .navbar__links li:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 0.2rem;
 }
 
 nav .navbar__content .navbar__links a {
