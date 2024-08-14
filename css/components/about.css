@@ -125,8 +125,12 @@
 }
 
 .about.dark-theme .about__left ul li a {
-    filter: invert();
     opacity: 1;
+}
+
+.about.dark-theme .about__left ul li img {
+    filter: invert();
+    box-shadow: none;
 }
 
 .about.dark-theme .about__left ul li p {
@@ -141,6 +145,10 @@
     transition: background-image 0.3s ease-in-out;
 }
 
+.about.dark-theme .about__left ul li .icon {
+    filter: invert(1);
+}
+
 .instagram {
     background-image: url('../../assets/instagram.png');
     border-radius: 15px;
@@ -148,6 +156,10 @@
 
 .instagram:hover {
     background-image: url('../../assets/instagram-color.png');
+}
+
+.about.dark-theme .about__left ul li .instagram:hover {
+    background-image: url('../../assets/instagram.png');
 }
 
 .linkedin {
@@ -160,6 +172,10 @@
     background-image: url('../../assets/linkedin-color.png');
 }
 
+.about.dark-theme .about__left ul li .linkedin:hover {
+    background-image: url('../../assets/linkedin-invert.png');
+}
+
 .curriculo {
     background-image: url('../../assets/curriculo.png');
     width: 46px;
@@ -168,4 +184,8 @@
 
 .curriculo:hover {
     background-image: url('../../assets/curriculo-color.png');
+}
+
+.about.dark-theme .about__left ul li .curriculo:hover {
+    background-image: url('../../assets/curriculo.png');
 }
