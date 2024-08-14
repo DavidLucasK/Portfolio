@@ -95,6 +95,7 @@
       visibility: hidden;
       opacity: 0;
       transition: visibility 0s linear 0.3s, opacity 0.3s ease-in-out 0.3s; 
+      width: 32px;
     }
     
     .techs-big:hover {
@@ -105,7 +106,6 @@
     .techs-big:hover > * {
       visibility: visible;
       opacity: 1;
-      width: 32px;
     }
     
     /*Animação quando for desaparecer as imagens do container*/
@@ -154,12 +154,12 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 0.3s, opacity 0.3s ease-in-out 0.3s;
+    width: 32px;
   }
   
   .techs-bigxl:hover > * {
     visibility: visible;
     opacity: 1;
-    width: 32px;
   }
   
   .techs-bigxl:not(:hover) > * {
