@@ -4,6 +4,7 @@
 
 /* Light theme */
 @import './components/navbar.css';
+@import './components/languages.css';
 @import './components/header.css';
 @import './components/about.css';
 @import './components/companys.css';

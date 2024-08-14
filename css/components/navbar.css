@@ -83,8 +83,6 @@ nav .navbar__content .navbar__mobile .mobile__links {
   opacity: 1;
 }
 
-
-
 /* Regras de mídia para dispositivos móveis (320px - 480px) */
 @media only screen and (max-width: 480px) {
   nav .navbar__content {

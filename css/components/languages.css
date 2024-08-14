@@ -1,0 +1,87 @@
+.language {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #language-img {
+    width: 25px;
+    height: 25px;
+    filter: invert();
+    transition: opacity 0.3s ease;
+    margin-top: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  #language-img:hover {
+    opacity: 1;
+  }
+  
+  .language-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it just below the image */
+    left: 0;
+    list-style: none;
+    margin-left: -1.4rem;
+    padding: 0;
+    background-color: #fff; /* Background color of the dropdown */
+    border: 1px solid #ccc; /* Border color of the dropdown */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+    z-index: 1000; /* Ensures it appears above other content */
+  }
+  
+  .language-menu li:not(:first-child) {
+    margin-top: -20px;
+  }
+
+  .language-menu li:hover > * {
+    filter: brightness(0.8);
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* .language-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 0;
+  } */
+  
+  .language-menu li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .language:hover .language-menu {
+    display: block;
+  }
+
+.brazil {
+    background-image: url('../../assets/brasil.png');
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.english {
+    background-image: url('../../assets/english.png');
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.spanish {
+    background-image: url('../../assets/spanish.png');
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.french {
+    background-image: url('../../assets/french.png');
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.japanese {
+    background-image: url('../../assets/japanese.png');
+    cursor: pointer;
+    transform: scale(0.8);
+}

@@ -274,6 +274,125 @@ function translateJapanese() {
     });
 }
 
+// Função para traduzir os textos da página para português
+function translatePortuguese() {
+    // Mapeamento de traduções
+    const traducoesPortuguese = {
+        'header-nav': `Início`,
+        'about-nav': `Sobre`,
+        'skills-nav': `Habilidades`,
+        'frontend-nav': `Tecnologias`,
+        'projects-nav': `Projetos`,
+        'footer-nav': `Contato`,
+        'hello': `Olá! Meu nome é David Lucas e sou Desenvolvedor`,
+        'alem': 'Além do código: Quem sou eu?',
+        'quetal': 'Que tal se conectar comigo nas redes sociais abaixo para saber mais sobre o meu trabalho?',
+        'about1': 'Desenvolvedor curioso e apaixonado por tecnologia e soluções.',
+        'about2': 'Meu nome é David Lucas e sou desenvolvedor. Sou apaixonado por tecnologia e tenho experiência em desenvolver aplicações intuitivas e soluções criativas. Gosto de resolver problemas de forma criativa, projetar interfaces visualmente atraentes e focar na experiência do usuário.',
+        'about3': `Adoro desafios, seja melhorando algo que já existe ou criando algo completamente novo e encontrando maneiras de automatizar as coisas.`,
+        'companys-title': 'Empresas em que já trabalhei e/ou estive em projetos relacionados.',
+        'skills-title': 'Caixa de Ferramentas',
+        'skills-desc': 'Aqui estão algumas habilidades e ferramentas que domino e que me permitem criar soluções criativas e funcionais.',
+        'automations': 'Automações',
+        'automations-title': 'Gosto de criar automações para simplificar minhas tarefas. Normalmente uso Python e IA para isso.',
+        'webdev-title': 'Desenvolvedor Web',
+        'webdev-desc': 'Experiência em desenvolvimento com foco em tecnologias modernas.',
+        'webdes-title': 'Design Web',
+        'webdes-desc': 'Habilidade em criar layouts modernos e responsivos com foco na experiência do usuário.',
+        'uxui-title': 'Design UX/UI',
+        'uxui-desc': 'Conhecimento em projetar interfaces e experiências de usuário visualmente atraentes e intuitivas.',
+        'git-title': 'Controle de Versão',
+        'git-desc': 'Experiência com ferramentas de controle de versão para gerenciamento de projetos.',
+        'frontend-desc': 'Tecnologias e outras ferramentes que já utilizei e utilizo em meus projetos e nas empresas em que trabalhei.',
+        'A': 'Avançado',
+        'B': 'Básico',
+        'I': 'Intermediário',
+        'back-title': `Backend e outras ferramentas que já utilizei`,
+        'projects-title': 'Projetos em Destaque',
+        'projects-desc': 'Aqui estão alguns dos meus projetos mais recentes',
+        'proj1-title': 'Escolhedor de Filmes',
+        'proj1-desc': `Desenvolvido para recomendações de filmes aleatórios para assistir.<br/>(Feito para facilitar as noites com a namorada rs)`,
+        'proj1-api': 'Usando a API MovieDB',
+        'proj2-desc': 'App web que fiz para minha namorada poder brincar e ser algo divertido entre a gente.<br>*Faz validações e requisições em tempo real com API feita por mim também.',
+        'proj3-desc': 'Página de login com validações em tempo real e integração com banco de dados.',
+        'proj4-desc': 'Calendário com design intuitivo e responsivo, permitindo fácil gerenciamento de eventos e navegação entre datas em qualquer dispositivo. Utiliza cache para guardar informações.',
+        'proj5-title': 'Taxas de câmbio de moedas',
+        'proj5-desc': 'Sistema web simples para conversões de moedas em tempo real.<br>*Usando a API ExchangeRate',
+        'proj6-desc': 'Lista de tarefas feita com HTML, CSS e JavaScript',
+        'proj7-title': 'Clone do Layout do YouTube',
+        'proj7-desc': 'Recriação do Layout do Youtube feito com React, NextJS e TailwindCSS.<br>*Desenvolvendo responsividade para mobile',
+        'proj8-title': 'Clone do Layout do Spotify',
+        'proj8-desc': 'Recriação do Layout do Spotify feito com React, NextJS e TailwindCSS.<br>*Desenvolvendo responsividade para mobile',
+        'footer-title': 'Entre em contato',
+        'copyright': '© 2024 David Lucas. Todos os direitos reservados.',
+        'cv': 'Currículo',
+        'proj-git': 'Acessar Git',
+    };
+
+    // Aplicar traduções aos elementos da página
+    Object.keys(traducoesPortuguese).forEach(id => {
+        if (id) { // Verifica se o id não está vazio
+            const elementos = document.querySelectorAll(`#${id}`);
+            elementos.forEach(elemento => {
+                if (elemento) {
+                    elemento.innerHTML = traducoesPortuguese[id];
+                }
+            });
+        }
+    });
+}
+
+
+const brazil = document.querySelector('.brazil');
+const english = document.querySelector('.english');
+const spanish = document.querySelector('.spanish');
+const french = document.querySelector('.french');
+const japanese = document.querySelector('.japanese');
+
+brazil.onclick = function() {
+    cancelAllTypeWriters();
+    titulo.innerHTML = ''; 
+    translatePortuguese();
+    cancelTypeWriter = false; // Reseta o controle de cancelamento
+    typeWriter(titulo, textos); // Inicia a nova função de digitação em japonês
+    hello.style.fontSize = '64px';
+    aplicarIdioma('en');
+}
+
+english.onclick = function() {
+    cancelAllTypeWriters();
+    titulo.innerHTML = ''; 
+    translateEnglish();
+    cancelTypeWriter = false; // Reseta o controle de cancelamento
+    typeWriter(titulo, textosEn); // Inicia a nova função de digitação em japonês
+    hello.style.fontSize = '64px';
+    aplicarIdioma('en');
+}
+
+spanish.onclick = function() {
+    translateSpanish();
+    aplicarIdioma('es');
+}
+
+french.onclick = function() {
+    cancelAllTypeWriters(); // Interrompe qualquer execução anterior de typeWriter
+    titulo.innerHTML = '';
+    translateFrench();
+    cancelTypeWriter = false; // Reseta o controle de cancelamento
+    typeWriter(titulo, textosFr); // Inicia a nova função de digitação em japonês
+    hello.style.fontSize = '60px';
+    aplicarIdioma('fr');
+}
+
+japanese.onclick = function() {
+    cancelAllTypeWriters(); // Interrompe qualquer execução anterior de typeWriter
+    titulo.innerHTML = ''; // Limpa o conteúdo atual antes de iniciar a nova digitação
+    translateJapanese(); // Função de tradução para japonês
+    cancelTypeWriter = false; // Reseta o controle de cancelamento
+    typeWriter(titulo, textosJa); // Inicia a nova função de digitação em japonês
+    hello.style.fontSize = '45px';
+    aplicarIdioma('ja');
+};
 
 // Verificar o idioma do navegador e traduzir se necessário
 if (obterIdiomaNavegador().startsWith('en')) {
@@ -287,29 +406,56 @@ else if (obterIdiomaNavegador().startsWith('fr')) {
 }
 else if (obterIdiomaNavegador().startsWith('ja')) {
     translateJapanese();
-    const companystitle = document.getElementById('companys-title');
-    companystitle.style.margin = '0 auto';
 }
 
+let cancelTypeWriter = false; // Variável para controlar a execução do typeWriter
+let timeoutIds = []; // Armazena todos os timeouts para que possam ser cancelados
+
 function typeWriter(elemento, textos, index = 0) {
+    if (cancelTypeWriter) return; // Se cancelTypeWriter for true, interrompe a função
+
+    const originalFontSize = elemento.style.fontSize; // Armazena o tamanho original do texto
+    elemento.style.fontSize = "64px"; // Aplica o novo tamanho
+
     const textoArray = textos[index].split('');
     elemento.innerHTML = '';
+
     textoArray.forEach((letra, i) => {
-      setTimeout(function() {
-        elemento.innerHTML += letra;
-      }, 100 * i);
+        const timeoutId = setTimeout(function() {
+            if (!cancelTypeWriter) { // Verifica se a execução ainda deve continuar
+                elemento.innerHTML += letra;
+            }
+        }, 100 * i);
+        timeoutIds.push(timeoutId); // Armazena o ID do timeout
     });
-  
+
     // Calcular o tempo total necessário para escrever o texto
     const tempoTotal = 100 * textoArray.length;
-  
+
     // Chamar a função novamente após o tempo necessário para escrever o texto, mais um pequeno delay
+    const nextTimeoutId = setTimeout(() => {
+        if (!cancelTypeWriter) { // Verifica novamente antes de chamar a próxima iteração
+            const proximoIndex = (index + 1) % textos.length;
+            typeWriter(elemento, textos, proximoIndex);
+        } else {
+            elemento.style.fontSize = originalFontSize; // Restaura o tamanho original quando a função termina
+        }
+    }, tempoTotal + 1300); // 1300ms de delay antes de mudar para o próximo texto
+    timeoutIds.push(nextTimeoutId); // Armazena o ID do timeout
+
+    // Restaura o tamanho original após a última letra
     setTimeout(() => {
-      // Alternar para o próximo texto ou reiniciar
-      const proximoIndex = (index + 1) % textos.length;
-      typeWriter(elemento, textos, proximoIndex);
-    }, tempoTotal + 1300); // 1000ms de delay antes de mudar para o próximo texto
-  }
+        if (!cancelTypeWriter) {
+            elemento.style.fontSize = originalFontSize;
+        }
+    }, tempoTotal);
+}
+
+function cancelAllTypeWriters() {
+    cancelTypeWriter = true; // Sinaliza para interromper a execução atual
+    timeoutIds.forEach(timeoutId => clearTimeout(timeoutId)); // Cancela todos os timeouts
+    timeoutIds = []; // Limpa a lista de IDs de timeouts
+}
 
 const hello = document.getElementById('hello');
 const titulo = document.querySelector('.cargo');
@@ -342,30 +488,40 @@ const textosJa = [
     'フルスタック開発者'
 ];
 
-function aplicarIdioma() {
-    const idioma = obterIdiomaNavegador();
-    
+function aplicarIdioma(idioma) {
+    // Define as classes para cada idioma
+    const classesPorIdioma = {
+        pt: 'pt',
+        en: 'en',
+        es: 'es',
+        fr: 'fr',
+        ja: 'ja'
+    };
+
     // Seleciona todos os elementos com as classes 'techs', 'techs-big', e 'techs-bigxl'
     const techsElements = document.querySelectorAll('.techs');
     const techsbigElements = document.querySelectorAll('.techs-big');
     const techsbigxlElements = document.querySelectorAll('.techs-bigxl');
-    
-    // Verifica se o idioma não começa com 'pt'
-    const adicionarClasse = !idioma.startsWith('pt');
-    
-    // Adiciona ou remove a classe 'en' com base no idioma
-    techsElements.forEach(el => el.classList.toggle('en', adicionarClasse));
-    techsbigElements.forEach(el => el.classList.toggle('en', adicionarClasse));
-    techsbigxlElements.forEach(el => el.classList.toggle('en', adicionarClasse));
+
+    // Remove todas as classes de idiomas previamente aplicadas
+    Object.values(classesPorIdioma).forEach(classe => {
+        techsElements.forEach(el => el.classList.remove(classe));
+        techsbigElements.forEach(el => el.classList.remove(classe));
+        techsbigxlElements.forEach(el => el.classList.remove(classe));
+    });
+
+    // Adiciona a classe correspondente ao idioma passado
+    const classeParaAdicionar = classesPorIdioma[idioma] || classesPorIdioma['en'];
+    techsElements.forEach(el => el.classList.add(classeParaAdicionar));
+    techsbigElements.forEach(el => el.classList.add(classeParaAdicionar));
+    techsbigxlElements.forEach(el => el.classList.add(classeParaAdicionar));
 }
 
-// Chama a função para aplicar a classe com base no idioma do navegador
 aplicarIdioma();
 
-
 //Função para escrever o cargo no header de acordo com o idioma
-if (obterIdiomaNavegador().startsWith('en')) {  
-    typeWriter(titulo, textosEn);
+if (obterIdiomaNavegador().startsWith('pt')) {  
+    typeWriter(titulo, textos);
 }
 else if (obterIdiomaNavegador().startsWith('es')) { 
     typeWriter(titulo, textosEs);
@@ -375,9 +531,9 @@ else if (obterIdiomaNavegador().startsWith('fr')) {
 }
 else if (obterIdiomaNavegador().startsWith('ja')) {
     typeWriter(titulo, textosJa);
-    hello.style.fontSize = '50px';
-    titulo.style.fontSize = "50px";
+    hello.style.fontSize = '45px';
+    titulo.style.fontSize = "45px";
 }
 else {
-    typeWriter(titulo, textos);
+    typeWriter(titulo, textosEn);
 }

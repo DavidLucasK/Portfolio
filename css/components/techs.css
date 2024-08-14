@@ -188,6 +188,7 @@
     color: black;
 }
 
+/* Suporte para o inglês */
 .techs.en::before {
   content: "Techs Used";
 }
@@ -198,4 +199,56 @@
 
 .techs-bigxl.en::before {
   content: "Techs Used";
+}
+
+/* Suporte para o espanhol */
+.techs.es::before {
+  content: "Tecnologías Usadas";
+}
+
+.techs-big.es::before {
+  content: "Tecnologías Usadas";
+}
+
+.techs-bigxl.es::before {
+  content: "Tecnologías Usadas";
+}
+
+/* Suporte para o francês */
+.techs.fr::before {
+  content: "Technologies Utilisées";
+}
+
+.techs-big.fr::before {
+  content: "Technologies Utilisées";
+}
+
+.techs-bigxl.fr::before {
+  content: "Technologies Utilisées";
+}
+
+/* Suporte para o português */
+.techs.pt::before {
+  content: "Tecnologias Usadas";
+}
+
+.techs-big.pt::before {
+  content: "Tecnologias Usadas";
+}
+
+.techs-bigxl.pt::before {
+  content: "Tecnologias Usadas";
+}
+
+/* Suporte para o japonês */
+.techs.ja::before {
+  content: "使用された技術";
+}
+
+.techs-big.ja::before {
+  content: "使用された技術";
+}
+
+.techs-bigxl.ja::before {
+  content: "使用された技術";
 }
