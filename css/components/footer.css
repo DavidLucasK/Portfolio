@@ -33,7 +33,8 @@ footer .footer__content ul li a{
 }
 
 footer .footer__content ul li a img{
-    filter: invert(100%);
+    filter: invert(1);
+    border-radius: 10px;
     width: 4rem;
 }
 

@@ -162,9 +162,6 @@
 
 .about.dark-theme .about__left ul li .instagram {
     box-shadow: none;
-}
-
-.about.dark-theme .about__left ul li .instagram:hover {
     background-image: url('../../assets/instagram.png');
 }
 

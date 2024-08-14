@@ -115,6 +115,7 @@ if(target.length) {
 // Função para atualizar o tema com base no estado do checkbox
 function updateTheme() {
   const body = document.body;
+  const languagesMenu = document.querySelector('.language-menu');
   const mobile__links = document.querySelector('.mobile__links');
   const header = document.querySelector('header');
   const about = document.querySelector('.about');
@@ -131,6 +132,7 @@ function updateTheme() {
 
   if (checkbox.checked) {
     body.classList.add('dark-theme');
+    languagesMenu.classList.add('dark-theme');
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
@@ -143,6 +145,7 @@ function updateTheme() {
     thomson.setAttribute("src", "assets/thomsonreutersdark.png");
   } else {
     body.classList.remove('dark-theme');
+    languagesMenu.classList.remove('dark-theme');
     mobile__links.classList.remove('dark-theme');
     header.classList.remove('dark-theme');
     about.classList.remove('dark-theme');
@@ -186,6 +189,7 @@ document.getElementById("checkbox-img").addEventListener("click", function() {
 
 function updateThemeMobile() {
   const body = document.body;
+  const languagesMenu = document.querySelector('.language-menu');
   const header = document.querySelector('header');
   const about = document.querySelector('.about');
   const skills = document.querySelector('.skills');
@@ -201,6 +205,7 @@ function updateThemeMobile() {
 
   if (checkbox.checked) {
     body.classList.add('dark-theme');
+    languagesMenu.classList.add('dark-theme');
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
@@ -213,6 +218,7 @@ function updateThemeMobile() {
     thomson.setAttribute("src", "assets/thomsonreutersdark.png");
   } else {
     body.classList.remove('dark-theme');
+    languagesMenu.classList.remove('dark-theme');
     header.classList.remove('dark-theme');
     about.classList.remove('dark-theme');
     skills.classList.remove('dark-theme');
