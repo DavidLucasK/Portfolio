@@ -35,12 +35,12 @@
           <!-- <div class="david-logo">DavidLucas</div> -->
         </a>
         <ul class="navbar__links">
-          <li><a href="#header">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#frontend">Tecnologias</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#footer">Contato</a></li>
+          <li><a id="header-nav" href="#header">Início</a></li>
+          <li><a id="about-nav" href="#about">Sobre</a></li>
+          <li><a id="skills-nav" href="#skills">Habilidades</a></li>
+          <li><a id="frontend-nav" href="#frontend">Tecnologias</a></li>
+          <li><a id="projects-nav" href="#projects">Projetos</a></li>
+          <li><a id="footer-nav" href="#footer">Contato</a></li>
           <li>
             <div class="container-check">
               <input type="checkbox" id="dark-mode-toggle">
@@ -55,12 +55,12 @@
             <img src="./assets/theme.png" alt="" id="checkbox-img1" class="bright">
           </div>
           <ul class="mobile__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#frontend">Tecnologias</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#footer">Contato</a></li>
+            <li><a id="header-nav" href="#header">Início</a></li>
+          <li><a id="about-nav" href="#about">Sobre</a></li>
+          <li><a id="skills-nav" href="#skills">Habilidades</a></li>
+          <li><a id="frontend-nav" href="#frontend">Tecnologias</a></li>
+          <li><a id="projects-nav" href="#projects">Projetos</a></li>
+          <li><a id="footer-nav" href="#footer">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -71,8 +71,8 @@
     <section data-anime="left">
       <header>
           <div class="header__left">
-            <h1>Olá! Meu nome é David Lucas e sou Desenvolvedor</h1>
-            <h1 class="cargo"></h1>
+            <h1 id="hello">Olá! Meu nome é David Lucas e sou Desenvolvedor</h1>
+            <h1 id="cargo" class="cargo"></h1>
           </div>
           <div class="header__right">
             <div class="teste">
@@ -86,8 +86,8 @@
 
     <section id="about" class="about max-width" data-anime="right">
       <div class="about__left">
-        <h2 class="secundary-title">Além do código: Quem sou eu?</h2>
-        <p>
+        <h2 id="alem" class="secundary-title">Além do código: Quem sou eu?</h2>
+        <p id="quetal">
           Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
           meu trabalho?
         </p>
@@ -106,21 +106,21 @@
           </li>
           <li>
             <a href="assets/Curriculo 2024.pdf" download="Currículo"><span class="icon curriculo"></span></a>
-            <p class="nome-icon">Currículo</p>
+            <p id="cv" class="nome-icon">Currículo</p>
           </li>
         </ul>
       </div>
       <div class="about__right">
-        <h3 class="tertiary-title mb-m">
+        <h3 id="about1" class="tertiary-title mb-m">
           Desenvolvedor curioso e apaixonado por tecnologia e soluções
         </h3>
-        <p>
+        <p id="about2">
           Meu nome é David Lucas e sou desenvolvedor, sou apaixonado por
-            tecnologia e tenho experiência em desenvolvimento de aplicações intuitivas
-            e soluções criativas. Gosto de solucionar problemas de jeitos criativos,
-            interfaces visualmente atraentes e que sejam focadas na experência do usuário.
+          tecnologia e tenho experiência em desenvolvimento de aplicações intuitivas
+          e soluções criativas. Gosto de solucionar problemas de jeitos criativos,
+          interfaces visualmente atraentes e que sejam focadas na experência do usuário.
         </p>
-        <p>
+        <p id="about3">
           Adoro desafios, desde melhorar algo que já exista ou até mesmo criar 
           algo completamente novo e encontrar alguma maneira de deixar as coisas
           automáticas.
@@ -130,7 +130,7 @@
 
     <section id="companys" class="about max-width" data-anime="left">
       <div class="companys">
-        <h3 class="tertiary-title mb-m">
+        <h3 id="companys-title" class="tertiary-title mb-m">
           Empresas em que já trabalhei e/ou estive em projetos relacionados.
         </h3>
           <div class="company-logos">
@@ -149,8 +149,8 @@
 
     <section id="skills" class="skills">
       <div class="skills__content" data-anime="right">
-        <h2 class="tertiary-title">Caixa de Ferramentas</h2>
-        <p class="description">
+        <h2 id="skills-title" class="tertiary-title">Caixa de Ferramentas</h2>
+        <p id="skills-desc" class="description">
           Aqui estão algumas habilidades e ferramentas que domino e que me permitem
           criar soluções criativas e funcionais.
         </p>
@@ -159,8 +159,8 @@
             <div class="image-container">
               <img src="assets/automation.png" width="40px" alt="Automações" />
             </div>
-            <h3>Automações</h3>
-            <p>
+            <h3 id="automations">Automações</h3>
+            <p id="automations-title">
               Gosto de criar automações para deixar minhas tarefas mais simples,
               Costumo usar Python e IA para isso.
             </p>
@@ -169,8 +169,8 @@
             <div class="image-container">
               <img src="assets/web-dev.png" width="40px" height="40px" alt=""Desenvolvimento Web />
             </div>
-            <h3>Desenvolvimento Web</h3>
-            <p>
+            <h3 id="webdev-title">Desenvolvimento Web</h3>
+            <p id="webdev-desc">
               Experiência em desenvolvimento com foco em tecnologias
               modernas.
             </p>
@@ -179,8 +179,8 @@
             <div class="image-container">
               <img src="assets/ux.png" width="40px" alt="Web Design" />
             </div>
-            <h3>Web Design</h3>
-            <p>
+            <h3 id="webdes-title">Web Design</h3>
+            <p id="webdes-desc">
               Habilidade em criar layouts modernos e responsivos, com foco na
               experiência do usuário.
             </p>
@@ -189,8 +189,8 @@
             <div class="image-container">
               <img src="assets/uxui.png" width="40px" alt="UX/UI Design" />
             </div>
-            <h3>UX/UI Design</h3>
-            <p>
+            <h3 id="uxui-title">UX/UI Design</h3>
+            <p id="uxui-desc">
               Conhecimentos em design de interface e experiência do usuário
               visualmente atraentes e intuitivas.
             </p>
@@ -199,8 +199,8 @@
             <div class="image-container">
               <img src="assets/github (2).svg" alt="Gerenciamentos de versões" />
             </div>
-            <h3>Gerenciamentos de versões</h3>
-            <p>
+            <h3 id="git-title">Gerenciamentos de versões</h3>
+            <p id="git-desc">
               Experiência em ferramentas de gerenciamento de versão para
               controle de projetos.
             </p>
@@ -214,7 +214,7 @@
     <section id="frontend" class="frontend">
       <div class="frontend__content max-width" data-anime="left">
         <h2 class="tertiary-title">Hard Skills</h2>
-        <p class="description">
+        <p id="frontend-desc" class="description">
           Tecnologias e outras ferramentes que já utilizei e utilizo em meus projetos e nas empresas em que trabalhei.
         </p>
         <h3 class="quartiary-title">Frontend</h3>
@@ -224,7 +224,7 @@
               <img src="assets/html-5.png" width="36px" alt="HTML"/>
             </div>
             <h3>HTML</h3>
-            <p>
+            <p id="A">
               Avançado
             </p>
           </li>
@@ -233,7 +233,7 @@
               <img src="assets/css-3.png" width="36px" alt="CSS" />
             </div>
             <h3>CSS</h3>
-            <p>
+            <p id="A">
               Avançado
             </p>
           </li>
@@ -241,8 +241,8 @@
             <div class="image-container">
               <img src="assets/js.png" alt="Javascript" />
             </div>
-              <h3>Javascript</h3>
-            <p>
+            <h3>Javascript</h3>
+            <p id="I">
               Intermediário
             </p>
           </li>
@@ -251,7 +251,7 @@
               <img src="assets/ts.png" alt="Typescript" />
             </div>
             <h3>Typescript</h3>
-            <p>
+            <p id="B">
               Básico
             </p>
           </li>
@@ -260,7 +260,7 @@
               <img src="assets/react.svg" alt="React" />
             </div>
             <h3>React</h3>
-            <p>
+            <p id="I">
               Intermediário
             </p>
           </li>
@@ -269,7 +269,7 @@
               <img src="assets/nextjs.png" alt="React" />
             </div>
             <h3>NextJS</h3>
-            <p>
+            <p id="I">
               Intermediário
             </p>
           </li>
@@ -278,7 +278,7 @@
               <img src="assets/tailwindcss.png" alt="React" />
             </div>
             <h3>Tailwind</h3>
-            <p>
+            <p id="I">
               Intermediário
             </p>
           </li>
@@ -287,111 +287,92 @@
               <img src="assets/figma.png" alt="figma" />
             </div>
             <h3>Figma</h3>
-            <p>
+            <p id="I">
               Intermediário
             </p>
           </li>
         </ul>
-    </section> 
+      </div>
+    </section>
+    
     <section id="backend" class="backend">
       <div class="backend__content max-width" data-anime="right">
-        <h3 class="quintiary-title">Backend e outras ferramentas que ja utilizei</h3>
+        <h3 id="back-title" class="quintiary-title">Backend e outras ferramentas que ja utilizei</h3>
         <ul>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/csharp.png" alt="CSharp" />
             </div>
             <h3>C#</h3>
-            <p>
-              Básico
-            </p>
+            <p id="B">Básico</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/python.png" alt="Python" />
             </div>
             <h3>Python</h3>
-            <p>
-              Intermediário
-            </p>
+            <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/sql.png" alt="SQL"/>
             </div>
             <h3>SQL</h3>
-            <p>
-              Avançado
-            </p>
+            <p id="A">Avançado</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/node-js.png" alt="node" />
             </div>
             <h3>NodeJs</h3>
-            <p>
-              Intermediário
-            </p>
+            <p id="I">Intermediário</p>
           </li>
-        </li>
-      </li>
-      <li class="backend__item">
-        <div class="image-container">
+          <li class="backend__item">
+            <div class="image-container">
               <img src="assets/jenkins.png" alt="jenkins" />
             </div>
             <h3>Jenkins</h3>
-            <p>
-              Intermediário
-            </p>
+            <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/postman.png" alt="Postman" />
             </div>
             <h3>Postman</h3>
-            <p>
-              Básico
-            </p>
+            <p id="B">Básico</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/soap.png" alt="SoapUI" />
             </div>
             <h3>SoapUI</h3>
-            <p>
-              Básico
-            </p>
+            <p id="B">Básico</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/jira.png" alt="jira" />
             </div>
             <h3>Jira</h3>
-            <p>
-              Avançado
-            </p>
+            <p id="A">Avançado</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/datadog.png" width="40px" alt="datadog" />
             </div>
             <h3>DataDog</h3>
-            <p>
-              Básico
-            </p>
+            <p id="B">Básico</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
               <img src="assets/aws.png" width="40px" alt="aws" />
             </div>
             <h3>Aws</h3>
-            <p>
-              Básico
-            </p>
+            <p id="B">Básico</p>
           </li>
         </ul>
       </div>
     </section>
+    
     <section id="mobile" class="mobile">
       <div class="mobile__content max-width" data-anime="left">
         <h3 class="quintiary-title">Mobile</h3>
@@ -416,8 +397,8 @@
 
     <section id="projects" class="projects">
       <div class="projects__content" data-anime="left">
-        <h2 class="secondary-title">Projetos em Destaque</h2>
-        <p>Aqui estão alguns dos meus projetos mais recentes.</p>
+        <h2 id="projects-title" class="secondary-title">Projetos em Destaque</h2>
+        <p id="projects-desc">Aqui estão alguns dos meus projetos mais recentes.</p>
       </div>
       <ul>
         <li data-anime="left">
@@ -427,12 +408,12 @@
             </a>
           </div>
           <div class="projects__info">
-            <h3 class="tertiary-title">Escolhas de Filmes</h3>
-            <p>
+            <h3 id="proj1-title" class="tertiary-title">Escolhas de Filmes</h3>
+            <p id="proj1-desc">
               Desenvolvido para recomendações de filmes aleatórios para assistir.
               <br>(Feito para facilitar as noites com a namorada rs)
             </p>
-            <p>*Usando API MovieDB</p>
+            <p id="proj1-api">*Usando API MovieDB</p>
             <div class="containers">
               <div class="techs-big">
                 <img src="./assets/html-5.png" width="36px" alt="">
@@ -440,7 +421,7 @@
                 <img src="./assets/js.png" alt="">
                 <img src="./assets/node-js.png" alt="">
               </div>
-              <a href="https://github.com/DavidLucasK/Movie-gen" target="_blank">Acessar Git</a>
+              <a id="proj-git" href="https://github.com/DavidLucasK/Movie-gen" target="_blank">Acessar Git</a>
             </div>
           </div>
         </li>
@@ -452,7 +433,7 @@
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">LoveYouHoney</h3>
-            <p>
+            <p id="proj2-desc">
               App web que fiz para minha namorada poder brincar e ser algo divertido entre a gente.
               <br>*Faz validações e requisições em tempo real com API feita por mim também.
             </p>
@@ -477,7 +458,7 @@
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">Login</h3>
-            <p>
+            <p id="proj3-desc">
               Página de login com validações em tempo real com banco de dados.
             </p>
             <div class="containers">
@@ -501,7 +482,7 @@
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">CalendarTasks</h3>
-            <p>
+            <p id="proj4-desc">
               Calendário com design intuitivo e responsivo, permitindo fácil gerenciamento de eventos e navegação 
               entre datas em qualquer dispositivo. Utiliza cache para guardar informações.
             </p>
@@ -522,8 +503,8 @@
             </a>
           </div>
           <div class="projects__info">
-            <h3 class="tertiary-title">Cotação de moedas em tempo real</h3>
-            <p>
+            <h3 id="proj5-title" class="tertiary-title">Cotação de moedas em tempo real</h3>
+            <p id="proj5-desc">
               Sistema web simples para fazer conversões de moedas em tempo real.
               <br>*Usando API ExchangeRate
             </p>
@@ -546,7 +527,7 @@
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">ToDoList</h3>
-            <p>
+            <p id="proj6-desc">
               ToDoList simples feita com HTML, CSS e JavaScript.
             </p>
             <div class="containers">
@@ -561,35 +542,13 @@
         </li>
         <li data-anime="left">
           <div class="image">
-            <a href="https://youtube-layout-davidlucask.vercel.app/" target="_blank">
-              <img src="assets/youtube-layout.png" alt="Youtube"/>
-            </a>
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">Recriação do layout do Youtube</h3>
-            <p>
-              Recriação do Layout do Youtube feito com React, NextJS e TailwindCSS.
-              <br>*Desenvolvendo responsividade para mobile
-            </p>
-            <div class="containers">
-              <div class="techs">
-                <img src="./assets/react.svg" width="40px" alt="">
-                <img src="./assets/nextjs.png" width="30px" alt="">
-                <img src="./assets/tailwindcss.png" alt="">
-              </div>
-              <a href="https://github.com/DavidLucasK/Youtube-Layout" target="_blank">Acessar Git</a>
-            </div>
-          </div>
-        </li>
-        <li data-anime="right">
-          <div class="image">
             <a href="https://spotify-davidlucas.vercel.app/" target="_blank">
               <img src="assets/spotify.png" alt="Spotify" />
             </a>
           </div>
           <div class="projects__info">
-            <h3 class="tertiary-title">Recriação do layout do Spotify</h3>
-            <p>
+            <h3 id="proj8-title" class="tertiary-title">Recriação do layout do Spotify</h3>
+            <p id="proj8-desc">
               Recriação do Layout do Spotify feito com React, NextJS e TailwindCSS.
               <br>*Desenvolvendo responsividade para mobile
             </p>
@@ -603,6 +562,28 @@
             </div>
           </div>
         </li>
+        <li data-anime="right">
+          <div class="image">
+            <a href="https://youtube-layout-davidlucask.vercel.app/" target="_blank">
+              <img src="assets/youtube-layout.png" alt="Youtube"/>
+            </a>
+          </div>
+          <div class="projects__info">
+            <h3 id="proj7-title" class="tertiary-title">Recriação do layout do Youtube</h3>
+            <p id="proj7-desc">
+              Recriação do Layout do Youtube feito com React, NextJS e TailwindCSS.
+              <br>*Desenvolvendo responsividade para mobile
+            </p>
+            <div class="containers">
+              <div class="techs">
+                <img src="./assets/react.svg" width="40px" alt="">
+                <img src="./assets/nextjs.png" width="30px" alt="">
+                <img src="./assets/tailwindcss.png" alt="">
+              </div>
+              <a href="https://github.com/DavidLucasK/Youtube-Layout" target="_blank">Acessar Git</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </section>
     
@@ -611,7 +592,7 @@
 
     <footer id="footer">
       <div class="footer__content">
-        <h2>Entre em contato</h2>
+        <h2 id="footer-title">Entre em contato</h2>
         <div class="footer__contact mb-m">
         <ul class="mb-l">
           <li>
@@ -633,7 +614,7 @@
             <a href="assets/Curriculo 2024.pdf" download="Currículo"><img src="assets/curriculo.png" alt="Currículo"></a>
           </li>
         </ul>
-        <p class="footer__copyright">
+        <p id="copyright" class="footer__copyright">
           © 2024 David Lucas. Todos os direitos reservados.
         </p>
       </div>
@@ -641,5 +622,6 @@
   </div>
   <!-- Script  -->
   <script type="module" src="scripts/index.js"></script>
+  <script type="module" src="scripts/translations.js"></script>
 </body>
 </html>

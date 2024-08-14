@@ -187,3 +187,15 @@
 .projects.dark-theme .techs-bigxl {
     color: black;
 }
+
+.techs.en::before {
+  content: "Techs Used";
+}
+
+.techs-big.en::before {
+  content: "Techs Used";
+}
+
+.techs-bigxl.en::before {
+  content: "Techs Used";
+}
