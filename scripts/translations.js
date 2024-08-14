@@ -342,58 +342,6 @@ function translatePortuguese() {
     });
 }
 
-
-const brazil = document.querySelector('.brazil');
-const english = document.querySelector('.english');
-const spanish = document.querySelector('.spanish');
-const french = document.querySelector('.french');
-const japanese = document.querySelector('.japanese');
-
-brazil.onclick = function() {
-    cancelAllTypeWriters();
-    titulo.innerHTML = ''; 
-    translatePortuguese();
-    cancelTypeWriter = false; // Reseta o controle de cancelamento
-    typeWriter(titulo, textos); // Inicia a nova função de digitação em japonês
-    hello.style.fontSize = '64px';
-    aplicarIdioma('en');
-}
-
-english.onclick = function() {
-    cancelAllTypeWriters();
-    titulo.innerHTML = ''; 
-    translateEnglish();
-    cancelTypeWriter = false; // Reseta o controle de cancelamento
-    typeWriter(titulo, textosEn); // Inicia a nova função de digitação em japonês
-    hello.style.fontSize = '64px';
-    aplicarIdioma('en');
-}
-
-spanish.onclick = function() {
-    translateSpanish();
-    aplicarIdioma('es');
-}
-
-french.onclick = function() {
-    cancelAllTypeWriters(); // Interrompe qualquer execução anterior de typeWriter
-    titulo.innerHTML = '';
-    translateFrench();
-    cancelTypeWriter = false; // Reseta o controle de cancelamento
-    typeWriter(titulo, textosFr); // Inicia a nova função de digitação em japonês
-    hello.style.fontSize = '60px';
-    aplicarIdioma('fr');
-}
-
-japanese.onclick = function() {
-    cancelAllTypeWriters(); // Interrompe qualquer execução anterior de typeWriter
-    titulo.innerHTML = ''; // Limpa o conteúdo atual antes de iniciar a nova digitação
-    translateJapanese(); // Função de tradução para japonês
-    cancelTypeWriter = false; // Reseta o controle de cancelamento
-    typeWriter(titulo, textosJa); // Inicia a nova função de digitação em japonês
-    hello.style.fontSize = '45px';
-    aplicarIdioma('ja');
-};
-
 // Verificar o idioma do navegador e traduzir se necessário
 if (obterIdiomaNavegador().startsWith('en')) {
     translateEnglish();
@@ -415,7 +363,6 @@ function typeWriter(elemento, textos, index = 0) {
     if (cancelTypeWriter) return; // Se cancelTypeWriter for true, interrompe a função
 
     const originalFontSize = elemento.style.fontSize; // Armazena o tamanho original do texto
-    elemento.style.fontSize = "64px"; // Aplica o novo tamanho
 
     const textoArray = textos[index].split('');
     elemento.innerHTML = '';
@@ -487,6 +434,67 @@ const textosJa = [
     'フロントエンド開発者',
     'フルスタック開発者'
 ];
+
+// Seleciona os elementos das bandeiras no menu desktop
+const brazil = document.querySelector('.navbar .brazil');
+const english = document.querySelector('.navbar .english');
+const spanish = document.querySelector('.navbar .spanish');
+const french = document.querySelector('.navbar .french');
+const japanese = document.querySelector('.navbar .japanese');
+
+// Seleciona os elementos das bandeiras no menu mobile
+const brazilMobile = document.querySelector('.navbar__mobile .brazil');
+const englishMobile = document.querySelector('.navbar__mobile .english');
+const spanishMobile = document.querySelector('.navbar__mobile .spanish');
+const frenchMobile = document.querySelector('.navbar__mobile .french');
+const japaneseMobile = document.querySelector('.navbar__mobile .japanese');
+
+// Função para verificar o tamanho da tela e ajustar o tamanho da fonte
+function adjustFontSizeForLanguage(idioma, baseFontSize) {
+    if (idioma === 'fr') {
+        return window.innerWidth < 768 ? '36px' : baseFontSize;
+    }
+    else if (idioma === 'ja') {
+        return window.innerWidth < 768 ? '30px' : baseFontSize;
+    }
+    return baseFontSize;
+}
+
+// Funções para os eventos de clique
+function setupClickEvents(element, langFunc, textos, baseFontSize, idioma) {
+    element.onclick = function() {
+        cancelAllTypeWriters();
+        titulo.innerHTML = ''; 
+        langFunc();
+        cancelTypeWriter = false; // Reseta o controle de cancelamento
+
+        // Ajuste o tamanho da fonte apenas para os idiomas japonês e francês
+        const adjustedFontSize = adjustFontSizeForLanguage(idioma, baseFontSize);
+
+        // Aplica o tamanho da fonte ajustado para o título e para o texto
+        titulo.style.fontSize = adjustedFontSize;
+        hello.style.fontSize = adjustedFontSize;
+
+        // Inicia a função de digitação com os textos e tamanho de fonte ajustados
+        typeWriter(titulo, textos); 
+        aplicarIdioma(idioma);
+    };
+}
+
+// Configura os eventos de clique para os menus do desktop
+setupClickEvents(brazil, translatePortuguese, textos, '64px', 'pt');
+setupClickEvents(english, translateEnglish, textosEn, '64px', 'en');
+setupClickEvents(spanish, translateSpanish, textosEs, '64px', 'es');
+setupClickEvents(french, translateFrench, textosFr, '60px', 'fr'); // Ajustado para francês
+setupClickEvents(japanese, translateJapanese, textosJa, '50px', 'ja'); // Ajustado para japonês
+
+// Configura os eventos de clique para os menus do mobile
+setupClickEvents(brazilMobile, translatePortuguese, textos, '39px', 'pt');
+setupClickEvents(englishMobile, translateEnglish, textosEn, '39px', 'en');
+setupClickEvents(spanishMobile, translateSpanish, textosEs, '36px', 'es');
+setupClickEvents(frenchMobile, translateFrench, textosFr, '36px', 'fr'); // Ajustado para francês
+setupClickEvents(japaneseMobile, translateJapanese, textosJa, '1px', 'ja'); // Ajustado para japonês
+
 
 function aplicarIdioma(idioma) {
     // Define as classes para cada idioma
