@@ -83,6 +83,12 @@ nav .navbar__content .navbar__mobile .mobile__links {
   opacity: 1;
 }
 
+#checkbox-img {
+  margin-bottom: -5px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
 /* Regras de mídia para dispositivos móveis (320px - 480px) */
 @media only screen and (max-width: 480px) {
   nav .navbar__content {

@@ -1,9 +1,5 @@
 window.onload = function(){
   window.scrollTo(20, 20);
-
-  const img = document.getElementById('checkbox-img');
-  img.style.marginBottom = '-5px';
-  img.style.marginRight = '10px';
 }
 
 

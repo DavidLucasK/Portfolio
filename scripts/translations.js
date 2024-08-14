@@ -310,7 +310,7 @@ function translatePortuguese() {
         'back-title': `Backend e outras ferramentas que já utilizei`,
         'projects-title': 'Projetos em Destaque',
         'projects-desc': 'Aqui estão alguns dos meus projetos mais recentes',
-        'proj1-title': 'Escolhedor de Filmes',
+        'proj1-title': 'Escolhas de Filmes',
         'proj1-desc': `Desenvolvido para recomendações de filmes aleatórios para assistir.<br/>(Feito para facilitar as noites com a namorada rs)`,
         'proj1-api': 'Usando a API MovieDB',
         'proj2-desc': 'App web que fiz para minha namorada poder brincar e ser algo divertido entre a gente.<br>*Faz validações e requisições em tempo real com API feita por mim também.',
@@ -525,7 +525,15 @@ function aplicarIdioma(idioma) {
     techsbigxlElements.forEach(el => el.classList.add(classeParaAdicionar));
 }
 
-aplicarIdioma();
+// Detecta o idioma do navegador e aplica o idioma correspondente
+function detectarIdiomaNavegador() {
+    const idiomaNavegador = navigator.language || navigator.userLanguage;
+    const idiomaPrincipal = idiomaNavegador.split('-')[0]; // Extrai a parte principal do idioma (e.g., 'pt' de 'pt-BR')
+    aplicarIdioma(idiomaPrincipal);
+}
+
+// Chama a função ao carregar a página
+window.onload = detectarIdiomaNavegador;
 
 //Função para escrever o cargo no header de acordo com o idioma
 if (obterIdiomaNavegador().startsWith('pt')) {  
