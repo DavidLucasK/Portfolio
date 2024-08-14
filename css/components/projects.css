@@ -152,6 +152,8 @@ color: white;
   }
   .projects ul li {
     display: grid;
+    gap: 0;
+    margin-bottom: 4rem;
   }
   .projects ul li .image img {
     width: 100%;
