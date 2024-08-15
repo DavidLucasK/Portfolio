@@ -196,6 +196,10 @@ p:not(:last-of-type),
     font-size: 58%;
   }
 
+  body {
+    margin-left: 0 !important;
+  }
+
   .max-width {
     padding: 0 2rem;
   }
