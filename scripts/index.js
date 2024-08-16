@@ -1,3 +1,27 @@
+//Funçao para desabilitar o hover e href do "ev" quando der hover no logo.
+
+const logoev = document.querySelector('.logo-ev');
+const link = logoev.closest('a');
+
+// Remover o cursor pointer
+logoev.style.cursor = 'default';
+
+// Desabilitar o redirecionamento quando o mouse estiver sobre a logo
+logoev.addEventListener('mouseover', (e) => {
+    link.addEventListener('click', preventClick);
+});
+
+// Reabilitar o redirecionamento quando o mouse sair da logo
+logoev.addEventListener('mouseout', (e) => {
+    link.removeEventListener('click', preventClick);
+});
+
+function preventClick(e) {
+    e.preventDefault();
+}
+
+//Função acaba aqui
+
 window.onload = function(){
   window.scrollTo(20, 20);
 }

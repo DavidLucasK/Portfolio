@@ -171,6 +171,7 @@ color: white;
 
   .projects ul li .containers {
     display: flex;
+    gap: 1rem;
   }
 }
 
