@@ -26,6 +26,10 @@
     gap: 4rem;
 }
 
+.square-icon {
+    border-radius: 50%;
+}
+
 .backend .backend__content ul li .image-container {
     background-color: white;
     padding: 2rem;
