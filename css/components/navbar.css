@@ -129,30 +129,17 @@ nav .navbar__content .navbar__mobile .mobile__links {
     margin-top: 2px;
   }
 
-  nav .logo2 {
-    width: 35px;
-    margin-bottom: 7px;
-    margin-left: -10px;
+  nav .logo-ev {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-top: 7px;
+    margin-left: -11px;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
-  }
-  
-  nav .logo3 {
-    width: 32px;
-    margin-bottom: 8px;
-    margin-left: -12px;
-    opacity: 0;
-    visibility: hidden;
     transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  nav .logo-navbar:hover ~ .logo3 {
     opacity: 1;
     visibility: visible;
   }
