@@ -160,7 +160,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(5px);
     position: absolute;
     top: 97px;
@@ -263,7 +263,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(5px);
     position: absolute;
     top: 100px;
