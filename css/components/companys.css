@@ -22,7 +22,7 @@
 
 @media only screen and (max-width: 768px) {
   .companys {
-    padding-right: 0.5rem;
+    margin-left: -1rem;
   }
 
   .companys h3 {
