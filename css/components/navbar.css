@@ -76,6 +76,10 @@ nav .navbar__content .navbar__links a:hover {
   box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
 }
 
+nav .navbar__content .navbar__mobile .mobile__links a {
+  color: black;
+}
+
 .navbar.active {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
