@@ -1,5 +1,4 @@
 .companys #companys-title{
-  width: fit-content;
   text-align: center;
   margin-left: 2rem;
 }
@@ -22,6 +21,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .companys {
+    margin-left: -1.5rem;
+  }
+
   .companys h3 {
       margin-left:  30px;
   }

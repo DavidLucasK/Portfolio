@@ -493,7 +493,7 @@ setupClickEvents(brazilMobile, translatePortuguese, textos, '39px', 'pt');
 setupClickEvents(englishMobile, translateEnglish, textosEn, '39px', 'en');
 setupClickEvents(spanishMobile, translateSpanish, textosEs, '36px', 'es');
 setupClickEvents(frenchMobile, translateFrench, textosFr, '36px', 'fr'); // Ajustado para francês
-setupClickEvents(japaneseMobile, translateJapanese, textosJa, '1px', 'ja'); // Ajustado para japonês
+setupClickEvents(japaneseMobile, translateJapanese, textosJa, '30px', 'ja'); // Ajustado para japonês
 
 
 function aplicarIdioma(idioma) {
