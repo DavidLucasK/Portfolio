@@ -1,12 +1,11 @@
-.companys #companys-title{
-  text-align: center;
-  margin-left: 2rem;
-}
-
 .companys .company-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.companys .company-logos img {
+  filter: drop-shadow(-20px 0px 10px rgba(0, 0, 0, 0.329));
 }
 
 .companys .company-logos img {

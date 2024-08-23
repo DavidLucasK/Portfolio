@@ -26,8 +26,8 @@ window.onload = function(){
   window.scrollTo(20, 20);
 }
 
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+/* Function para acertar o GoTO do Header somente*/
+document.querySelectorAll('a[href="#header"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
     
