@@ -180,7 +180,7 @@ p:not(:last-of-type) {
         mask-image: linear-gradient(
             to right,
             transparent,
-            #000 5% 90%,
+            #000 2% 98%,
             transparent
         );
     }
