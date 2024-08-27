@@ -27,18 +27,36 @@ window.onload = function(){
 }
 
 /* Function para acertar o GoTO do Header somente*/
-document.querySelectorAll('a[href="#header"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    
     const targetId = this.getAttribute('href').substring(1); // Remove o "#"
-    const targetElement = document.getElementById(targetId);
     
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 180, // Ajuste o valor conforme necessário
-        behavior: 'smooth'
-      });
+    // Verifica se o ID não é "SalveUmaCrianca" ou "LoveYouHoney"
+    if (targetId !== "SalveUmaCrianca" && targetId !== "LoveYouHoney") {
+      e.preventDefault();
+
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 180, // Ajuste o valor conforme necessário
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      e.preventDefault();
+
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        // Verifica se a largura da tela é menor que 480px
+        const offset = window.innerWidth < 480 ? 120 : 180;
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - offset, // Ajuste o valor conforme necessário
+          behavior: 'smooth'
+        });
+      }
     }
   });
 });
@@ -318,6 +336,7 @@ checkScreenSize();
 
 
 // Sessão do carrossel de feedbacks
+// Sessão do carrossel de feedbacks
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const ul = document.querySelector('.container-feedbacks ul');
@@ -333,6 +352,28 @@ function initializeCarousel() {
     while (ul.children.length < minItems) {
         items.forEach(item => {
             const clone = item.cloneNode(true);
+
+            // Ajuste os links dentro do clone
+            const originalLink = item.querySelector('a');
+            const clonedLink = clone.querySelector('a');
+
+            // Mantenha o mesmo comportamento de rolagem suave dos links originais
+            if (originalLink && clonedLink) {
+                clonedLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = originalLink.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 120, // Ajuste o valor conforme necessário
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+
             ul.appendChild(clone);
         });
     }
@@ -361,10 +402,10 @@ function updateCarousel() {
     let offset = -currentIndex * (itemWidth + gap) + centerPosition;
 
     if (window.innerWidth > 1025) {
-      ul.style.marginLeft = ("20px");
-  } else if (window.innerWidth < 480) {
-      offset += 10; // Adiciona 10px de deslocamento para telas menores
-  }
+        ul.style.marginLeft = ("20px");
+    } else if (window.innerWidth < 480) {
+        offset += 10; // Adiciona 10px de deslocamento para telas menores
+    }
 
     ul.style.transform = `translateX(${Math.max(Math.min(offset, 0), -(totalWidth - carouselWidth))}px)`;
 }
