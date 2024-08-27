@@ -183,6 +183,7 @@ p:not(:last-of-type) {
             #000 2% 98%,
             transparent
         );
+        overflow-x: scroll;
     }
 
     .container-feedbacks ul {
