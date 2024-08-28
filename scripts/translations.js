@@ -41,7 +41,7 @@ function translateEnglish() {
         'proj1-title': 'Movie Chooser',
         'proj1-desc': `Developed for random movie recommendations to watch.<br/>(Made to make date nights easier, haha)`,
         'proj1-api': 'Using MovieDB API',
-        'proj2-desc': 'A web app I created for my girlfriend to play with and have fun.<br>*It performs real-time validations and requests with an API I also developed.',
+        'proj2-desc': 'A web app I created for my girlfriend to play with and have fun.<br>It performs real-time validations and requests with an API I also developed.',
         'proj3-desc': 'Login page with real-time validations and database integration.',
         'proj4-desc': 'Calendar with an intuitive and responsive design, allowing easy event management and navigation between dates on any device. It uses caching to store information.',
         'proj5-title': 'Currency exchange rates',
