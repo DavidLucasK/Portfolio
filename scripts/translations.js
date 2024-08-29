@@ -58,6 +58,11 @@ function translateEnglish() {
         'copyright': '© 2024 David Lucas. All rights reserved.',
         'cv': 'Resume',
         'proj-git': 'Access Git',
+        'feedback1': `"I was looking for a developer to create the website for the Instituto Salve uma Criança.<br/>Someone with clear ideas, who would execute them with excellence and convey our affection for the project.<br/>The result exceeded all my expectations.<br/>I am very satisfied and highly recommend."`,
+        'feedback2': `"I loved the site David created.The design is beautiful, functional, and full of personalized details that perfectly show who we are as a couple.
+                        He has incredible talent and is very creative in creating these projects.
+                        <br/>If you want a job well done, I highly recommend him!
+                        <br/>(I’m waiting to more "games" to accumulate more LovePoints there!)"`
     };
 
     // Aplicar traduções aos elementos da página
@@ -129,6 +134,8 @@ function translateSpanish() {
         'copyright': '© 2024 David Lucas. Todos los derechos reservados.',
         'cv': 'Currículum',
         'proj-git': 'Acceder a Git',
+        'feedback1': `"Estaba buscando un desarrollador para crear el sitio web del Instituto Salve una Criança.<br/>Alguien con ideas claras, que las ejecutara con excelencia y transmitiera nuestro cariño por el proyecto.<br/>El resultado superó todas mis expectativas.<br/>Estoy muy satisfecho y lo recomiendo encarecidamente."`,
+        'feedback2': `"Me encantó el sitio web que David creó. El diseño es hermoso, funcional y lleno de detalles personalizados que muestran perfectamente quiénes somos como pareja.<br/>Tiene un talento increíble y es muy creativo para crear estos proyectos.<br/>Si quieres un trabajo bien hecho, ¡lo recomiendo muchísimo!<br/>(¡Estoy esperando más "juegos" para acumular más LovePoints allí!)"`
     };
 
     // Aplicar traduções aos elementos da página
@@ -200,6 +207,9 @@ function translateFrench() {
         'copyright': '© 2024 David Lucas. Tous droits réservés.',
         'cv': 'CV',
         'proj-git': 'Accéder à Git',
+        'feedback1': `"Je cherchais un développeur pour créer le site web de l'Institut Salve uma Criança.<br/>Quelqu'un avec des idées claires, qui les réaliserait avec excellence et transmettrait notre affection pour le projet.<br/>Le résultat a dépassé toutes mes attentes.<br/>Je suis très satisfait et je le recommande vivement."`,
+        'feedback2': `"J'ai adoré le site que David a créé. Le design est magnifique, fonctionnel, et plein de détails personnalisés qui montrent parfaitement qui nous sommes en tant que couple.<br/>Il a un talent incroyable et est très créatif pour créer ces projets.<br/>Si vous voulez un travail bien fait, je le recommande vivement !<br/>(J'attends avec impatience d'autres "jeux" pour accumuler plus de LovePoints !)"`
+
     };
 
     // Aplicar traduções aos elementos da página
@@ -272,6 +282,9 @@ function translateJapanese() {
         'copyright': '© 2024 David Lucas. 全著作権所有。',
         'cv': '履歴書',
         'proj-git': 'Gitにアクセス',
+        'feedback1': `"私はInstituto Salve uma Criançaのウェブサイトを作成するための開発者を探していました。<br/>明確なアイデアを持ち、それを卓越した形で実現し、プロジェクトに対する私たちの愛情を伝えることができる人。<br/>結果は私のすべての期待を超えました。<br/>私は非常に満足しており、強くお勧めします。"`,
+        'feedback2': `"デビッドが作成したサイトをとても気に入っています。デザインは美しく、機能的で、私たちがカップルとしてどんな人間かを完璧に示すカスタマイズされた詳細が満載です。<br/>彼は信じられないほどの才能を持ち、これらのプロジェクトを作成するのに非常にクリエイティブです。<br/>もしよい仕事を求めているなら、彼を強くお勧めします！<br/>(もっと多くの"ゲーム"を楽しみにしていて、もっとLovePointsを貯めたいです！)"`
+
     };
 
     // Aplicar traduções aos elementos da página
