@@ -356,6 +356,9 @@ function translatePortuguese() {
         'copyright': '© 2024 David Lucas. Todos os direitos reservados.',
         'cv': 'Currículo',
         'proj-git': 'Acessar Git',
+        'feedback1': `"Estava em busca de um desenvolvedor para criar o site do Instituto Salve uma Criança.<br/>Alguém com ideias claras, e que as concretizasse com excelência e transmitisse o nosso carinho pelo projeto.<br/>O resultado superou todas as minhas expectativas.<br/>Estou muito satisfeito e altamente recomendo."`,
+        'feedback2': `"Adorei o site que o David fez. O design é lindo, funcional, e cheio de detalhes personalizados que mostram perfeitamente como somos como casal. Ele tem um talento incrível e é muito criativo para criar esses projetos. <br/>Se você quer um trabalho bem-feito, eu recomendo demais mesmo! <br/>(Estou esperando mais "games" para acumular mais LovePoints lá!)"`
+
     };
 
     // Aplicar traduções aos elementos da página
