@@ -23,8 +23,8 @@
 }
 
 .skills .skills__content ul li {
-  flex: 1 1 calc(33.333% - 2rem); /* Para 3 itens por linha */
-  max-width: calc(33.333% - 2rem);
+  flex: 1 1 calc(33.333% - 5rem); /* Para 3 itens por linha */
+  max-width: calc(33.333% - 5rem);
 }
 
 .skills .skills__content ul li .image-container {

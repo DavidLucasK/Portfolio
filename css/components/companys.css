@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+#companys-title {
+  text-align: center;
+}
+
 .companys .company-logos img {
   filter: drop-shadow(-20px 0px 10px rgba(0, 0, 0, 0.329));
 }

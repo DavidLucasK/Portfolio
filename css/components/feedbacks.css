@@ -1,7 +1,7 @@
 /* Estilos principais do container do carrossel */
 .container-feedbacks {
     position: relative;
-    padding: 0 35rem 10rem;
+    padding: 0 25rem 10rem;
     width: 100%; /* Ajusta o width para 100% do container pai */
     margin: 0 auto;
     overflow: hidden; /* Esconde o conteúdo que ultrapassa o container */
@@ -11,7 +11,7 @@
 .carousel-wrapper {
     display: flex;
     overflow: hidden; /* Esconde o conteúdo que ultrapassa o container */
-    padding: 5rem 0;
+    padding: 25 0;
     /*Mask-Image dá o efeito de desaparecendo aos cantos */
     mask-image: linear-gradient(
         to right,
@@ -141,7 +141,7 @@ p:not(:last-of-type) {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .container-feedbacks {
-        padding: 0 10rem 5rem; /* Ajuste o padding para telas menores */
+        padding: 0 10rem 25; /* Ajuste o padding para telas menores */
     }
 
     .carousel-wrapper {
@@ -172,7 +172,7 @@ p:not(:last-of-type) {
 
 @media only screen and (max-width: 480px) {
     .container-feedbacks {
-        padding: 0 5rem 2rem; /* Ajuste o padding para telas menores */
+        padding: 0 25 2rem; /* Ajuste o padding para telas menores */
     }
 
     .carousel-wrapper {

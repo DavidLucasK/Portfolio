@@ -62,7 +62,21 @@ function translateEnglish() {
         'feedback2': `"I loved the site David created.The design is beautiful, functional, and full of personalized details that perfectly show who we are as a couple.
                         He has incredible talent and is very creative in creating these projects.
                         <br/>If you want a job well done, I highly recommend him!
-                        <br/>(I’m waiting to more "games" to accumulate more LovePoints there!)"`
+                        <br/>(I’m waiting to more "games" to accumulate more LovePoints there!)"`,
+        'soft-title': 'Soft Skills',
+        'soft-desc': 'Some of the interpersonal skills I have acquired and refined throughout my career',
+        "soft1-title": 'Communication',
+        "soft1-desc": 'I am a communicative and transparent person, always aiming to facilitate understanding and collaboration among everyone.',
+        "soft2-title": 'Teamwork',
+        "soft2-desc": 'I strive to be collaborative, encouraging the sharing of ideas to achieve goals and results.',
+        "soft3-title": 'Adaptability',
+        "soft3-desc": 'I approach changes with flexibility and quickly adapt to new situations to maintain productivity and performance.',
+        "soft4-title": 'Time Management',
+        "soft4-desc": 'I like to organize my time consciously, prioritizing tasks to balance efficiency with well-being.',
+        "soft5-title": 'Creativity',
+        "soft5-desc": 'I use my creativity to challenge the obvious and conventional to find solutions that are not only effective but also innovative.',
+        "soft6-title": 'Resilience',
+        "soft6-desc": 'I face challenges with calm and determination, adjusting flexibly to overcome them with the goal of achieving my objectives.'
     };
 
     // Aplicar traduções aos elementos da página
@@ -135,7 +149,21 @@ function translateSpanish() {
         'cv': 'Currículum',
         'proj-git': 'Acceder a Git',
         'feedback1': `"Estaba buscando un desarrollador para crear el sitio web del Instituto Salve una Criança.<br/>Alguien con ideas claras, que las ejecutara con excelencia y transmitiera nuestro cariño por el proyecto.<br/>El resultado superó todas mis expectativas.<br/>Estoy muy satisfecho y lo recomiendo encarecidamente."`,
-        'feedback2': `"Me encantó el sitio web que David creó. El diseño es hermoso, funcional y lleno de detalles personalizados que muestran perfectamente quiénes somos como pareja.<br/>Tiene un talento increíble y es muy creativo para crear estos proyectos.<br/>Si quieres un trabajo bien hecho, ¡lo recomiendo muchísimo!<br/>(¡Estoy esperando más "juegos" para acumular más LovePoints allí!)"`
+        'feedback2': `"Me encantó el sitio web que David creó. El diseño es hermoso, funcional y lleno de detalles personalizados que muestran perfectamente quiénes somos como pareja.<br/>Tiene un talento increíble y es muy creativo para crear estos proyectos.<br/>Si quieres un trabajo bien hecho, ¡lo recomiendo muchísimo!<br/>(¡Estoy esperando más "juegos" para acumular más LovePoints allí!)"`,
+        'soft-title': 'Soft Skills',
+        'soft-desc': "Algunas de las habilidades interpersonales que he adquirido y perfeccionado a lo largo de mi carrera",
+        "soft1-title": 'Comunicación',
+        "soft1-desc": 'Soy una persona comunicativa y transparente, siempre buscando facilitar la comprensión y la colaboración de todos.',
+        "soft2-title": 'Trabajo en equipo',
+        "soft2-desc": 'Busco ser colaborativo, incentivando el intercambio de ideas para alcanzar metas y resultados.',
+        "soft3-title": 'Adaptabilidad',
+        "soft3-desc": 'Enfrento los cambios con flexibilidad y me adapto rápidamente a nuevas situaciones para mantener la productividad y el rendimiento.',
+        "soft4-title": 'Gestión del tiempo',
+        "soft4-desc": 'Me gusta organizar mi tiempo de manera consciente, priorizando las tareas para equilibrar eficiencia con bienestar.',
+        "soft5-title": 'Creatividad',
+        "soft5-desc": 'Uso mi creatividad para desafiar lo obvio y lo convencional, buscando soluciones que sean no solo efectivas, sino también innovadoras.',
+        "soft6-title": 'Resiliencia',
+        "soft6-desc": 'Enfrento los desafíos con calma y determinación, ajustándome con flexibilidad para superarlos con el objetivo de alcanzar mis metas.'
     };
 
     // Aplicar traduções aos elementos da página
@@ -208,8 +236,21 @@ function translateFrench() {
         'cv': 'CV',
         'proj-git': 'Accéder à Git',
         'feedback1': `"Je cherchais un développeur pour créer le site web de l'Institut Salve uma Criança.<br/>Quelqu'un avec des idées claires, qui les réaliserait avec excellence et transmettrait notre affection pour le projet.<br/>Le résultat a dépassé toutes mes attentes.<br/>Je suis très satisfait et je le recommande vivement."`,
-        'feedback2': `"J'ai adoré le site que David a créé. Le design est magnifique, fonctionnel, et plein de détails personnalisés qui montrent parfaitement qui nous sommes en tant que couple.<br/>Il a un talent incroyable et est très créatif pour créer ces projets.<br/>Si vous voulez un travail bien fait, je le recommande vivement !<br/>(J'attends avec impatience d'autres "jeux" pour accumuler plus de LovePoints !)"`
-
+        'feedback2': `"J'ai adoré le site que David a créé. Le design est magnifique, fonctionnel, et plein de détails personnalisés qui montrent parfaitement qui nous sommes en tant que couple.<br/>Il a un talent incroyable et est très créatif pour créer ces projets.<br/>Si vous voulez un travail bien fait, je le recommande vivement !<br/>(J'attends avec impatience d'autres "jeux" pour accumuler plus de LovePoints !)"`,
+        'soft-title': "Soft Skills",
+        'soft-desc': `Certaines des compétences interpersonnelles que j'ai acquises et affinées tout au long de ma carrière`,
+        "soft1-title": `Communication`,
+        "soft1-desc": `Je suis une personne communicative et transparente, cherchant toujours à faciliter la compréhension et la collaboration de tous.`,
+        "soft2-title": `Travail en équipe`,
+        "soft2-desc": `Je cherche à être collaboratif, en encourageant le partage d’idées pour atteindre des objectifs et des résultats.`,
+        "soft3-title": `Adaptabilité`,
+        "soft3-desc": `J’aborde les changements avec flexibilité et m’adapte rapidement à de nouvelles situations pour maintenir la productivité et les performances.`,
+        "soft4-title": `Gestion du temps`,
+        "soft4-desc": `J’aime organiser mon temps de manière consciente, en priorisant les tâches pour équilibrer efficacité et bien-être.`,
+        "soft5-title": `Créativité`,
+        "soft5-desc": `J’utilise ma créativité pour remettre en question les évidences et les conventions afin de trouver des solutions qui soient non seulement efficaces mais aussi innovantes.`,
+        "soft6-title": `Résilience`,
+        "soft6-desc": `J’aborde les défis avec calme et détermination, en m’ajustant avec flexibilité pour les surmonter et atteindre mes objectifs.`
     };
 
     // Aplicar traduções aos elementos da página
@@ -283,8 +324,21 @@ function translateJapanese() {
         'cv': '履歴書',
         'proj-git': 'Gitにアクセス',
         'feedback1': `"私はInstituto Salve uma Criançaのウェブサイトを作成するための開発者を探していました。<br/>明確なアイデアを持ち、それを卓越した形で実現し、プロジェクトに対する私たちの愛情を伝えることができる人。<br/>結果は私のすべての期待を超えました。<br/>私は非常に満足しており、強くお勧めします。"`,
-        'feedback2': `"デビッドが作成したサイトをとても気に入っています。デザインは美しく、機能的で、私たちがカップルとしてどんな人間かを完璧に示すカスタマイズされた詳細が満載です。<br/>彼は信じられないほどの才能を持ち、これらのプロジェクトを作成するのに非常にクリエイティブです。<br/>もしよい仕事を求めているなら、彼を強くお勧めします！<br/>(もっと多くの"ゲーム"を楽しみにしていて、もっとLovePointsを貯めたいです！)"`
-
+        'feedback2': `"デビッドが作成したサイトをとても気に入っています。デザインは美しく、機能的で、私たちがカップルとしてどんな人間かを完璧に示すカスタマイズされた詳細が満載です。<br/>彼は信じられないほどの才能を持ち、これらのプロジェクトを作成するのに非常にクリエイティブです。<br/>もしよい仕事を求めているなら、彼を強くお勧めします！<br/>(もっと多くの"ゲーム"を楽しみにしていて、もっとLovePointsを貯めたいです！)"`,
+        'soft-title': "ソフトスキル",
+        'soft-desc': "キャリアを通じて習得し、磨いてきた対人スキルのいくつか",
+        "soft1-title": `コミュニケーション`,
+        "soft1-desc": `私はコミュニケーション能力が高く、透明性のある行動を心掛けており、すべての人が理解しやすく協力しやすい環境を作るよう努めています。`,
+        "soft2-title": `チームワーク`,
+        "soft2-desc": `協力的な姿勢を大切にし、目標や成果を達成するためにアイデアの共有を促進しています。`,
+        "soft3-title": `適応力`,
+        "soft3-desc": `変化に柔軟に対応し、新しい状況に迅速に適応して生産性とパフォーマンスを維持しています。`,
+        "soft4-title": `時間管理`,
+        "soft4-desc": `時間を意識的に整理し、効率と幸福のバランスを取るためにタスクの優先順位をつけることを好みます。`,
+        "soft5-title": `創造性`,
+        "soft5-desc": `創造力を活かして、既存の枠にとらわれず、効果的でありながら革新的な解決策を見つけることを目指しています。`,
+        "soft6-title": `レジリエンス`,
+        "soft6-desc": `冷静かつ決断力を持って挑戦に臨み、目標を達成するために柔軟に対応して乗り越えています。`
     };
 
     // Aplicar traduções aos elementos da página
@@ -357,8 +411,21 @@ function translatePortuguese() {
         'cv': 'Currículo',
         'proj-git': 'Acessar Git',
         'feedback1': `"Estava em busca de um desenvolvedor para criar o site do Instituto Salve uma Criança.<br/>Alguém com ideias claras, e que as concretizasse com excelência e transmitisse o nosso carinho pelo projeto.<br/>O resultado superou todas as minhas expectativas.<br/>Estou muito satisfeito e altamente recomendo."`,
-        'feedback2': `"Adorei o site que o David fez. O design é lindo, funcional, e cheio de detalhes personalizados que mostram perfeitamente como somos como casal. Ele tem um talento incrível e é muito criativo para criar esses projetos. <br/>Se você quer um trabalho bem-feito, eu recomendo demais mesmo! <br/>(Estou esperando mais "games" para acumular mais LovePoints lá!)"`
-
+        'feedback2': `"Adorei o site que o David fez. O design é lindo, funcional, e cheio de detalhes personalizados que mostram perfeitamente como somos como casal. Ele tem um talento incrível e é muito criativo para criar esses projetos. <br/>Se você quer um trabalho bem-feito, eu recomendo demais mesmo! <br/>(Estou esperando mais "games" para acumular mais LovePoints lá!)"`,
+        'soft-title': 'Soft Skills',
+        'soft-desc': 'Algumas das competências interpessoais que adquiri e refinei ao longo da minha carreira.',
+        "soft1-title": 'Comunicação',
+        "soft1-desc": 'Sou uma pessoa comunicativa e transparente, buscando sempre a facilitar a compreensão e colaboração de todos.',
+        "soft2-title": 'Trabalho em equipe',
+        "soft2-desc": 'Busco ser colaborativo, incentivando o compartilhamento de ideias para alcançar metas e resultados.',
+        "soft3-title": 'Adaptabilidade',
+        "soft3-desc": 'Encaro mudanças com flexibilidade e me adapto rápido a novas situações para manter a produtividade e o desempenho.',
+        "soft4-title": 'Gestão do tempo',
+        "soft4-desc": ' Gosto de organizar meu tempo de maneira consciente, priorizando as tarefas para equilibrar eficiência com bem-estar.',
+        "soft5-title": 'Criatividade',
+        "soft5-desc": 'Uso a minha criatividade para desafiar o óbvio e oconvencional para encontrar soluções que sejam não apenas eficazes, mas também inovadoras.',
+        "soft6-title": 'Resiliência',
+        "soft6-desc": 'Encaro desafios com calma e determinação, me ajustando com flexibilidade para superá-los visando alcançar meus objetivos.',
     };
 
     // Aplicar traduções aos elementos da página
