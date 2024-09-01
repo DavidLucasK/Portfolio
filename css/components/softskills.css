@@ -57,7 +57,7 @@
     margin: 2rem 0 1rem;
   }
   
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .soft {
         flex-direction: column;
         align-items: center;
@@ -83,12 +83,12 @@
     }
   
     .soft .soft__content ul li .image-container {
-        width: 100px;
-        height: 100px;
+        width: 8rem;
+        height: 8rem;
     }
 
     .soft .soft__content ul li .image-container img {
-        max-width: 40px;
+        max-width: 36px;
     }
   
     .soft .soft__content ul li h3 {
