@@ -166,7 +166,7 @@ function updateTheme() {
   const projects = document.querySelector('.projects');
   const nissan = document.querySelector('.nissanlogo');
   const thomson = document.querySelector('.thomsonlogo');
-  const feedbacks = document.querySelector(".feedbacks");
+  // const feedbacks = document.querySelector(".feedbacks");
   const aspasElements = document.querySelectorAll('.aspas');
 
   const checkbox = document.getElementById("dark-mode-toggle");
@@ -183,7 +183,7 @@ function updateTheme() {
     backend.classList.add('dark-theme');
     mobile.classList.add('dark-theme');
     projects.classList.add('dark-theme');
-    feedbacks.classList.add('dark-theme');
+    // feedbacks.classList.add('dark-theme');
     nissan.setAttribute("src", "assets/nissandark.png");
     thomson.setAttribute("src", "assets/thomsonreutersdark.png");
     
@@ -203,7 +203,7 @@ function updateTheme() {
     backend.classList.remove('dark-theme');
     mobile.classList.remove('dark-theme');
     projects.classList.remove('dark-theme');
-    feedbacks.classList.remove('dark-theme');
+    // feedbacks.classList.remove('dark-theme');
     nissan.setAttribute("src", "assets/nissan.png");
     thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
     
@@ -254,7 +254,7 @@ function updateThemeMobile() {
   const projects = document.querySelector('.projects');
   const nissan = document.querySelector('.nissanlogo');
   const thomson = document.querySelector('.thomsonlogo');
-  const feedbacks = document.querySelector(".feedbacks");
+  // const feedbacks = document.querySelector(".feedbacks");
   const aspasElements = document.querySelectorAll('.aspas');
 
   const checkbox = document.getElementById("dark-mode-toggle1");
@@ -271,7 +271,7 @@ function updateThemeMobile() {
     backend.classList.add('dark-theme');
     mobile.classList.add('dark-theme');
     projects.classList.add('dark-theme');
-    feedbacks.classList.add('dark-theme');
+    // feedbacks.classList.add('dark-theme');
     nissan.setAttribute("src", "assets/nissandark.png");
     thomson.setAttribute("src", "assets/thomsonreutersdark.png");
     
@@ -290,7 +290,7 @@ function updateThemeMobile() {
     backend.classList.remove('dark-theme');
     mobile.classList.remove('dark-theme');
     projects.classList.remove('dark-theme');
-    feedbacks.classList.remove('dark-theme');
+    // feedbacks.classList.remove('dark-theme');
     nissan.setAttribute("src", "assets/nissan.png");
     thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
 
@@ -343,96 +343,96 @@ checkScreenSize();
 
 // Sessão do carrossel de feedbacks
 // Sessão do carrossel de feedbacks
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-const ul = document.querySelector('.container-feedbacks ul');
-let items = Array.from(ul.children);
-let totalItems = items.length;
-let itemWidth = items[0].offsetWidth; // Largura de um item
-let gap = parseFloat(getComputedStyle(ul).gap); // Obtém o gap entre os itens
-const minItems = 50; // Número mínimo de itens
-let currentIndex = 0; // Inicializa no primeiro item
+// const prevBtn = document.querySelector('.prev-btn');
+// const nextBtn = document.querySelector('.next-btn');
+// const ul = document.querySelector('.container-feedbacks ul');
+// let items = Array.from(ul.children);
+// let totalItems = items.length;
+// let itemWidth = items[0].offsetWidth; // Largura de um item
+// let gap = parseFloat(getComputedStyle(ul).gap); // Obtém o gap entre os itens
+// const minItems = 50; // Número mínimo de itens
+// let currentIndex = 0; // Inicializa no primeiro item
 
-function initializeCarousel() {
-    // Duplicar itens até atingir o número mínimo
-    while (ul.children.length < minItems) {
-        items.forEach(item => {
-            const clone = item.cloneNode(true);
+// function initializeCarousel() {
+//     // Duplicar itens até atingir o número mínimo
+//     while (ul.children.length < minItems) {
+//         items.forEach(item => {
+//             const clone = item.cloneNode(true);
 
-            // Ajuste os links dentro do clone
-            const originalLink = item.querySelector('a');
-            const clonedLink = clone.querySelector('a');
+//             // Ajuste os links dentro do clone
+//             const originalLink = item.querySelector('a');
+//             const clonedLink = clone.querySelector('a');
 
-            // Mantenha o mesmo comportamento de rolagem suave dos links originais
-            if (originalLink && clonedLink) {
-                clonedLink.addEventListener('click', function(e) {
-                    e.preventDefault();
+//             // Mantenha o mesmo comportamento de rolagem suave dos links originais
+//             if (originalLink && clonedLink) {
+//                 clonedLink.addEventListener('click', function(e) {
+//                     e.preventDefault();
 
-                    const targetId = originalLink.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
+//                     const targetId = originalLink.getAttribute('href').substring(1);
+//                     const targetElement = document.getElementById(targetId);
                     
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 120, // Ajuste o valor conforme necessário
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            }
+//                     if (targetElement) {
+//                         window.scrollTo({
+//                             top: targetElement.offsetTop - 120, // Ajuste o valor conforme necessário
+//                             behavior: 'smooth'
+//                         });
+//                     }
+//                 });
+//             }
 
-            ul.appendChild(clone);
-        });
-    }
+//             ul.appendChild(clone);
+//         });
+//     }
 
-    // Atualiza o array de itens e o número total de itens
-    updateItemVariables();
-    // Atualiza o carrossel para garantir que o primeiro item esteja visível
-    updateCarousel();
-}
+//     // Atualiza o array de itens e o número total de itens
+//     updateItemVariables();
+//     // Atualiza o carrossel para garantir que o primeiro item esteja visível
+//     updateCarousel();
+// }
 
-function updateItemVariables() {
-    // Atualiza o array de itens e o número total de itens
-    items = Array.from(ul.children);
-    totalItems = items.length;
-    itemWidth = items[0].offsetWidth; // Atualiza a largura do item
-    gap = parseFloat(getComputedStyle(ul).gap); // Atualiza o gap
-}
+// function updateItemVariables() {
+//     // Atualiza o array de itens e o número total de itens
+//     items = Array.from(ul.children);
+//     totalItems = items.length;
+//     itemWidth = items[0].offsetWidth; // Atualiza a largura do item
+//     gap = parseFloat(getComputedStyle(ul).gap); // Atualiza o gap
+// }
 
-function updateCarousel() {
-    // Calcula a posição do item centralizado
-    const carouselWidth = ul.parentElement.offsetWidth;
-    const totalWidth = (itemWidth + gap) * totalItems - gap; // Considera o gap total
-    const centerPosition = (carouselWidth - itemWidth) / 2;
+// function updateCarousel() {
+//     // Calcula a posição do item centralizado
+//     const carouselWidth = ul.parentElement.offsetWidth;
+//     const totalWidth = (itemWidth + gap) * totalItems - gap; // Considera o gap total
+//     const centerPosition = (carouselWidth - itemWidth) / 2;
 
-    // Calcula o offset necessário para centralizar o item
-    let offset = -currentIndex * (itemWidth + gap) + centerPosition;
+//     // Calcula o offset necessário para centralizar o item
+//     let offset = -currentIndex * (itemWidth + gap) + centerPosition;
 
-    if (window.innerWidth > 1025) {
-        ul.style.marginLeft = ("20px");
-    } else if (window.innerWidth < 480) {
-        offset += 10; // Adiciona 10px de deslocamento para telas menores
-    }
+//     if (window.innerWidth > 1025) {
+//         ul.style.marginLeft = ("20px");
+//     } else if (window.innerWidth < 480) {
+//         offset += 10; // Adiciona 10px de deslocamento para telas menores
+//     }
 
-    ul.style.transform = `translateX(${Math.max(Math.min(offset, 0), -(totalWidth - carouselWidth))}px)`;
-}
+//     ul.style.transform = `translateX(${Math.max(Math.min(offset, 0), -(totalWidth - carouselWidth))}px)`;
+// }
 
-function goToIndex(index) {
-    currentIndex = index;
-    updateCarousel();
-}
+// function goToIndex(index) {
+//     currentIndex = index;
+//     updateCarousel();
+// }
 
-prevBtn.addEventListener('click', () => {
-    const newIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-    goToIndex(newIndex);
-});
+// prevBtn.addEventListener('click', () => {
+//     const newIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+//     goToIndex(newIndex);
+// });
 
-nextBtn.addEventListener('click', () => {
-    const newIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
-    goToIndex(newIndex);
-});
+// nextBtn.addEventListener('click', () => {
+//     const newIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+//     goToIndex(newIndex);
+// });
 
-// Inicializa o carrossel e ajusta o número de itens
-initializeCarousel();
+// // Inicializa o carrossel e ajusta o número de itens
+// initializeCarousel();
 
-// Recalcula o carrossel quando a janela for redimensionada
-window.addEventListener('resize', updateCarousel);
+// // Recalcula o carrossel quando a janela for redimensionada
+// window.addEventListener('resize', updateCarousel);
