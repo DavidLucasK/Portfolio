@@ -142,6 +142,10 @@
   .soft.dark-theme {
     background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;
   }
+
+  .soft.dark-theme .tertiary-title{
+    color: #FFF;
+  }
   
   .soft__content.dark-theme {
     background: linear-gradient(180deg, #1d1d1d, #1d1d1d) no-repeat;

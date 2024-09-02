@@ -158,6 +158,7 @@ function updateTheme() {
   const header = document.querySelector('header');
   const about = document.querySelector('.about');
   const skills = document.querySelector('.skills');
+  const soft = document.querySelector('.soft');
   const skills__content = document.querySelector('.skills .skills__content');
   const frontend = document.querySelector('.frontend');
   const backend = document.querySelector('.backend');
@@ -176,6 +177,7 @@ function updateTheme() {
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
+    soft.classList.add('dark-theme');
     skills__content.classList.add('dark-theme');
     frontend.classList.add('dark-theme');
     backend.classList.add('dark-theme');
@@ -195,6 +197,7 @@ function updateTheme() {
     header.classList.remove('dark-theme');
     about.classList.remove('dark-theme');
     skills.classList.remove('dark-theme');
+    soft.classList.remove('dark-theme');
     skills__content.classList.remove('dark-theme');
     frontend.classList.remove('dark-theme');
     backend.classList.remove('dark-theme');
@@ -243,6 +246,7 @@ function updateThemeMobile() {
   const header = document.querySelector('header');
   const about = document.querySelector('.about');
   const skills = document.querySelector('.skills');
+  const soft = document.querySelector('.soft');
   const skills__content = document.querySelector('.skills .skills__content');
   const frontend = document.querySelector('.frontend');
   const backend = document.querySelector('.backend');
@@ -261,6 +265,7 @@ function updateThemeMobile() {
     header.classList.add('dark-theme');
     about.classList.add('dark-theme');
     skills.classList.add('dark-theme');
+    soft.classList.add('dark-theme');
     skills__content.classList.add('dark-theme');
     frontend.classList.add('dark-theme');
     backend.classList.add('dark-theme');
@@ -279,6 +284,7 @@ function updateThemeMobile() {
     header.classList.remove('dark-theme');
     about.classList.remove('dark-theme');
     skills.classList.remove('dark-theme');
+    soft.classList.remove('dark-theme');
     skills__content.classList.remove('dark-theme');
     frontend.classList.remove('dark-theme');
     backend.classList.remove('dark-theme');
