@@ -86,8 +86,20 @@
     transform: scale(0.8);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   #language-img {
-    margin-top: 7px;
+    margin-top: 6px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #language-img {
+    margin-top: 9px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  #language-img {
+    margin-top: 0px;
   }
 }

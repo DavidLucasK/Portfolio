@@ -235,6 +235,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .navbar__content .navbar__mobile {
     display: flex;
     margin-top: 0;
+    gap: 10px;
   }
 
   nav .navbar__content .navbar__mobile img {
@@ -320,6 +321,10 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   nav .navbar__content .navbar__mobile {
     display: none;
+  }
+
+  .navbar__mobile .container-check img {
+    margin-top: -10px;
   }
 }
 
