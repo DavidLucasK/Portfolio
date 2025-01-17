@@ -3,7 +3,7 @@ footer {
     justify-content: center;
     align-items: center;
     animation: gradient 10s ease infinite;
-    background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+    background: linear-gradient(90deg, #0F172A, #334155, #1E293B);
     background-size: 200% 200%;
     margin-right: -20px;
 }
