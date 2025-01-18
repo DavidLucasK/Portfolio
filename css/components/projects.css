@@ -75,7 +75,7 @@
   color: white;
   border-radius: 12px;
   padding: 23px;
-  background: linear-gradient(90deg, #0e11a5, #307bd0);
+  background: linear-gradient(90deg, #340ea5, #7b30d0);
   box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.699) 0px -2px 6px 0px inset;
   transition: filter 0.5s ease-in-out;
 }
