@@ -23,20 +23,54 @@ header .header__left {
   height: 200px;
 }
 
-header .header__right img {
+.header__right {
+  position: relative;
   width: 300px;
   height: 300px;
   margin-left: -350px;
   border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
-  animation: gradient 10s ease infinite;
-  background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
-  background-size: 300% 200%;
-  filter: brightness(110%);
-  filter: contrast(135%);
-  transition: 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.445) -30px 10px 30px;
 }
 
+/* Imagem original no ::before */
+.header__right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url('../../assets/avatar-big-david_NO_BG.png') no-repeat center/cover, 
+    linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555);
+  border-radius: inherit;
+  filter: brightness(110%);
+  filter: contrast(135%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Imagem hover no ::after */
+.header__right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: url('../../assets/perfil23.png') no-repeat center/cover,
+              linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555);
+  border-radius: inherit;
+  opacity: 0; /* Fica invisível inicialmente */
+  transition: opacity 0.5s ease-in-out;
+  filter: brightness(110%);
+  filter: contrast(135%);
+  transform: translateY(30px);
+}
+
+/* Faz a troca da imagem ao passar o mouse */
+.header__right:hover::after {
+  opacity: 1;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
   header {
@@ -71,11 +105,12 @@ header .header__right img {
     height: 300px;
   }
 
-  header .header__right img {
+  header .header__right {
     width: 180px;
     height: 180px;
     margin: 0 auto;
     border-radius: 100%;
+    background-color: blue;
   }
 
   body.dark-theme .mobile__links a {
@@ -102,7 +137,7 @@ header .header__right img {
     margin-bottom: 300px;
   }
 
-  header .header__right img {
+  header .header__right {
     width: 180px;
     height: 180px;
     margin: 0 auto;
@@ -132,7 +167,7 @@ header .header__right img {
     margin-bottom: 200px;
   }
 
-  header .header__right img {
+  header .header__right {
     width: 180px;
     height: 180px;
     margin: 0 auto;
@@ -169,7 +204,7 @@ header.dark-theme h1 {
   color: white;
 }
 
-header.dark-theme .header__right img {
+header.dark-theme .header__right {
   filter: brightness(100%);
 }
 
