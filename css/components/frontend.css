@@ -83,6 +83,11 @@
       gap: 2rem;
       grid-template-columns: repeat(2, 1fr); /* Duas colunas */
     }
+
+    /* Feio porém necessário */
+    .frontend .frontend__content .top_image_section {
+      grid-template-columns: repeat(1, 1fr);
+    }
   
     .frontend .frontend__content ul li .image-container {
       width: 8rem;
