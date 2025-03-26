@@ -46,7 +46,7 @@ header .header__left {
   background: 
     url('../../assets/avatar-big-david_NO_BG.webp') no-repeat center/cover;
   border-radius: inherit;
-  filter: brightness(110%) contrast(135%);
+  filter: brightness(100%) contrast(120%);
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -190,9 +190,6 @@ header .header__left {
     width: 100vw;
   }
 }
-
-
-
 
 /* Tema Dark */
 body.dark-theme {
