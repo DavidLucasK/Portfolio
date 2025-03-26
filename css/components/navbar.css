@@ -23,7 +23,7 @@ nav .navbar__content {
 }
 
 nav .logo-navbar {
-  width: 120px;
+  width: 100px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -33,10 +33,10 @@ nav .logo-navbar:hover {
 
 nav .logo-ev {
   position: absolute;
-  width: 90px;
-  height: 85px;
-  margin-top: 24px;
-  margin-left: -30px;
+  width: 280px;
+  height: 145px;
+  margin-top: -16px;
+  margin-left: -40px;
   opacity: 0;
   transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
 }
@@ -124,19 +124,16 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .logo-navbar {
-    width: 50px;
+    width: 60px;
     margin-left: 0;
     margin-top: 2px;
   }
 
   nav .logo-ev {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    margin-top: 7px;
-    margin-left: -11px;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
+    width: 150px;
+    height: 75px;
+    margin-top: -3px;
+    margin-left: -23px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -214,13 +211,10 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .logo-ev {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    margin-top: 10px;
-    margin-left: -14px;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
+    width: 200px;  /* Ajusta o tamanho para tablets */
+    height: 100px;
+    margin-top: -18px;
+    margin-left: -27px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -297,13 +291,10 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .logo-ev {
-    position: absolute;
-    width: 55px;
-    height: 50px;
-    margin-top: 13px;
-    margin-left: -17px;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
+    width: 200px;  /* Ajusta o tamanho para laptops */
+    height: 100px;
+    margin-top: -12px;
+    margin-left: -28px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -313,10 +304,11 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   nav .navbar__content .navbar__links {
     display: flex;
+    max-width: 500px;
   }
 
   nav .navbar__content .navbar__links a {
-    font-size: 13pt;
+    font-size: 10pt;
   }
 
   nav .navbar__content .navbar__mobile {
@@ -342,13 +334,10 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .logo-ev {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    margin-top: 13px;
-    margin-left: -19px;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+    width: 220px;  /* Mantém o tamanho original para desktops */
+    height: 110px;
+    margin-top: -10px;
+    margin-left: -30px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {

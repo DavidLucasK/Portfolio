@@ -57,31 +57,31 @@
   }
 
 .brazil {
-    background-image: url('../../assets/brasil.png');
+    background-image: url('../../assets/brasil.webp');
     cursor: pointer;
     transform: scale(0.8);
 }
 
 .english {
-    background-image: url('../../assets/english.png');
+    background-image: url('../../assets/english.webp');
     cursor: pointer;
     transform: scale(0.8);
 }
 
 .spanish {
-    background-image: url('../../assets/spanish.png');
+    background-image: url('../../assets/spanish.webp');
     cursor: pointer;
     transform: scale(0.8);
 }
 
 .french {
-    background-image: url('../../assets/french.png');
+    background-image: url('../../assets/french.webp');
     cursor: pointer;
     transform: scale(0.8);
 }
 
 .japanese {
-    background-image: url('../../assets/japanese.png');
+    background-image: url('../../assets/japanese.webp');
     cursor: pointer;
     transform: scale(0.8);
 }

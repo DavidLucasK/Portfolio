@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Adiciona um evento de clique ao botão burger
   burger.addEventListener('click', () => {
     // Verifica se a lista de links mobile está visível
-    burger.setAttribute("src", "assets/close.png");
+    burger.setAttribute("src", "assets/close.webp");
 
-    if (burger.src.endsWith('assets/close.png')) {
+    if (burger.src.endsWith('assets/close.webp')) {
       // Altere o valor da largura conforme necessário
       burger.style.width = '25px';
       burger.style.height = '25px';
@@ -184,11 +184,11 @@ function updateTheme() {
     mobile.classList.add('dark-theme');
     projects.classList.add('dark-theme');
     // feedbacks.classList.add('dark-theme');
-    nissan.setAttribute("src", "assets/nissandark.png");
-    thomson.setAttribute("src", "assets/thomsonreutersdark.png");
+    nissan.setAttribute("src", "assets/nissandark.webp");
+    thomson.setAttribute("src", "assets/thomsonreutersdark.webp");
     
     aspasElements.forEach(aspas => {
-      aspas.setAttribute("src", "assets/aspas-dark.png");
+      aspas.setAttribute("src", "assets/aspas-dark.webp");
     });
   } else {
     body.classList.remove('dark-theme');
@@ -204,11 +204,11 @@ function updateTheme() {
     mobile.classList.remove('dark-theme');
     projects.classList.remove('dark-theme');
     // feedbacks.classList.remove('dark-theme');
-    nissan.setAttribute("src", "assets/nissan.png");
-    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
+    nissan.setAttribute("src", "assets/nissan.webp");
+    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.webp");
     
     aspasElements.forEach(aspas => {
-      aspas.setAttribute("src", "assets/aspas.png");
+      aspas.setAttribute("src", "assets/aspas.webp");
     });
   }
 }
@@ -228,11 +228,11 @@ document.getElementById("checkbox-img").addEventListener("click", function() {
   checkbox.checked = !checkbox.checked;
 
   if (checkbox.checked) {
-    img.setAttribute("src", "assets/dark-theme.png");
+    img.setAttribute("src", "assets/dark-theme.webp");
     img.style.width = '25px';
     img.style.height = '25px';
   } else {
-    img.setAttribute("src", "assets/theme.png");
+    img.setAttribute("src", "assets/theme.webp");
     img.style.width = '25px';
     img.style.height = '25px';
   }
@@ -272,11 +272,11 @@ function updateThemeMobile() {
     mobile.classList.add('dark-theme');
     projects.classList.add('dark-theme');
     // feedbacks.classList.add('dark-theme');
-    nissan.setAttribute("src", "assets/nissandark.png");
-    thomson.setAttribute("src", "assets/thomsonreutersdark.png");
+    nissan.setAttribute("src", "assets/nissandark.webp");
+    thomson.setAttribute("src", "assets/thomsonreutersdark.webp");
     
     aspasElements.forEach(aspas => {
-      aspas.setAttribute("src", "assets/aspas-dark.png");
+      aspas.setAttribute("src", "assets/aspas-dark.webp");
     });
   } else {
     body.classList.remove('dark-theme');
@@ -291,11 +291,11 @@ function updateThemeMobile() {
     mobile.classList.remove('dark-theme');
     projects.classList.remove('dark-theme');
     // feedbacks.classList.remove('dark-theme');
-    nissan.setAttribute("src", "assets/nissan.png");
-    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.png");
+    nissan.setAttribute("src", "assets/nissan.webp");
+    thomson.setAttribute("src", "assets/Thomson_Reuters_logo.webp");
 
     aspasElements.forEach(aspas => {
-      aspas.setAttribute("src", "assets/aspas.png");
+      aspas.setAttribute("src", "assets/aspas.webp");
     });
   }
 }
@@ -308,11 +308,11 @@ document.getElementById("checkbox-img1").addEventListener("click", function() {
   checkbox.checked = !checkbox.checked;
 
   if (checkbox.checked) {
-    img.setAttribute("src", "assets/dark-theme.png");
+    img.setAttribute("src", "assets/dark-theme.webp");
     img.style.width = '25px';
     img.style.height = '25px';
   } else {
-    img.setAttribute("src", "assets/theme.png");
+    img.setAttribute("src", "assets/theme.webp");
     img.style.width = '25px';
     img.style.height = '25px';
   }

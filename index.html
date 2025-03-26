@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
   <!-- Scripts -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+
   <!-- Fonts -->
-    
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+
   <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
   <meta name="theme-color" content="#340ea5">
   <!-- Cor para Temas IOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <!-- Title -->
   <title>DavidLucas - Portfolio</title>
+
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/Logo.webp" type="image/x-icon">
+
   <!-- CSS -->
-  <link rel="stylesheet" href="css/extends.css">
-  <!-- Fonts  -->
+  <link rel="stylesheet" href="css/extends.css" media="print" onload="this.media='all'">
+
+  <!-- Fonts Adicionais -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
+
 <body>
   <!-- Navbar  -->
   <nav class="navbar">
-      <div class="navbar__content">
-        <a class="logo-container" href="/">
-          <img src="assets/Logo.png" class="logo-navbar" alt="Logo que significam D e L de David Lucas">
-          <img src="assets/LogoEV.png" class="logo-ev" alt="Logo DavidLucas 1Developer">
-        </a>
-        <ul class="navbar__links">
+    <div class="navbar__content">
+      <a class="logo-container" href="/">
+        <img src="assets/Logo.webp" class="logo-navbar" alt="Logo que significam D e L de David Lucas">
+        <img src="assets/eveloper1.webp" class="logo-ev" alt="Logo DavidLucas 1Developer">
+      </a>
+      <ul class="navbar__links">
+        <li><a id="header-nav" href="#header">Início</a></li>
+        <li><a id="about-nav" href="#about">Sobre</a></li>
+        <li><a id="skills-nav" href="#skills">Habilidades</a></li>
+        <li><a id="frontend-nav" href="#frontend">Tecnologias</a></li>
+        <li><a id="projects-nav" href="#projects">Projetos</a></li>
+        <li><a id="footer-nav" href="#footer">Contato</a></li>
+        <li>
+          <div class="container-check">
+            <input type="checkbox" id="dark-mode-toggle">
+            <img src="./assets/theme.webp" alt="Botão de alternância para modo escuro" id="checkbox-img" class="bright">
+          </div>
+        </li>
+        <li class="language">
+          <img src="./assets/language.webp" alt="Ícone de botão para selecionar idioma" id="language-img">
+          <ul class="language-menu">
+            <li><span class="icon brazil"></span></li>
+            <li><span class="icon english"></span></li>
+            <li><span class="icon spanish"></span></li>
+            <li><span class="icon french"></span></li>
+            <li><span class="icon japanese"></span></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar__mobile">
+        <img src="assets/menu.svg" alt="Ícone do menu de navegação" class="burguer" />
+        <div class="container-check">
+          <input type="checkbox" id="dark-mode-toggle1">
+          <img src="./assets/theme.webp" alt="Botão de alternância para modo escuro" id="checkbox-img1" class="bright">
+        </div>
+        <ul class="mobile__links">
           <li><a id="header-nav" href="#header">Início</a></li>
           <li><a id="about-nav" href="#about">Sobre</a></li>
           <li><a id="skills-nav" href="#skills">Habilidades</a></li>
           <li><a id="frontend-nav" href="#frontend">Tecnologias</a></li>
           <li><a id="projects-nav" href="#projects">Projetos</a></li>
           <li><a id="footer-nav" href="#footer">Contato</a></li>
-          <li>
-            <div class="container-check">
-              <input type="checkbox" id="dark-mode-toggle">
-              <img src="./assets/theme.png" alt="Dark mode button" id="checkbox-img" class="bright">
-            </div>
-          </li>
           <li class="language">
-            <img src="./assets/language.png" alt="Botão de Idiomas" id="language-img">
+            <img src="./assets/language.webp" alt="Ícone de botão para selecionar idioma" id="language-img">
             <ul class="language-menu">
               <li><span class="icon brazil"></span></li>
               <li><span class="icon english"></span></li>
@@ -63,33 +89,10 @@
             </ul>
           </li>
         </ul>
-        <div class="navbar__mobile">
-          <img src="assets/menu.svg" alt="menu" class="burguer" />
-          <div class="container-check">
-            <input type="checkbox" id="dark-mode-toggle1">
-            <img src="./assets/theme.png" alt="" id="checkbox-img1" class="bright">
-          </div>
-          <ul class="mobile__links">
-            <li><a id="header-nav" href="#header">Início</a></li>
-          <li><a id="about-nav" href="#about">Sobre</a></li>
-          <li><a id="skills-nav" href="#skills">Habilidades</a></li>
-          <li><a id="frontend-nav" href="#frontend">Tecnologias</a></li>
-          <li><a id="projects-nav" href="#projects">Projetos</a></li>
-          <li><a id="footer-nav" href="#footer">Contato</a></li>
-          </ul>
-          <li class="language">
-            <img src="./assets/language.png" alt="" id="language-img">
-            <ul class="language-menu">
-              <li><span class="icon brazil"></span></li>
-              <li><span class="icon english"></span></li>
-              <li><span class="icon spanish"></span></li>
-              <li><span class="icon french"></span></li>
-              <li><span class="icon japanese"></span></li>
-            </ul>
-          </li>
-        </div>
       </div>
+    </div>
   </nav>
+  
 
   <div id="header" class="interface">
     <!-- header -->
@@ -120,7 +123,7 @@
             <p class="nome-icon">Linkedin</p>
           </li>
           <li>
-            <a class="git" href="https://github.com/DavidLucasK" rel="noopener noreferrer" target="_blank"><img src="assets/github-invert.png" alt="GitHub"></a>
+            <a class="git" href="https://github.com/DavidLucasK" rel="noopener noreferrer" target="_blank"><img src="assets/github-invert.webp" alt="GitHub"></a>
             <p class="nome-icon">GitHub</p>
           </li>
           <li>
@@ -156,13 +159,13 @@
           Essas são algumas empresas e marcas em que já trabalhei ou estive em projetos relacionados.
         </h3>
           <div class="company-logos">
-            <a href="https://www.thomsonreuters.com" rel="noopener noreferrer" target="_blank"><img src="./assets/Thomson_Reuters_logo.png" class="thomsonlogo"></a>
-            <a href="https://embraer.com/br/pt" rel="noopener noreferrer" target="_blank"><img src="./assets/embraer.png" width="420px"></a>
-            <a href="https://www.nissan.com.br/" rel="noopener noreferrer" target="_blank"><img src="./assets/nissan.png" class="nissanlogo"></a>
-            <a href="https://www.viracopos.com/" rel="noopener noreferrer" target="_blank"><img src="./assets/viracopos.logo.png"></a>
-            <a href="https://www.deere.com.br/pt/index.html" rel="noopener noreferrer" target="_blank"><img src="./assets/johndeere.png"></a>
-            <a href="https://benfatto.net.br/" rel="noopener noreferrer" target="_blank"><img src="./assets/benfatto-logo.png" width="300px"></a>
-            <!-- <img src="./assets/sotreq.png" width="300px"> -->
+            <a href="https://www.thomsonreuters.com" rel="noopener noreferrer" target="_blank"><img src="./assets/Thomson_Reuters_logo.webp" alt="Logo Thomson Reuters" class="thomsonlogo"></a>
+            <a href="https://embraer.com/br/pt" rel="noopener noreferrer" target="_blank"><img src="./assets/embraer.webp" alt="Logo Embraer" width="420px"></a>
+            <a href="https://www.nissan.com.br/" rel="noopener noreferrer" target="_blank"><img src="./assets/nissan.webp" alt="Logo Nissan" class="nissanlogo"></a>
+            <a href="https://www.viracopos.com/" rel="noopener noreferrer" target="_blank"><img src="./assets/viracopos.logo.webp" alt="Logo Aeroporto Viracopos"></a>
+            <a href="https://www.deere.com.br/pt/index.html" rel="noopener noreferrer" target="_blank"><img src="./assets/johndeere.webp" alt="Logo John Deere"></a>
+            <a href="https://benfatto.net.br/" rel="noopener noreferrer" target="_blank"><img src="./assets/benfatto-logo.webp" width="300px" alt="Logo Benfatto"></a>
+            <!-- <img src="./assets/sotreq.webp" width="300px"> -->
           </div>
       </div>
     </section>              
@@ -179,7 +182,7 @@
         <ul class="max-width">
           <li class="skills__item">
             <div class="image-container">
-              <img src="assets/automation.png" width="40px" alt="Automações" />
+              <img src="assets/automation.webp" width="40px" alt="Automações" />
             </div>
             <h3 id="automations">Automações</h3>
             <p id="automations-title">
@@ -189,7 +192,7 @@
           </li>
           <li class="skills__item">
             <div class="image-container">
-              <img src="assets/web-dev.png" width="40px" height="40px" alt=""Desenvolvimento Web />
+              <img src="assets/web-dev.webp" width="40px" height="40px" alt="Desenvolvimento Web" />
             </div>
             <h3 id="webdev-title">Desenvolvimento Web</h3>
             <p id="webdev-desc">
@@ -199,7 +202,7 @@
           </li>
           <li class="skills__item">
             <div class="image-container">
-              <img src="assets/ux.png" width="40px" alt="Web Design" />
+              <img src="assets/ux.webp" width="40px" alt="Web Design" />
             </div>
             <h3 id="webdes-title">Web Design</h3>
             <p id="webdes-desc">
@@ -209,7 +212,7 @@
           </li>
           <li class="skills__item">
             <div class="image-container">
-              <img src="assets/uxui.png" width="40px" alt="UX/UI Design" />
+              <img src="assets/uxui.webp" width="40px" alt="UX/UI Design" />
             </div>
             <h3 id="uxui-title">UX/UI Design</h3>
             <p id="uxui-desc">
@@ -267,7 +270,7 @@
           </li>
           <li class="soft__item">
             <div class="image-container">
-              <img src="assets/camaleao.gif" width="40px" alt="Adaptabilidade" />
+              <img src="assets/camaleao.gif" width="40px" alt="Camaleão/Adaptabilidade" />
             </div>
             <h3 id="soft3-title">Adaptabilidade</h3>
             <p id="soft3-desc">
@@ -288,7 +291,7 @@
           </li>
           <li class="soft__item">
             <div class="image-container">
-              <img src="assets/shield.gif" width="40px" alt="Resiliência" />
+              <img src="assets/shield.gif" width="40px" alt="Escudo/Resiliência" />
             </div>
             <h3 id="soft6-title">Resiliência</h3>
             <p id="soft6-desc">
@@ -298,7 +301,7 @@
           </li>
           <li class="soft__item">
             <div class="image-container">
-              <img src="assets/tempo.gif" width="40px" alt="Gestão do tempo" />
+              <img src="assets/tempo.gif" width="40px" alt="Relógio/Gestão do tempo" />
             </div>
             <h3 id="soft4-title">Gestão do tempo</h3>
             <p id="soft4-desc">
@@ -328,7 +331,7 @@
         <ul>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/html-5.png" width="36px" alt="HTML"/>
+              <img src="assets/html-5.webp" width="36px" alt="Ícone HTML"/>
             </div>
             <h3>HTML</h3>
             <p id="A">
@@ -337,7 +340,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/css-3.png" width="36px" alt="CSS" />
+              <img src="assets/css-3.webp" width="36px" alt="Ícone CSS" />
             </div>
             <h3>CSS</h3>
             <p id="A">
@@ -346,7 +349,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/js.png" alt="Javascript" />
+              <img src="assets/js.webp" alt="Ícone Javascript" />
             </div>
             <h3>Javascript</h3>
             <p id="I">
@@ -355,7 +358,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/ts.png" alt="Typescript" />
+              <img src="assets/ts.webp" alt="Ícone Typescript" />
             </div>
             <h3>Typescript</h3>
             <p id="I">
@@ -364,7 +367,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/react.svg" alt="React" />
+              <img src="assets/react.svg" alt="Ícone React" />
             </div>
             <h3>React</h3>
             <p id="I">
@@ -373,7 +376,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/nextjs.png" alt="React" />
+              <img src="assets/nextjs.webp" alt="Ícone Next" />
             </div>
             <h3>NextJS</h3>
             <p id="I">
@@ -382,7 +385,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/angular.png" width="42px" alt="React" />
+              <img src="assets/angular.webp" width="42px" alt="Ícone Angular" />
             </div>
             <h3>Angular</h3>
             <p id="B">
@@ -391,7 +394,7 @@
           </li>
           <li class="frontend__item">
             <div class="image-container">
-              <img src="assets/figma.png" alt="figma" />
+              <img src="assets/figma.webp" alt="Ícone Figma" />
             </div>
             <h3>Figma</h3>
             <p id="I">
@@ -408,84 +411,84 @@
         <ul>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/csharp.png" alt="CSharp" />
+              <img src="assets/csharp.webp" alt="Ícone CSharp" />
             </div>
             <h3>C#</h3>
             <p id="A">Avançado</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/dotnet.png" class="square-icon" width="42px" alt="DotNet" />
+              <img src="assets/dotnet.webp" class="square-icon" width="42px" alt="Ícone DotNet" />
             </div>
             <h3>.NET</h3>
             <p id="A">Avançado</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/java.png" class="square-icon" width="42px" alt="Java" />
+              <img src="assets/java.webp" class="square-icon" width="42px" alt="Ícone Java" />
             </div>
             <h3>Java</h3>
             <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/python.png" alt="Python" />
+              <img src="assets/python.webp" alt="Ícone Python" />
             </div>
             <h3>Python</h3>
             <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/sql.png" alt="SQL"/>
+              <img src="assets/sql.webp" alt="Ícone SQL"/>
             </div>
             <h3>SQL</h3>
             <p id="A">Avançado</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/node-js.png" alt="node" />
+              <img src="assets/node-js.webp" alt="Ícone Node" />
             </div>
             <h3>NodeJs</h3>
             <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/aws.png" width="40px" alt="aws" />
+              <img src="assets/aws.webp" width="40px" alt="Ícone AWS" />
             </div>
             <h3>Aws</h3>
             <p id="B">Básico</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/jenkins.png" alt="jenkins" />
+              <img src="assets/jenkins.webp" alt="Ícone Jenkins" />
             </div>
             <h3>Jenkins</h3>
             <p id="I">Intermediário</p>
           </li>
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/postman.png" alt="Postman" />
+              <img src="assets/postman.webp" alt="Ícone Postman" />
             </div>
             <h3>Postman</h3>
             <p id="A">Avançado</p>
           </li>
           <!-- <li class="backend__item">
             <div class="image-container">
-              <img src="assets/soap.png" alt="SoapUI" />
+              <img src="assets/soap.webp" alt="SoapUI" />
             </div>
             <h3>SoapUI</h3>
             <p id="B">Básico</p>
           </li> -->
           <!-- <li class="backend__item">
             <div class="image-container">
-              <img src="assets/jira.png" alt="jira" />
+              <img src="assets/jira.webp" alt="jira" />
             </div>
             <h3>Jira</h3>
             <p id="A">Avançado</p>
           </li> -->
           <li class="backend__item">
             <div class="image-container">
-              <img src="assets/datadog.png" width="40px" alt="datadog" />
+              <img src="assets/datadog.webp" width="40px" alt="Ícone datadog" />
             </div>
             <h3>DataDog</h3>
             <p id="B">Básico</p>
@@ -500,14 +503,14 @@
         <ul>
           <li class="mobile__item">
             <div class="image-container">
-              <img src="assets/react.svg" alt="React-Native"/>
+              <img src="assets/react.svg" alt="Ícone React-Native"/>
             </div>
             <h3>React Native</h3>
             <p id="I">Intermediário</p>
           </li>
           <li class="mobile__item">
             <div class="image-container">
-              <img src="assets/android-studio.png" width="60" alt="Android-Studio"/>
+              <img src="assets/android-studio.webp" width="60" alt="Ícone Android-Studio"/>
             </div>
             <h3>Android Studio</h3>
             <p id="B">Básico</p>
@@ -527,7 +530,7 @@
         <li data-anime="left" id="SalveUmaCrianca">
           <div class="image">
             <a href="https://salveumacrianca.com.br/" target="_blank">
-              <img src="./assets/SalveUmaCrianca1.png" alt="Página de Insitito">
+              <img src="./assets/SalveUmaCrianca1.webp" alt="Página do Insitito Salve Uma Criança">
             </a>
           </div>
           <div class="projects__info">
@@ -538,9 +541,9 @@
             </p>
             <div class="containers">
               <div class="techs pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/SalveUmaCrianca" target="_blank">Acessar Git</a>
             </div>
@@ -549,7 +552,7 @@
         <li data-anime="right">
           <div class="image">
             <a href="https://moviegen.vercel.app/" target="_blank">
-              <img src="assets/movie-gen.png" alt="Escolhas de Filmes" />
+              <img src="assets/movie-gen.webp" alt="Escolhas de Filmes" />
             </a>
           </div>
           <div class="projects__info">
@@ -561,10 +564,10 @@
             </p>
             <div class="containers">
               <div class="techs-big pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
-                <img src="./assets/node-js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
+                <img src="./assets/node-js.webp" alt="Ícone Node">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/Movie-gen" target="_blank">Acessar Git</a>
             </div>
@@ -573,7 +576,7 @@
         <li data-anime="left" id="LoveYouHoney">
           <div class="image">
             <a href="https://loveuportfolio.vercel.app/" target="_blank">
-              <img src="assets/loveupage.png" alt="LoveYouHoney"/>
+              <img src="assets/loveupage.webp" alt="LoveYouHoney"/>
             </a>
           </div>
           <div class="projects__info">
@@ -585,12 +588,12 @@
             </p>
             <div class="containers">
               <div class="techs-bigxl pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
-                <img src="./assets/react.svg"alt="">
-                <img src="./assets/node-js.png" alt="">
-                <img src="./assets/supabase.png" width="36px" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
+                <img src="./assets/react.svg"alt="Ícone React Native">
+                <img src="./assets/node-js.webp" alt="Ícone Node">
+                <img src="./assets/supabase.webp" width="36px" alt="Ícone Supabase">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/TeAmoMaPortfolio" target="_blank">Acessar Git</a>
             </div>
@@ -599,7 +602,7 @@
         <li data-anime="right">
           <div class="image">
             <a href="https://logindl.vercel.app/" target="_blank">
-              <img src="./assets/login2.png" alt="Página de Login">
+              <img src="./assets/login2.webp" alt="Página de Login">
             </a>
           </div>
           <div class="projects__info">
@@ -609,12 +612,12 @@
             </p>
             <div class="containers">
               <div class="techs-bigxl pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
-                <img src="./assets/node-js.png" alt="">
-                <img src="./assets/postgresql.png" alt="">
-                <img src="./assets/supabase.png" width="36px" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
+                <img src="./assets/node-js.webp" alt="Ícone Node">
+                <img src="./assets/postgresql.webp" alt="Ícone postgresql">
+                <img src="./assets/supabase.webp" width="36px" alt="Ícone Supabase">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/LoginPage" target="_blank">Acessar Git</a>
             </div>
@@ -623,7 +626,7 @@
         <li data-anime="left">
           <div class="image">
             <a href="https://dragandnotes.vercel.app/" target="_blank">
-              <img src="assets/DragNotes.png" alt="Notas com Drag and Drop">
+              <img src="assets/DragNotes.webp" alt="Notas com Drag and Drop">
             </a>
           </div>
           <div class="projects__info">
@@ -635,9 +638,9 @@
             </p>
             <div class="containers">
               <div class="techs pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/DragNotes" target="_blank">Acessar Git</a>
             </div>
@@ -646,7 +649,7 @@
         <li data-anime="right">
           <div class="image">
             <a href="https://calendartasks.vercel.app/" target="_blank">
-              <img src="/assets/CalendarTasks2.png" alt="Imagem do site de Calendário com Tasks" />
+              <img src="/assets/CalendarTasks2.webp" alt="Imagem do site de Calendário com Tasks" />
             </a>
           </div>
           <div class="projects__info">
@@ -657,9 +660,9 @@
             </p>
             <div class="containers">
               <div class="techs pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/CalendarTasks" target="_blank">Acessar Git</a>
             </div>
@@ -668,7 +671,7 @@
         <li data-anime="left">
           <div class="image">
             <a href="https://coinversor.vercel.app" target="_blank">
-              <img src="assets/coinverter4.png" alt="Cotação de Moedas">
+              <img src="assets/coinverter4.webp" alt="Cotação de Moedas">
             </a>
           </div>
           <div class="projects__info">
@@ -679,10 +682,10 @@
             </p>
             <div class="containers">
               <div class="techs-big pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
-                <img src="./assets/node-js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="Ícone Html">
+                <img src="./assets/css-3.webp" width="36px" alt="Ícone CSS">
+                <img src="./assets/js.webp" alt="Ícone Javascript">
+                <img src="./assets/node-js.webp" alt="Ícone Node">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/Youtube-Layout" target="_blank">Acessar Git</a>
             </div>
@@ -691,7 +694,7 @@
         <!-- <li data-anime="right">
           <div class="image">
             <a href="https://todolistdl.vercel.app/" target="_blank">
-              <img src="assets/ToDoList2.png" alt="ToDoList"/>
+              <img src="assets/ToDoList2.webp" alt="ToDoList"/>
             </a>
           </div>
           <div class="projects__info">
@@ -701,9 +704,9 @@
             </p>
             <div class="containers">
               <div class="techs pt">
-                <img src="./assets/html-5.png" width="36px" alt="">
-                <img src="./assets/css-3.png" width="36px" alt="">
-                <img src="./assets/js.png" alt="">
+                <img src="./assets/html-5.webp" width="36px" alt="">
+                <img src="./assets/css-3.webp" width="36px" alt="">
+                <img src="./assets/js.webp" alt="">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/ToDoList" target="_blank">Acessar Git</a>
             </div>
@@ -712,7 +715,7 @@
         <li data-anime="right">
           <div class="image">
             <a href="https://spotify-davidlucas.vercel.app/" target="_blank">
-              <img src="assets/spotify.png" alt="Spotify" />
+              <img src="assets/spotify.webp" alt="Imagem da home do Spotify" />
             </a>
           </div>
           <div class="projects__info">
@@ -723,9 +726,9 @@
             </p>
             <div class="containers">
               <div class="techs pt">
-                <img src="./assets/react.svg" width="40px" alt="">
-                <img src="./assets/nextjs.png" width="30px" alt="">
-                <img src="./assets/tailwindcss.png" alt="">
+                <img src="./assets/react.svg" width="40px" alt="Ícone React">
+                <img src="./assets/nextjs.webp" width="30px" alt="Ícone Next">
+                <img src="./assets/tailwindcss.webp" alt="Ícone Tailwind">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/Spotify-Layout" target="_blank">Acessar Git</a>
             </div>
@@ -734,7 +737,7 @@
         <!-- <li data-anime="left">
           <div class="image">
             <a href="https://youtube-layout-davidlucask.vercel.app/" target="_blank">
-              <img src="assets/youtube-layout.png" alt="Youtube"/>
+              <img src="assets/youtube-layout.webp" alt="Youtube"/>
             </a>
           </div>
           <div class="projects__info">
@@ -746,8 +749,8 @@
             <div class="containers">
               <div class="techs pt">
                 <img src="./assets/react.svg" width="40px" alt="">
-                <img src="./assets/nextjs.png" width="30px" alt="">
-                <img src="./assets/tailwindcss.png" alt="">
+                <img src="./assets/nextjs.webp" width="30px" alt="">
+                <img src="./assets/tailwindcss.webp" alt="">
               </div>
               <a id="proj-git" href="https://github.com/DavidLucasK/Youtube-Layout" target="_blank">Acessar Git</a>
             </div>
@@ -763,7 +766,7 @@
           <div class="carousel-wrapper">
               <ul>
                   <li>
-                      <img src="assets/aspas.png" class="aspas" alt="Aspas Feedback">
+                      <img src="assets/aspas.webp" class="aspas" alt="Aspas Feedback">
                       <p class="texto-feedback" id="feedback1">
                           "Estava em busca de um desenvolvedor para criar o site do Instituto Salve uma Criança.
                           <br/>Alguém com ideias claras, e que as concretizasse com excelência e transmitisse o nosso carinho pelo projeto.
@@ -776,7 +779,7 @@
                       <p class="nome-feedback">Clodoaldo Andrade - Presidente</p>
                   </li>
                   <li>
-                    <img src="assets/aspas.png" class="aspas" alt="Aspas Feedback">
+                    <img src="assets/aspas.webp" class="aspas" alt="Aspas Feedback">
                     <p class="texto-feedback" id="feedback2">
                       "Adorei o site que o David fez.
                       O design é lindo, funcional, e cheio de detalhes personalizados que mostram perfeitamente como somos como casal.
@@ -806,22 +809,22 @@
         <div class="footer__contact mb-m">
         <ul class="mb-l">
           <li>
-            <a href="mailto:davidlucasfr70@gmail.com"><img src="assets/mail.png" alt="mail"></a>
+            <a href="mailto:davidlucasfr70@gmail.com"><img src="assets/mail.webp" alt="Ícone Email"></a>
           </li>
           <li>
-            <a href="https://wa.me/+5519981973600?text=Ol%C3%A1%2C+vi+seu+portf%C3%B3lio+e+gostaria+de+conversar+com+voc%C3%AA"><img src="assets/whatsapp.png" alt="whats"></a>
+            <a href="https://wa.me/+5519981973600?text=Ol%C3%A1%2C+vi+seu+portf%C3%B3lio+e+gostaria+de+conversar+com+voc%C3%AA"><img src="assets/whatsapp.webp" alt="Ícone Whatsapp"></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/david-lucas-a21208176/"><img src="assets/linkedin-invert.png" alt="Linkedin"></a>
+            <a href="https://www.linkedin.com/in/david-lucas-a21208176/"><img src="assets/linkedin-invert.webp" alt="Ícone Linkedin"></a>
           </li>
           <li>
-            <a class="git" href="https://github.com/DavidLucasK"><img src="assets/github-invert.png" alt="GitHub"></a>
+            <a class="git" href="https://github.com/DavidLucasK"><img src="assets/github-invert.webp" alt="Ícone GitHub"></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/david.lucask/"><img src="assets/instagram.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/david.lucask/"><img src="assets/instagram.webp" alt="Icone Instagram"></a>
           </li>
           <li>
-            <a href="assets/Curriculo 2025.pdf" download="Currículo"><img src="assets/curriculo.png" alt="Currículo"></a>
+            <a href="assets/Curriculo 2025.pdf" download="Currículo"><img src="assets/curriculo.webp" alt="Ícone Currículo"></a>
           </li>
         </ul>
         <p id="copyright" class="footer__copyright">
