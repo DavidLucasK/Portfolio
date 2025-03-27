@@ -79,17 +79,10 @@
         padding: 0 5rem;
     }
 
-    .about .about__right {
-        width: 80%;
-    }
-
-    .about .about__right p {
-        font-size: 14pt;
-    }
-
     .about .about__left {
         margin-left: 1px;
         max-width: 80%;
+        text-align: center;
     }
     
     .about .about__left ul {
@@ -120,6 +113,15 @@
     }
 
     .about .about__left p {
+        font-size: 14pt;
+    }
+
+    .about .about__right {
+        width: 80%;
+        text-align: center;
+    }
+
+    .about .about__right p {
         font-size: 14pt;
     }
 }

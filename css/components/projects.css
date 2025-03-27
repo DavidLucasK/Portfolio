@@ -63,6 +63,7 @@
 
 .projects ul li .projects__info {
   max-width: 100%;
+  text-align: center;
 }
 
 .projects ul li .projects__info p {
@@ -137,9 +138,10 @@ color: white;
   }
 
   .projects ul li .containers {
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 2rem;
+    justify-content: center;
   }
 }
 
