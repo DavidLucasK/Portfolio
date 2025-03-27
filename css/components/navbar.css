@@ -28,6 +28,8 @@ nav .logo-container {
 nav .logo-navbar {
   width: 100px;
   transition: transform 0.5s ease-in-out;
+  position: relative; /* Garante que ele continua sendo a referência */
+  z-index: 2; /* Mantém acima */
 }
 
 nav .logo-navbar:hover {
@@ -39,6 +41,8 @@ nav .logo-ev {
   width: 280px;
   height: 145px;
   opacity: 0;
+  margin-left: 60px;
+  margin-top: -15px;
   transition: opacity 0.7s ease-in-out, visibility 0.5s ease-in-out;
 }
 
@@ -125,16 +129,16 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .logo-navbar {
-    width: 60px;
+    width: 80px;
     margin-left: 0;
     margin-top: 2px;
   }
 
   nav .logo-ev {
-    width: 150px;
-    height: 75px;
-    margin-top: -3px;
-    margin-left: -23px;
+    width: 200px;
+    height: 100px;
+    margin-top: -4px;
+    margin-left: 52px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -214,8 +218,8 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .logo-ev {
     width: 200px;  /* Ajusta o tamanho para tablets */
     height: 100px;
-    margin-top: -18px;
-    margin-left: -27px;
+    margin-top: -16px;
+    margin-left: 34px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -295,7 +299,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
     width: 200px;  /* Ajusta o tamanho para laptops */
     height: 100px;
     margin-top: -12px;
-    margin-left: -28px;
+    margin-left: 42px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
@@ -338,7 +342,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
     width: 220px;  /* Mantém o tamanho original para desktops */
     height: 110px;
     margin-top: -10px;
-    margin-left: -30px;
+    margin-left: 50px;
   }
   
   nav .logo-navbar:hover ~ .logo2 {
