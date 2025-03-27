@@ -40,7 +40,7 @@
   object-fit: cover; 
   border-radius: 1rem;
   box-shadow: -50px 30px 50px 1px rgb(122, 122, 122);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 
@@ -56,6 +56,7 @@
 
 .projects ul li .image img:hover {
   transform: scale(1.05);
+  filter: brightness(90%);
 }
 
 .projects ul li .image-wip img:hover {
