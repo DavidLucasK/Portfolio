@@ -26,6 +26,19 @@ window.onload = function(){
   window.scrollTo(20, 20);
 }
 
+const toggleDark = document.querySelector('.container-check img'); // Obtém um único elemento
+const arrowUp = document.querySelector('.clique');
+const containerCheck = document.querySelector('.container-check');
+
+function removeAnimation() {
+  toggleDark.style.animation = 'none';
+  arrowUp.style.display = 'none';
+  containerCheck.style.display = 'block';
+}
+
+toggleDark.addEventListener("click", removeAnimation);
+toggleDark.addEventListener("touchstart", removeAnimation);
+
 /* Function para acertar o GoTO do Header somente*/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -75,10 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (burger.src.endsWith('assets/close.webp')) {
       // Altere o valor da largura conforme necessário
-      burger.style.width = '25px';
-      burger.style.height = '25px';
-      burger.style.marginTop = '8px';
-      burger.style.marginRight = '10px';
+      burger.style.width = '20px';
+      burger.style.height = '20px';
+      burger.style.marginTop = '4px';
+      burger.style.marginRight = '5px';
     }
 
     if (mobileLinks.style.display === 'block') {
@@ -87,8 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.setAttribute("src", "assets/menu.svg");
       burger.style.marginTop = '0px';
       burger.style.marginRight = '0px';
-      burger.style.width = '40px';
-      burger.style.height = '40px';
+      burger.style.width = '30px';
+      burger.style.height = '30px';
     } else {
       // Se não visível, exibe a lista
       mobileLinks.style.display = 'block';
@@ -102,8 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.setAttribute("src", "assets/menu.svg");
       burger.style.marginTop = '0px';
       burger.style.marginRight = '0px';
-      burger.style.width = '40px';
-      burger.style.height = '40px';
+      burger.style.width = '30px';
+      burger.style.height = '30px';
     });
   });
 });
