@@ -57,11 +57,10 @@ header .header__left {
   width: 95%;
   height: 95%;
   background: 
-  url('../../assets/perfil-camiseta-preta-1.webp') no-repeat center/cover;
+  url('../../assets/perfil-camiseta-preta-2.webp') no-repeat center/cover;
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  filter: brightness(110%) contrast(135%);
   transform: translateY(10px); /* Pequeno ajuste para melhorar suavidade */
 }
 
