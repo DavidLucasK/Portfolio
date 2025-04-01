@@ -107,10 +107,12 @@
 
     .about .about__left h2 {
         font-size: 18pt;
+        text-align: center;
     }
 
     .about .about__left p {
         font-size: 14pt;
+        text-align: center;
     }
 
     .about .about__right {
