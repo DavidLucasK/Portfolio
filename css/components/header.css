@@ -135,7 +135,7 @@ header .header__left {
   header .header__left {
     max-width: 100%;
     height: 100px;
-    margin-bottom: 230px;
+    margin-bottom: 300px;
   }
 
   header .header__right {
@@ -158,7 +158,7 @@ header .header__left {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 480px) {
   header {
     flex-direction: column;
     align-items: center;
