@@ -57,7 +57,7 @@ header .header__left {
   width: 95%;
   height: 95%;
   background: 
-    url('../../assets/perfil23.webp') no-repeat center/cover;
+  url('../../assets/perfil-camiseta-preta-1.webp') no-repeat center/cover;
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
