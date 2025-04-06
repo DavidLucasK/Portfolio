@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://davidlucasfr.com.br" target="_blank">
-    <img src="https://davidlucas.vercel.app/assets/portfolio.png" alt="Portfolio Preview" width="100%" />
+    <img src="https://davidlucas.vercel.app/assets/portfolio.webp" alt="Portfolio Preview" width="100%" />
   </a>
 </p>
 
@@ -17,10 +17,9 @@
 
 ## ✨ Sobre
 
-Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências como desenvolvedor. Foi criado com foco em:
+Este é o meu portfólio pessoal, onde mostro meus projetos, habilidades e experiências como desenvolvedor. Foi criado com foco em:
 
 - 🔥 Design moderno e responsivo  
-- ⚛️ Tecnologias modernas (React, TailwindCSS, etc)  
 - 🎯 Navegação intuitiva e fluida  
 - 🖥️ Adaptável para todos os dispositivos  
 
@@ -31,10 +30,8 @@ Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e ex
 - HTML5  
 - CSS3  
 - JavaScript  
-- React.js  
-- TailwindCSS  
-- Vite  
 - Vercel (deploy)
+*Obs: Estou deixando ele em React/NextJS
 
 ---
 
@@ -53,9 +50,9 @@ Você pode visitar o portfólio clicando aqui:
 
 ## 📧 Contato
 
-Se quiser bater um papo, colaborar ou conhecer mais sobre meu trabalho:
+Se quiser trocar uma idéia, me dar um feedback ou conhecer mais sobre meu trabalho:
 
-- 📩 Email: [seuemail@email.com]  
+- 📩 Email: davidlucasfr70@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/david-lucas-a21208176](https://www.linkedin.com/in/david-lucas-a21208176/)  
 - 📸 Instagram: [@david.lucask](https://instagram.com/david.lucask)
 
@@ -63,8 +60,8 @@ Se quiser bater um papo, colaborar ou conhecer mais sobre meu trabalho:
 
 ## 🧠 Curiosidade
 
-Este portfólio é mais que uma vitrine de projetos — ele é uma extensão do que eu sou como dev: apaixonado por código, design e experiências incríveis.
+Este portfólio é mais que uma vitrine de projetos(que serão muitos futuramente!) — ele é uma extensão do que eu sou como dev: apaixonado por código, design e experiências.
 
 ---
 
-> 💡 Sinta-se à vontade para dar uma estrela ⭐ neste repositório ou me chamar para trocar uma ideia!
+> 💡 Fique à vontade para dar uma estrela ⭐ neste repositório ou me chamar para trocar uma ideia!
