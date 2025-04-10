@@ -44,7 +44,7 @@ Totalmente adaptado para **PCs, notebooks, tablets e celulares** 📱💻🖥️
 ## 📌 Como acessar
 
 Você pode visitar o portfólio clicando aqui:  
-👉 **[davidlucasfr.com.br](https://davidlucasfr.com.br)**
+👉 **[davidlucasfr.com.br](https://davidlucasfr.com.br)** ou clicando diretamente na imagem lá em cima 😁
 
 ---
 
