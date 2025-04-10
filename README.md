@@ -1,4 +1,4 @@
-# 💼 Portfólio - David Lucas
+# 🌐 Portfólio - David Lucas
 
 [![Website](https://img.shields.io/badge/🌐%20Acesse%20meu%20portfólio-190555?style=for-the-badge&logo=vercel&logoColor=white)](https://davidlucasfr.com.br)
 [![GitHub](https://img.shields.io/badge/📂%20Repositório%20no%20GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario/seu-repo)
@@ -44,7 +44,7 @@ Totalmente adaptado para **PCs, notebooks, tablets e celulares** 📱💻🖥️
 ## 📌 Como acessar
 
 Você pode visitar o portfólio clicando aqui:  
-👉 **[davidlucasfr.com.br](https://davidlucasfr.com.br)**
+👉 **[davidlucasfr.com.br](https://davidlucasfr.com.br)** ou clicando diretamente na imagem lá em cima 😁
 
 ---
 
