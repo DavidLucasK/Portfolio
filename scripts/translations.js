@@ -74,7 +74,7 @@ function translateEnglish() {
     "proj11-title": "Save a Child Institute",
     "proj11-desc":
       "Volunteer work for the Salve uma Criança Institute, which carries out social actions in Campinas, transforming special dates and bringing hope to children.",
-    proj333_title: "TresOuMais",
+    proj333_title: "ThreeOrMore",
     proj333_desc:
       "A project with friends to talk about Christian life with young people on social media!",
     "footer-title": "Get in touch",
@@ -197,7 +197,7 @@ function translateSpanish() {
     "proj11-title": "Instituto Salve a un Niño",
     "proj11-desc":
       "Trabajo voluntario para el Instituto Salve una Criança, que realiza acciones sociales en Campinas, transformando fechas especiales y llevando esperanza a los niños.",
-    proj333_title: "TresOuMais",
+    proj333_title: "TresOMás",
     proj333_desc:
       "Proyecto con amigos para hablar sobre la vida cristiana con los jóvenes en las redes sociales.",
     "footer-title": "Ponte en contacto",
