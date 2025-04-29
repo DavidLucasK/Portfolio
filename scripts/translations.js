@@ -74,6 +74,9 @@ function translateEnglish() {
     "proj11-title": "Save a Child Institute",
     "proj11-desc":
       "Volunteer work for the Salve uma Criança Institute, which carries out social actions in Campinas, transforming special dates and bringing hope to children.",
+    proj333_title: "TresOuMais",
+    proj333_desc:
+      "A project with friends to talk about Christian life with young people on social media!",
     "footer-title": "Get in touch",
     copyright: "© 2024 David Lucas. All rights reserved.",
     cv: "Resume",
@@ -194,6 +197,9 @@ function translateSpanish() {
     "proj11-title": "Instituto Salve a un Niño",
     "proj11-desc":
       "Trabajo voluntario para el Instituto Salve una Criança, que realiza acciones sociales en Campinas, transformando fechas especiales y llevando esperanza a los niños.",
+    proj333_title: "TresOuMais",
+    proj333_desc:
+      "Proyecto con amigos para hablar sobre la vida cristiana con los jóvenes en las redes sociales.",
     "footer-title": "Ponte en contacto",
     copyright: "© 2024 David Lucas. Todos los derechos reservados.",
     cv: "Currículum",
@@ -305,6 +311,9 @@ function translateFrench() {
     "proj10-desc": `Site web pour créer des notes avec fonction de glisser-déposer. <br/>Utilise la mise en cache pour sauvegarder les informations pour une utilisation future. <br/><strong>Pour l'instant uniquement pour les ordinateurs de bureau</strong>`,
     "proj11-title": "Institut Sauvez un Enfant",
     "proj11-desc": `Travail bénévole pour l'Institut Salve uma Criança, qui mène des actions sociales à Campinas, transformant des dates spéciales et apportant de l'espoir aux enfants.`,
+    proj333_title: "TroisOuPlus",
+    proj333_desc:
+      "Projet avec des amis pour parler de la vie chrétienne avec les jeunes sur les réseaux sociaux.",
     "footer-title": "Prenez contact",
     copyright: "© 2024 David Lucas. Tous droits réservés.",
     cv: "CV",
@@ -418,6 +427,9 @@ function translateJapanese() {
     "proj11-title": "子供を救う会",
     "proj11-desc":
       "カンピーナスで特別な日を変え、子供たちに希望をもたらす社会的活動を行うサルヴ・ウマ・クリアンサ・インスティチュートのボランティア活動。",
+    proj333_title: "スリー・オア・モア",
+    proj333_desc:
+      "友人たちと一緒に、若者たちに向けてキリスト教の人生についてSNSで語るプロジェクトです。",
     "footer-title": "連絡先",
     copyright: "© 2024 David Lucas. 全著作権所有。",
     cv: "履歴書",
@@ -533,6 +545,9 @@ function translatePortuguese() {
     "proj11-title": "Instituto Salve uma Criança",
     "proj11-desc":
       "Trabalho voluntário para o Instituto Salve uma Criança, que realiza ações sociais em Campinas, transformando datas especiais e levando esperança às crianças.",
+    proj333_title: "TrêsOuMais",
+    proj333_desc:
+      "Projeto com amigos para falar sobre a vida cristã com os jovens nas redes sociais!",
     "footer-title": "Entre em contato",
     copyright: "© 2024 David Lucas. Todos os direitos reservados.",
     cv: "Currículo",
