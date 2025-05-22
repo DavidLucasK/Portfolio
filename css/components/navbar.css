@@ -13,6 +13,13 @@ nav {
   box-shadow: rgb(0, 0, 0) 0 0 30px;
 }
 
+.btnsRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .clique {
   position: relative;
   filter: invert();
@@ -60,14 +67,6 @@ nav .logo-ev {
 nav .navbar__content .navbar__links li {
   display: inline-block;
   align-content: center;
-}
-
-nav .navbar__content .navbar__links li:last-of-type {
-  transform: translateY(5px);
-}
-
-nav .navbar__content .navbar__links li:not(:last-of-type) {
-  margin-right: 0.2rem;
 }
 
 nav .navbar__content .navbar__links a {
@@ -217,8 +216,9 @@ nav .navbar__content .navbar__mobile .mobile__links {
     display: flex;
   }
 
-  .container-check {
+  .btnsRight .container-check {
     margin-right: 1rem;
+    display: none;
   }
 
   .container-check img {
@@ -241,6 +241,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   .container-check {
     margin-right: 1rem;
     animation: none;
+    display: none;
   }
 
   nav .logo-navbar {
